@@ -1,0 +1,2233 @@
+month,region,channel,flavour,units_sold,revenue_inr
+2024-01-01,North,Parlour,Vanilla,326,58680
+2024-01-01,North,Parlour,Chocolate,274,54800
+2024-01-01,North,Parlour,Mango Alphonso,130,31200
+2024-01-01,North,Parlour,Butterscotch,200,38000
+2024-01-01,North,Parlour,Strawberry,158,30020
+2024-01-01,North,Parlour,Kesar Pista,141,36660
+2024-01-01,North,Parlour,Sugar-Free Vanilla,73,16790
+2024-01-01,North,Supermarket,Vanilla,391,70380
+2024-01-01,North,Supermarket,Chocolate,400,80000
+2024-01-01,North,Supermarket,Mango Alphonso,166,39840
+2024-01-01,North,Supermarket,Butterscotch,268,50920
+2024-01-01,North,Supermarket,Strawberry,203,38570
+2024-01-01,North,Supermarket,Kesar Pista,165,42900
+2024-01-01,North,Supermarket,Sugar-Free Vanilla,86,19780
+2024-01-01,North,Quick-commerce,Vanilla,168,30240
+2024-01-01,North,Quick-commerce,Chocolate,157,31400
+2024-01-01,North,Quick-commerce,Mango Alphonso,66,15840
+2024-01-01,North,Quick-commerce,Butterscotch,111,21090
+2024-01-01,North,Quick-commerce,Strawberry,83,15770
+2024-01-01,North,Quick-commerce,Kesar Pista,63,16380
+2024-01-01,North,Quick-commerce,Sugar-Free Vanilla,37,8510
+2024-01-01,South,Parlour,Vanilla,275,49500
+2024-01-01,South,Parlour,Chocolate,244,48800
+2024-01-01,South,Parlour,Mango Alphonso,106,25440
+2024-01-01,South,Parlour,Butterscotch,193,36670
+2024-01-01,South,Parlour,Strawberry,122,23180
+2024-01-01,South,Parlour,Kesar Pista,104,27040
+2024-01-01,South,Parlour,Sugar-Free Vanilla,52,11960
+2024-01-01,South,Supermarket,Vanilla,380,68400
+2024-01-01,South,Supermarket,Chocolate,345,69000
+2024-01-01,South,Supermarket,Mango Alphonso,162,38880
+2024-01-01,South,Supermarket,Butterscotch,248,47120
+2024-01-01,South,Supermarket,Strawberry,170,32300
+2024-01-01,South,Supermarket,Kesar Pista,167,43420
+2024-01-01,South,Supermarket,Sugar-Free Vanilla,74,17020
+2024-01-01,South,Quick-commerce,Vanilla,137,24660
+2024-01-01,South,Quick-commerce,Chocolate,138,27600
+2024-01-01,South,Quick-commerce,Mango Alphonso,60,14400
+2024-01-01,South,Quick-commerce,Butterscotch,97,18430
+2024-01-01,South,Quick-commerce,Strawberry,66,12540
+2024-01-01,South,Quick-commerce,Kesar Pista,61,15860
+2024-01-01,South,Quick-commerce,Sugar-Free Vanilla,27,6210
+2024-01-01,East,Parlour,Vanilla,175,31500
+2024-01-01,East,Parlour,Chocolate,169,33800
+2024-01-01,East,Parlour,Mango Alphonso,73,17520
+2024-01-01,East,Parlour,Butterscotch,117,22230
+2024-01-01,East,Parlour,Strawberry,81,15390
+2024-01-01,East,Parlour,Kesar Pista,76,19760
+2024-01-01,East,Parlour,Sugar-Free Vanilla,41,9430
+2024-01-01,East,Supermarket,Vanilla,242,43560
+2024-01-01,East,Supermarket,Chocolate,231,46200
+2024-01-01,East,Supermarket,Mango Alphonso,100,24000
+2024-01-01,East,Supermarket,Butterscotch,158,30020
+2024-01-01,East,Supermarket,Strawberry,129,24510
+2024-01-01,East,Supermarket,Kesar Pista,110,28600
+2024-01-01,East,Supermarket,Sugar-Free Vanilla,54,12420
+2024-01-01,East,Quick-commerce,Vanilla,89,16020
+2024-01-01,East,Quick-commerce,Chocolate,95,19000
+2024-01-01,East,Quick-commerce,Mango Alphonso,38,9120
+2024-01-01,East,Quick-commerce,Butterscotch,62,11780
+2024-01-01,East,Quick-commerce,Strawberry,50,9500
+2024-01-01,East,Quick-commerce,Kesar Pista,42,10920
+2024-01-01,East,Quick-commerce,Sugar-Free Vanilla,21,4830
+2024-01-01,West,Parlour,Vanilla,302,54360
+2024-01-01,West,Parlour,Chocolate,296,59200
+2024-01-01,West,Parlour,Mango Alphonso,132,31680
+2024-01-01,West,Parlour,Butterscotch,184,34960
+2024-01-01,West,Parlour,Strawberry,126,23940
+2024-01-01,West,Parlour,Kesar Pista,120,31200
+2024-01-01,West,Parlour,Sugar-Free Vanilla,59,13570
+2024-01-01,West,Supermarket,Vanilla,368,66240
+2024-01-01,West,Supermarket,Chocolate,405,81000
+2024-01-01,West,Supermarket,Mango Alphonso,180,43200
+2024-01-01,West,Supermarket,Butterscotch,251,47690
+2024-01-01,West,Supermarket,Strawberry,192,36480
+2024-01-01,West,Supermarket,Kesar Pista,164,42640
+2024-01-01,West,Supermarket,Sugar-Free Vanilla,91,20930
+2024-01-01,West,Quick-commerce,Vanilla,148,26640
+2024-01-01,West,Quick-commerce,Chocolate,136,27200
+2024-01-01,West,Quick-commerce,Mango Alphonso,61,14640
+2024-01-01,West,Quick-commerce,Butterscotch,101,19190
+2024-01-01,West,Quick-commerce,Strawberry,68,12920
+2024-01-01,West,Quick-commerce,Kesar Pista,65,16900
+2024-01-01,West,Quick-commerce,Sugar-Free Vanilla,35,8050
+2024-02-01,North,Parlour,Vanilla,363,65340
+2024-02-01,North,Parlour,Chocolate,333,66600
+2024-02-01,North,Parlour,Mango Alphonso,175,42000
+2024-02-01,North,Parlour,Butterscotch,247,46930
+2024-02-01,North,Parlour,Strawberry,162,30780
+2024-02-01,North,Parlour,Kesar Pista,144,37440
+2024-02-01,North,Parlour,Sugar-Free Vanilla,73,16790
+2024-02-01,North,Supermarket,Vanilla,510,91800
+2024-02-01,North,Supermarket,Chocolate,501,100200
+2024-02-01,North,Supermarket,Mango Alphonso,210,50400
+2024-02-01,North,Supermarket,Butterscotch,303,57570
+2024-02-01,North,Supermarket,Strawberry,231,43890
+2024-02-01,North,Supermarket,Kesar Pista,234,60840
+2024-02-01,North,Supermarket,Sugar-Free Vanilla,107,24610
+2024-02-01,North,Quick-commerce,Vanilla,208,37440
+2024-02-01,North,Quick-commerce,Chocolate,195,39000
+2024-02-01,North,Quick-commerce,Mango Alphonso,74,17760
+2024-02-01,North,Quick-commerce,Butterscotch,133,25270
+2024-02-01,North,Quick-commerce,Strawberry,94,17860
+2024-02-01,North,Quick-commerce,Kesar Pista,82,21320
+2024-02-01,North,Quick-commerce,Sugar-Free Vanilla,39,8970
+2024-02-01,South,Parlour,Vanilla,317,57060
+2024-02-01,South,Parlour,Chocolate,271,54200
+2024-02-01,South,Parlour,Mango Alphonso,131,31440
+2024-02-01,South,Parlour,Butterscotch,204,38760
+2024-02-01,South,Parlour,Strawberry,160,30400
+2024-02-01,South,Parlour,Kesar Pista,142,36920
+2024-02-01,South,Parlour,Sugar-Free Vanilla,63,14490
+2024-02-01,South,Supermarket,Vanilla,415,74700
+2024-02-01,South,Supermarket,Chocolate,369,73800
+2024-02-01,South,Supermarket,Mango Alphonso,192,46080
+2024-02-01,South,Supermarket,Butterscotch,297,56430
+2024-02-01,South,Supermarket,Strawberry,189,35910
+2024-02-01,South,Supermarket,Kesar Pista,183,47580
+2024-02-01,South,Supermarket,Sugar-Free Vanilla,91,20930
+2024-02-01,South,Quick-commerce,Vanilla,148,26640
+2024-02-01,South,Quick-commerce,Chocolate,159,31800
+2024-02-01,South,Quick-commerce,Mango Alphonso,69,16560
+2024-02-01,South,Quick-commerce,Butterscotch,112,21280
+2024-02-01,South,Quick-commerce,Strawberry,76,14440
+2024-02-01,South,Quick-commerce,Kesar Pista,61,15860
+2024-02-01,South,Quick-commerce,Sugar-Free Vanilla,33,7590
+2024-02-01,East,Parlour,Vanilla,195,35100
+2024-02-01,East,Parlour,Chocolate,223,44600
+2024-02-01,East,Parlour,Mango Alphonso,100,24000
+2024-02-01,East,Parlour,Butterscotch,154,29260
+2024-02-01,East,Parlour,Strawberry,99,18810
+2024-02-01,East,Parlour,Kesar Pista,84,21840
+2024-02-01,East,Parlour,Sugar-Free Vanilla,50,11500
+2024-02-01,East,Supermarket,Vanilla,316,56880
+2024-02-01,East,Supermarket,Chocolate,253,50600
+2024-02-01,East,Supermarket,Mango Alphonso,124,29760
+2024-02-01,East,Supermarket,Butterscotch,177,33630
+2024-02-01,East,Supermarket,Strawberry,145,27550
+2024-02-01,East,Supermarket,Kesar Pista,131,34060
+2024-02-01,East,Supermarket,Sugar-Free Vanilla,58,13340
+2024-02-01,East,Quick-commerce,Vanilla,111,19980
+2024-02-01,East,Quick-commerce,Chocolate,107,21400
+2024-02-01,East,Quick-commerce,Mango Alphonso,45,10800
+2024-02-01,East,Quick-commerce,Butterscotch,80,15200
+2024-02-01,East,Quick-commerce,Strawberry,52,9880
+2024-02-01,East,Quick-commerce,Kesar Pista,45,11700
+2024-02-01,East,Quick-commerce,Sugar-Free Vanilla,24,5520
+2024-02-01,West,Parlour,Vanilla,355,63900
+2024-02-01,West,Parlour,Chocolate,304,60800
+2024-02-01,West,Parlour,Mango Alphonso,140,33600
+2024-02-01,West,Parlour,Butterscotch,249,47310
+2024-02-01,West,Parlour,Strawberry,167,31730
+2024-02-01,West,Parlour,Kesar Pista,144,37440
+2024-02-01,West,Parlour,Sugar-Free Vanilla,73,16790
+2024-02-01,West,Supermarket,Vanilla,421,75780
+2024-02-01,West,Supermarket,Chocolate,410,82000
+2024-02-01,West,Supermarket,Mango Alphonso,189,45360
+2024-02-01,West,Supermarket,Butterscotch,309,58710
+2024-02-01,West,Supermarket,Strawberry,205,38950
+2024-02-01,West,Supermarket,Kesar Pista,184,47840
+2024-02-01,West,Supermarket,Sugar-Free Vanilla,89,20470
+2024-02-01,West,Quick-commerce,Vanilla,179,32220
+2024-02-01,West,Quick-commerce,Chocolate,157,31400
+2024-02-01,West,Quick-commerce,Mango Alphonso,81,19440
+2024-02-01,West,Quick-commerce,Butterscotch,125,23750
+2024-02-01,West,Quick-commerce,Strawberry,76,14440
+2024-02-01,West,Quick-commerce,Kesar Pista,71,18460
+2024-02-01,West,Quick-commerce,Sugar-Free Vanilla,39,8970
+2024-03-01,North,Parlour,Vanilla,499,89820
+2024-03-01,North,Parlour,Chocolate,467,93400
+2024-03-01,North,Parlour,Mango Alphonso,247,59280
+2024-03-01,North,Parlour,Butterscotch,358,68020
+2024-03-01,North,Parlour,Strawberry,251,47690
+2024-03-01,North,Parlour,Kesar Pista,240,62400
+2024-03-01,North,Parlour,Sugar-Free Vanilla,120,27600
+2024-03-01,North,Supermarket,Vanilla,667,120060
+2024-03-01,North,Supermarket,Chocolate,622,124400
+2024-03-01,North,Supermarket,Mango Alphonso,300,72000
+2024-03-01,North,Supermarket,Butterscotch,467,88730
+2024-03-01,North,Supermarket,Strawberry,336,63840
+2024-03-01,North,Supermarket,Kesar Pista,319,82940
+2024-03-01,North,Supermarket,Sugar-Free Vanilla,158,36340
+2024-03-01,North,Quick-commerce,Vanilla,299,53820
+2024-03-01,North,Quick-commerce,Chocolate,238,47600
+2024-03-01,North,Quick-commerce,Mango Alphonso,114,27360
+2024-03-01,North,Quick-commerce,Butterscotch,176,33440
+2024-03-01,North,Quick-commerce,Strawberry,139,26410
+2024-03-01,North,Quick-commerce,Kesar Pista,111,28860
+2024-03-01,North,Quick-commerce,Sugar-Free Vanilla,55,12650
+2024-03-01,South,Parlour,Vanilla,436,78480
+2024-03-01,South,Parlour,Chocolate,413,82600
+2024-03-01,South,Parlour,Mango Alphonso,181,43440
+2024-03-01,South,Parlour,Butterscotch,279,53010
+2024-03-01,South,Parlour,Strawberry,228,43320
+2024-03-01,South,Parlour,Kesar Pista,187,48620
+2024-03-01,South,Parlour,Sugar-Free Vanilla,101,23230
+2024-03-01,South,Supermarket,Vanilla,598,107640
+2024-03-01,South,Supermarket,Chocolate,513,102600
+2024-03-01,South,Supermarket,Mango Alphonso,279,66960
+2024-03-01,South,Supermarket,Butterscotch,421,79990
+2024-03-01,South,Supermarket,Strawberry,308,58520
+2024-03-01,South,Supermarket,Kesar Pista,275,71500
+2024-03-01,South,Supermarket,Sugar-Free Vanilla,136,31280
+2024-03-01,South,Quick-commerce,Vanilla,212,38160
+2024-03-01,South,Quick-commerce,Chocolate,215,43000
+2024-03-01,South,Quick-commerce,Mango Alphonso,92,22080
+2024-03-01,South,Quick-commerce,Butterscotch,148,28120
+2024-03-01,South,Quick-commerce,Strawberry,98,18620
+2024-03-01,South,Quick-commerce,Kesar Pista,95,24700
+2024-03-01,South,Quick-commerce,Sugar-Free Vanilla,53,12190
+2024-03-01,East,Parlour,Vanilla,294,52920
+2024-03-01,East,Parlour,Chocolate,311,62200
+2024-03-01,East,Parlour,Mango Alphonso,131,31440
+2024-03-01,East,Parlour,Butterscotch,203,38570
+2024-03-01,East,Parlour,Strawberry,160,30400
+2024-03-01,East,Parlour,Kesar Pista,145,37700
+2024-03-01,East,Parlour,Sugar-Free Vanilla,67,15410
+2024-03-01,East,Supermarket,Vanilla,433,77940
+2024-03-01,East,Supermarket,Chocolate,368,73600
+2024-03-01,East,Supermarket,Mango Alphonso,170,40800
+2024-03-01,East,Supermarket,Butterscotch,302,57380
+2024-03-01,East,Supermarket,Strawberry,201,38190
+2024-03-01,East,Supermarket,Kesar Pista,179,46540
+2024-03-01,East,Supermarket,Sugar-Free Vanilla,93,21390
+2024-03-01,East,Quick-commerce,Vanilla,145,26100
+2024-03-01,East,Quick-commerce,Chocolate,154,30800
+2024-03-01,East,Quick-commerce,Mango Alphonso,68,16320
+2024-03-01,East,Quick-commerce,Butterscotch,113,21470
+2024-03-01,East,Quick-commerce,Strawberry,70,13300
+2024-03-01,East,Quick-commerce,Kesar Pista,74,19240
+2024-03-01,East,Quick-commerce,Sugar-Free Vanilla,31,7130
+2024-03-01,West,Parlour,Vanilla,455,81900
+2024-03-01,West,Parlour,Chocolate,471,94200
+2024-03-01,West,Parlour,Mango Alphonso,215,51600
+2024-03-01,West,Parlour,Butterscotch,306,58140
+2024-03-01,West,Parlour,Strawberry,213,40470
+2024-03-01,West,Parlour,Kesar Pista,224,58240
+2024-03-01,West,Parlour,Sugar-Free Vanilla,99,22770
+2024-03-01,West,Supermarket,Vanilla,664,119520
+2024-03-01,West,Supermarket,Chocolate,635,127000
+2024-03-01,West,Supermarket,Mango Alphonso,275,66000
+2024-03-01,West,Supermarket,Butterscotch,442,83980
+2024-03-01,West,Supermarket,Strawberry,312,59280
+2024-03-01,West,Supermarket,Kesar Pista,303,78780
+2024-03-01,West,Supermarket,Sugar-Free Vanilla,131,30130
+2024-03-01,West,Quick-commerce,Vanilla,260,46800
+2024-03-01,West,Quick-commerce,Chocolate,225,45000
+2024-03-01,West,Quick-commerce,Mango Alphonso,105,25200
+2024-03-01,West,Quick-commerce,Butterscotch,172,32680
+2024-03-01,West,Quick-commerce,Strawberry,114,21660
+2024-03-01,West,Quick-commerce,Kesar Pista,103,26780
+2024-03-01,West,Quick-commerce,Sugar-Free Vanilla,56,12880
+2024-04-01,North,Parlour,Vanilla,678,122040
+2024-04-01,North,Parlour,Chocolate,700,140000
+2024-04-01,North,Parlour,Mango Alphonso,931,223440
+2024-04-01,North,Parlour,Butterscotch,543,103170
+2024-04-01,North,Parlour,Strawberry,323,61370
+2024-04-01,North,Parlour,Kesar Pista,299,77740
+2024-04-01,North,Parlour,Sugar-Free Vanilla,151,34730
+2024-04-01,North,Supermarket,Vanilla,1081,194580
+2024-04-01,North,Supermarket,Chocolate,1020,204000
+2024-04-01,North,Supermarket,Mango Alphonso,1223,293520
+2024-04-01,North,Supermarket,Butterscotch,646,122740
+2024-04-01,North,Supermarket,Strawberry,441,83790
+2024-04-01,North,Supermarket,Kesar Pista,455,118300
+2024-04-01,North,Supermarket,Sugar-Free Vanilla,222,51060
+2024-04-01,North,Quick-commerce,Vanilla,390,70200
+2024-04-01,North,Quick-commerce,Chocolate,398,79600
+2024-04-01,North,Quick-commerce,Mango Alphonso,449,107760
+2024-04-01,North,Quick-commerce,Butterscotch,229,43510
+2024-04-01,North,Quick-commerce,Strawberry,193,36670
+2024-04-01,North,Quick-commerce,Kesar Pista,157,40820
+2024-04-01,North,Quick-commerce,Sugar-Free Vanilla,84,19320
+2024-04-01,South,Parlour,Vanilla,672,120960
+2024-04-01,South,Parlour,Chocolate,545,109000
+2024-04-01,South,Parlour,Mango Alphonso,651,156240
+2024-04-01,South,Parlour,Butterscotch,379,72010
+2024-04-01,South,Parlour,Strawberry,297,56430
+2024-04-01,South,Parlour,Kesar Pista,253,65780
+2024-04-01,South,Parlour,Sugar-Free Vanilla,135,31050
+2024-04-01,South,Supermarket,Vanilla,865,155700
+2024-04-01,South,Supermarket,Chocolate,743,148600
+2024-04-01,South,Supermarket,Mango Alphonso,973,233520
+2024-04-01,South,Supermarket,Butterscotch,527,100130
+2024-04-01,South,Supermarket,Strawberry,394,74860
+2024-04-01,South,Supermarket,Kesar Pista,384,99840
+2024-04-01,South,Supermarket,Sugar-Free Vanilla,190,43700
+2024-04-01,South,Quick-commerce,Vanilla,292,52560
+2024-04-01,South,Quick-commerce,Chocolate,298,59600
+2024-04-01,South,Quick-commerce,Mango Alphonso,347,83280
+2024-04-01,South,Quick-commerce,Butterscotch,191,36290
+2024-04-01,South,Quick-commerce,Strawberry,159,30210
+2024-04-01,South,Quick-commerce,Kesar Pista,140,36400
+2024-04-01,South,Quick-commerce,Sugar-Free Vanilla,65,14950
+2024-04-01,East,Parlour,Vanilla,453,81540
+2024-04-01,East,Parlour,Chocolate,416,83200
+2024-04-01,East,Parlour,Mango Alphonso,487,116880
+2024-04-01,East,Parlour,Butterscotch,260,49400
+2024-04-01,East,Parlour,Strawberry,188,35720
+2024-04-01,East,Parlour,Kesar Pista,199,51740
+2024-04-01,East,Parlour,Sugar-Free Vanilla,100,23000
+2024-04-01,East,Supermarket,Vanilla,586,105480
+2024-04-01,East,Supermarket,Chocolate,590,118000
+2024-04-01,East,Supermarket,Mango Alphonso,674,161760
+2024-04-01,East,Supermarket,Butterscotch,360,68400
+2024-04-01,East,Supermarket,Strawberry,256,48640
+2024-04-01,East,Supermarket,Kesar Pista,239,62140
+2024-04-01,East,Supermarket,Sugar-Free Vanilla,134,30820
+2024-04-01,East,Quick-commerce,Vanilla,235,42300
+2024-04-01,East,Quick-commerce,Chocolate,227,45400
+2024-04-01,East,Quick-commerce,Mango Alphonso,274,65760
+2024-04-01,East,Quick-commerce,Butterscotch,140,26600
+2024-04-01,East,Quick-commerce,Strawberry,101,19190
+2024-04-01,East,Quick-commerce,Kesar Pista,88,22880
+2024-04-01,East,Quick-commerce,Sugar-Free Vanilla,50,11500
+2024-04-01,West,Parlour,Vanilla,731,131580
+2024-04-01,West,Parlour,Chocolate,635,127000
+2024-04-01,West,Parlour,Mango Alphonso,795,190800
+2024-04-01,West,Parlour,Butterscotch,421,79990
+2024-04-01,West,Parlour,Strawberry,351,66690
+2024-04-01,West,Parlour,Kesar Pista,312,81120
+2024-04-01,West,Parlour,Sugar-Free Vanilla,159,36570
+2024-04-01,West,Supermarket,Vanilla,969,174420
+2024-04-01,West,Supermarket,Chocolate,935,187000
+2024-04-01,West,Supermarket,Mango Alphonso,943,226320
+2024-04-01,West,Supermarket,Butterscotch,637,121030
+2024-04-01,West,Supermarket,Strawberry,420,79800
+2024-04-01,West,Supermarket,Kesar Pista,425,110500
+2024-04-01,West,Supermarket,Sugar-Free Vanilla,207,47610
+2024-04-01,West,Quick-commerce,Vanilla,375,67500
+2024-04-01,West,Quick-commerce,Chocolate,353,70600
+2024-04-01,West,Quick-commerce,Mango Alphonso,381,91440
+2024-04-01,West,Quick-commerce,Butterscotch,246,46740
+2024-04-01,West,Quick-commerce,Strawberry,153,29070
+2024-04-01,West,Quick-commerce,Kesar Pista,161,41860
+2024-04-01,West,Quick-commerce,Sugar-Free Vanilla,80,18400
+2024-05-01,North,Parlour,Vanilla,800,144000
+2024-05-01,North,Parlour,Chocolate,857,171400
+2024-05-01,North,Parlour,Mango Alphonso,960,230400
+2024-05-01,North,Parlour,Butterscotch,542,102980
+2024-05-01,North,Parlour,Strawberry,427,81130
+2024-05-01,North,Parlour,Kesar Pista,343,89180
+2024-05-01,North,Parlour,Sugar-Free Vanilla,164,37720
+2024-05-01,North,Supermarket,Vanilla,1067,192060
+2024-05-01,North,Supermarket,Chocolate,1046,209200
+2024-05-01,North,Supermarket,Mango Alphonso,1394,334560
+2024-05-01,North,Supermarket,Butterscotch,829,157510
+2024-05-01,North,Supermarket,Strawberry,518,98420
+2024-05-01,North,Supermarket,Kesar Pista,501,130260
+2024-05-01,North,Supermarket,Sugar-Free Vanilla,239,54970
+2024-05-01,North,Quick-commerce,Vanilla,477,85860
+2024-05-01,North,Quick-commerce,Chocolate,418,83600
+2024-05-01,North,Quick-commerce,Mango Alphonso,541,129840
+2024-05-01,North,Quick-commerce,Butterscotch,268,50920
+2024-05-01,North,Quick-commerce,Strawberry,227,43130
+2024-05-01,North,Quick-commerce,Kesar Pista,175,45500
+2024-05-01,North,Quick-commerce,Sugar-Free Vanilla,102,23460
+2024-05-01,South,Parlour,Vanilla,673,121140
+2024-05-01,South,Parlour,Chocolate,619,123800
+2024-05-01,South,Parlour,Mango Alphonso,796,191040
+2024-05-01,South,Parlour,Butterscotch,492,93480
+2024-05-01,South,Parlour,Strawberry,323,61370
+2024-05-01,South,Parlour,Kesar Pista,309,80340
+2024-05-01,South,Parlour,Sugar-Free Vanilla,152,34960
+2024-05-01,South,Supermarket,Vanilla,926,166680
+2024-05-01,South,Supermarket,Chocolate,916,183200
+2024-05-01,South,Supermarket,Mango Alphonso,1030,247200
+2024-05-01,South,Supermarket,Butterscotch,658,125020
+2024-05-01,South,Supermarket,Strawberry,406,77140
+2024-05-01,South,Supermarket,Kesar Pista,441,114660
+2024-05-01,South,Supermarket,Sugar-Free Vanilla,205,47150
+2024-05-01,South,Quick-commerce,Vanilla,379,68220
+2024-05-01,South,Quick-commerce,Chocolate,362,72400
+2024-05-01,South,Quick-commerce,Mango Alphonso,429,102960
+2024-05-01,South,Quick-commerce,Butterscotch,235,44650
+2024-05-01,South,Quick-commerce,Strawberry,158,30020
+2024-05-01,South,Quick-commerce,Kesar Pista,161,41860
+2024-05-01,South,Quick-commerce,Sugar-Free Vanilla,75,17250
+2024-05-01,East,Parlour,Vanilla,476,85680
+2024-05-01,East,Parlour,Chocolate,503,100600
+2024-05-01,East,Parlour,Mango Alphonso,589,141360
+2024-05-01,East,Parlour,Butterscotch,316,60040
+2024-05-01,East,Parlour,Strawberry,226,42940
+2024-05-01,East,Parlour,Kesar Pista,208,54080
+2024-05-01,East,Parlour,Sugar-Free Vanilla,104,23920
+2024-05-01,East,Supermarket,Vanilla,636,114480
+2024-05-01,East,Supermarket,Chocolate,585,117000
+2024-05-01,East,Supermarket,Mango Alphonso,746,179040
+2024-05-01,East,Supermarket,Butterscotch,481,91390
+2024-05-01,East,Supermarket,Strawberry,327,62130
+2024-05-01,East,Supermarket,Kesar Pista,307,79820
+2024-05-01,East,Supermarket,Sugar-Free Vanilla,145,33350
+2024-05-01,East,Quick-commerce,Vanilla,244,43920
+2024-05-01,East,Quick-commerce,Chocolate,244,48800
+2024-05-01,East,Quick-commerce,Mango Alphonso,261,62640
+2024-05-01,East,Quick-commerce,Butterscotch,162,30780
+2024-05-01,East,Quick-commerce,Strawberry,119,22610
+2024-05-01,East,Quick-commerce,Kesar Pista,111,28860
+2024-05-01,East,Quick-commerce,Sugar-Free Vanilla,56,12880
+2024-05-01,West,Parlour,Vanilla,771,138780
+2024-05-01,West,Parlour,Chocolate,731,146200
+2024-05-01,West,Parlour,Mango Alphonso,836,200640
+2024-05-01,West,Parlour,Butterscotch,515,97850
+2024-05-01,West,Parlour,Strawberry,399,75810
+2024-05-01,West,Parlour,Kesar Pista,352,91520
+2024-05-01,West,Parlour,Sugar-Free Vanilla,155,35650
+2024-05-01,West,Supermarket,Vanilla,956,172080
+2024-05-01,West,Supermarket,Chocolate,996,199200
+2024-05-01,West,Supermarket,Mango Alphonso,1223,293520
+2024-05-01,West,Supermarket,Butterscotch,672,127680
+2024-05-01,West,Supermarket,Strawberry,528,100320
+2024-05-01,West,Supermarket,Kesar Pista,469,121940
+2024-05-01,West,Supermarket,Sugar-Free Vanilla,231,53130
+2024-05-01,West,Quick-commerce,Vanilla,377,67860
+2024-05-01,West,Quick-commerce,Chocolate,357,71400
+2024-05-01,West,Quick-commerce,Mango Alphonso,413,99120
+2024-05-01,West,Quick-commerce,Butterscotch,253,48070
+2024-05-01,West,Quick-commerce,Strawberry,189,35910
+2024-05-01,West,Quick-commerce,Kesar Pista,183,47580
+2024-05-01,West,Quick-commerce,Sugar-Free Vanilla,78,17940
+2024-06-01,North,Parlour,Vanilla,728,131040
+2024-06-01,North,Parlour,Chocolate,724,144800
+2024-06-01,North,Parlour,Mango Alphonso,795,190800
+2024-06-01,North,Parlour,Butterscotch,513,97470
+2024-06-01,North,Parlour,Strawberry,352,66880
+2024-06-01,North,Parlour,Kesar Pista,301,78260
+2024-06-01,North,Parlour,Sugar-Free Vanilla,164,37720
+2024-06-01,North,Supermarket,Vanilla,897,161460
+2024-06-01,North,Supermarket,Chocolate,995,199000
+2024-06-01,North,Supermarket,Mango Alphonso,1198,287520
+2024-06-01,North,Supermarket,Butterscotch,611,116090
+2024-06-01,North,Supermarket,Strawberry,467,88730
+2024-06-01,North,Supermarket,Kesar Pista,399,103740
+2024-06-01,North,Supermarket,Sugar-Free Vanilla,233,53590
+2024-06-01,North,Quick-commerce,Vanilla,382,68760
+2024-06-01,North,Quick-commerce,Chocolate,330,66000
+2024-06-01,North,Quick-commerce,Mango Alphonso,414,99360
+2024-06-01,North,Quick-commerce,Butterscotch,272,51680
+2024-06-01,North,Quick-commerce,Strawberry,180,34200
+2024-06-01,North,Quick-commerce,Kesar Pista,173,44980
+2024-06-01,North,Quick-commerce,Sugar-Free Vanilla,84,19320
+2024-06-01,South,Parlour,Vanilla,678,122040
+2024-06-01,South,Parlour,Chocolate,599,119800
+2024-06-01,South,Parlour,Mango Alphonso,769,184560
+2024-06-01,South,Parlour,Butterscotch,444,84360
+2024-06-01,South,Parlour,Strawberry,301,57190
+2024-06-01,South,Parlour,Kesar Pista,276,71760
+2024-06-01,South,Parlour,Sugar-Free Vanilla,132,30360
+2024-06-01,South,Supermarket,Vanilla,884,159120
+2024-06-01,South,Supermarket,Chocolate,797,159400
+2024-06-01,South,Supermarket,Mango Alphonso,1023,245520
+2024-06-01,South,Supermarket,Butterscotch,580,110200
+2024-06-01,South,Supermarket,Strawberry,393,74670
+2024-06-01,South,Supermarket,Kesar Pista,338,87880
+2024-06-01,South,Supermarket,Sugar-Free Vanilla,169,38870
+2024-06-01,South,Quick-commerce,Vanilla,326,58680
+2024-06-01,South,Quick-commerce,Chocolate,318,63600
+2024-06-01,South,Quick-commerce,Mango Alphonso,364,87360
+2024-06-01,South,Quick-commerce,Butterscotch,217,41230
+2024-06-01,South,Quick-commerce,Strawberry,144,27360
+2024-06-01,South,Quick-commerce,Kesar Pista,125,32500
+2024-06-01,South,Quick-commerce,Sugar-Free Vanilla,65,14950
+2024-06-01,East,Parlour,Vanilla,412,74160
+2024-06-01,East,Parlour,Chocolate,397,79400
+2024-06-01,East,Parlour,Mango Alphonso,498,119520
+2024-06-01,East,Parlour,Butterscotch,267,50730
+2024-06-01,East,Parlour,Strawberry,195,37050
+2024-06-01,East,Parlour,Kesar Pista,192,49920
+2024-06-01,East,Parlour,Sugar-Free Vanilla,96,22080
+2024-06-01,East,Supermarket,Vanilla,530,95400
+2024-06-01,East,Supermarket,Chocolate,543,108600
+2024-06-01,East,Supermarket,Mango Alphonso,669,160560
+2024-06-01,East,Supermarket,Butterscotch,380,72200
+2024-06-01,East,Supermarket,Strawberry,260,49400
+2024-06-01,East,Supermarket,Kesar Pista,245,63700
+2024-06-01,East,Supermarket,Sugar-Free Vanilla,134,30820
+2024-06-01,East,Quick-commerce,Vanilla,226,40680
+2024-06-01,East,Quick-commerce,Chocolate,220,44000
+2024-06-01,East,Quick-commerce,Mango Alphonso,272,65280
+2024-06-01,East,Quick-commerce,Butterscotch,156,29640
+2024-06-01,East,Quick-commerce,Strawberry,103,19570
+2024-06-01,East,Quick-commerce,Kesar Pista,86,22360
+2024-06-01,East,Quick-commerce,Sugar-Free Vanilla,46,10580
+2024-06-01,West,Parlour,Vanilla,714,128520
+2024-06-01,West,Parlour,Chocolate,693,138600
+2024-06-01,West,Parlour,Mango Alphonso,847,203280
+2024-06-01,West,Parlour,Butterscotch,445,84550
+2024-06-01,West,Parlour,Strawberry,339,64410
+2024-06-01,West,Parlour,Kesar Pista,294,76440
+2024-06-01,West,Parlour,Sugar-Free Vanilla,149,34270
+2024-06-01,West,Supermarket,Vanilla,861,154980
+2024-06-01,West,Supermarket,Chocolate,820,164000
+2024-06-01,West,Supermarket,Mango Alphonso,1029,246960
+2024-06-01,West,Supermarket,Butterscotch,551,104690
+2024-06-01,West,Supermarket,Strawberry,420,79800
+2024-06-01,West,Supermarket,Kesar Pista,405,105300
+2024-06-01,West,Supermarket,Sugar-Free Vanilla,192,44160
+2024-06-01,West,Quick-commerce,Vanilla,326,58680
+2024-06-01,West,Quick-commerce,Chocolate,330,66000
+2024-06-01,West,Quick-commerce,Mango Alphonso,369,88560
+2024-06-01,West,Quick-commerce,Butterscotch,239,45410
+2024-06-01,West,Quick-commerce,Strawberry,151,28690
+2024-06-01,West,Quick-commerce,Kesar Pista,147,38220
+2024-06-01,West,Quick-commerce,Sugar-Free Vanilla,76,17480
+2024-07-01,North,Parlour,Vanilla,479,86220
+2024-07-01,North,Parlour,Chocolate,518,103600
+2024-07-01,North,Parlour,Mango Alphonso,210,50400
+2024-07-01,North,Parlour,Butterscotch,350,66500
+2024-07-01,North,Parlour,Strawberry,229,43510
+2024-07-01,North,Parlour,Kesar Pista,221,57460
+2024-07-01,North,Parlour,Cookie Crunch,261,65250
+2024-07-01,North,Parlour,Sugar-Free Vanilla,109,25070
+2024-07-01,North,Supermarket,Vanilla,748,134640
+2024-07-01,North,Supermarket,Chocolate,660,132000
+2024-07-01,North,Supermarket,Mango Alphonso,320,76800
+2024-07-01,North,Supermarket,Butterscotch,505,95950
+2024-07-01,North,Supermarket,Strawberry,322,61180
+2024-07-01,North,Supermarket,Kesar Pista,279,72540
+2024-07-01,North,Supermarket,Cookie Crunch,336,84000
+2024-07-01,North,Supermarket,Sugar-Free Vanilla,153,35190
+2024-07-01,North,Quick-commerce,Vanilla,299,53820
+2024-07-01,North,Quick-commerce,Chocolate,251,50200
+2024-07-01,North,Quick-commerce,Mango Alphonso,120,28800
+2024-07-01,North,Quick-commerce,Butterscotch,192,36480
+2024-07-01,North,Quick-commerce,Strawberry,134,25460
+2024-07-01,North,Quick-commerce,Kesar Pista,123,31980
+2024-07-01,North,Quick-commerce,Cookie Crunch,155,38750
+2024-07-01,North,Quick-commerce,Sugar-Free Vanilla,55,12650
+2024-07-01,South,Parlour,Vanilla,399,71820
+2024-07-01,South,Parlour,Chocolate,391,78200
+2024-07-01,South,Parlour,Mango Alphonso,175,42000
+2024-07-01,South,Parlour,Butterscotch,304,57760
+2024-07-01,South,Parlour,Strawberry,213,40470
+2024-07-01,South,Parlour,Kesar Pista,178,46280
+2024-07-01,South,Parlour,Cookie Crunch,240,60000
+2024-07-01,South,Parlour,Sugar-Free Vanilla,100,23000
+2024-07-01,South,Supermarket,Vanilla,553,99540
+2024-07-01,South,Supermarket,Chocolate,576,115200
+2024-07-01,South,Supermarket,Mango Alphonso,266,63840
+2024-07-01,South,Supermarket,Butterscotch,364,69160
+2024-07-01,South,Supermarket,Strawberry,300,57000
+2024-07-01,South,Supermarket,Kesar Pista,277,72020
+2024-07-01,South,Supermarket,Cookie Crunch,286,71500
+2024-07-01,South,Supermarket,Sugar-Free Vanilla,115,26450
+2024-07-01,South,Quick-commerce,Vanilla,218,39240
+2024-07-01,South,Quick-commerce,Chocolate,224,44800
+2024-07-01,South,Quick-commerce,Mango Alphonso,106,25440
+2024-07-01,South,Quick-commerce,Butterscotch,148,28120
+2024-07-01,South,Quick-commerce,Strawberry,113,21470
+2024-07-01,South,Quick-commerce,Kesar Pista,89,23140
+2024-07-01,South,Quick-commerce,Cookie Crunch,123,30750
+2024-07-01,South,Quick-commerce,Sugar-Free Vanilla,50,11500
+2024-07-01,East,Parlour,Vanilla,284,51120
+2024-07-01,East,Parlour,Chocolate,310,62000
+2024-07-01,East,Parlour,Mango Alphonso,142,34080
+2024-07-01,East,Parlour,Butterscotch,210,39900
+2024-07-01,East,Parlour,Strawberry,136,25840
+2024-07-01,East,Parlour,Kesar Pista,145,37700
+2024-07-01,East,Parlour,Cookie Crunch,171,42750
+2024-07-01,East,Parlour,Sugar-Free Vanilla,64,14720
+2024-07-01,East,Supermarket,Vanilla,409,73620
+2024-07-01,East,Supermarket,Chocolate,385,77000
+2024-07-01,East,Supermarket,Mango Alphonso,178,42720
+2024-07-01,East,Supermarket,Butterscotch,268,50920
+2024-07-01,East,Supermarket,Strawberry,211,40090
+2024-07-01,East,Supermarket,Kesar Pista,189,49140
+2024-07-01,East,Supermarket,Cookie Crunch,200,50000
+2024-07-01,East,Supermarket,Sugar-Free Vanilla,97,22310
+2024-07-01,East,Quick-commerce,Vanilla,163,29340
+2024-07-01,East,Quick-commerce,Chocolate,161,32200
+2024-07-01,East,Quick-commerce,Mango Alphonso,71,17040
+2024-07-01,East,Quick-commerce,Butterscotch,104,19760
+2024-07-01,East,Quick-commerce,Strawberry,79,15010
+2024-07-01,East,Quick-commerce,Kesar Pista,74,19240
+2024-07-01,East,Quick-commerce,Cookie Crunch,79,19750
+2024-07-01,East,Quick-commerce,Sugar-Free Vanilla,36,8280
+2024-07-01,West,Parlour,Vanilla,489,88020
+2024-07-01,West,Parlour,Chocolate,460,92000
+2024-07-01,West,Parlour,Mango Alphonso,205,49200
+2024-07-01,West,Parlour,Butterscotch,338,64220
+2024-07-01,West,Parlour,Strawberry,220,41800
+2024-07-01,West,Parlour,Kesar Pista,223,57980
+2024-07-01,West,Parlour,Cookie Crunch,271,67750
+2024-07-01,West,Parlour,Sugar-Free Vanilla,95,21850
+2024-07-01,West,Supermarket,Vanilla,701,126180
+2024-07-01,West,Supermarket,Chocolate,589,117800
+2024-07-01,West,Supermarket,Mango Alphonso,277,66480
+2024-07-01,West,Supermarket,Butterscotch,444,84360
+2024-07-01,West,Supermarket,Strawberry,303,57570
+2024-07-01,West,Supermarket,Kesar Pista,253,65780
+2024-07-01,West,Supermarket,Cookie Crunch,365,91250
+2024-07-01,West,Supermarket,Sugar-Free Vanilla,131,30130
+2024-07-01,West,Quick-commerce,Vanilla,235,42300
+2024-07-01,West,Quick-commerce,Chocolate,252,50400
+2024-07-01,West,Quick-commerce,Mango Alphonso,104,24960
+2024-07-01,West,Quick-commerce,Butterscotch,179,34010
+2024-07-01,West,Quick-commerce,Strawberry,124,23560
+2024-07-01,West,Quick-commerce,Kesar Pista,102,26520
+2024-07-01,West,Quick-commerce,Cookie Crunch,118,29500
+2024-07-01,West,Quick-commerce,Sugar-Free Vanilla,58,13340
+2024-08-01,North,Parlour,Vanilla,437,78660
+2024-08-01,North,Parlour,Chocolate,474,94800
+2024-08-01,North,Parlour,Mango Alphonso,204,48960
+2024-08-01,North,Parlour,Butterscotch,334,63460
+2024-08-01,North,Parlour,Strawberry,235,44650
+2024-08-01,North,Parlour,Kesar Pista,210,54600
+2024-08-01,North,Parlour,Cookie Crunch,249,62250
+2024-08-01,North,Parlour,Sugar-Free Vanilla,108,24840
+2024-08-01,North,Supermarket,Vanilla,588,105840
+2024-08-01,North,Supermarket,Chocolate,575,115000
+2024-08-01,North,Supermarket,Mango Alphonso,285,68400
+2024-08-01,North,Supermarket,Butterscotch,410,77900
+2024-08-01,North,Supermarket,Strawberry,310,58900
+2024-08-01,North,Supermarket,Kesar Pista,273,70980
+2024-08-01,North,Supermarket,Cookie Crunch,337,84250
+2024-08-01,North,Supermarket,Sugar-Free Vanilla,135,31050
+2024-08-01,North,Quick-commerce,Vanilla,257,46260
+2024-08-01,North,Quick-commerce,Chocolate,225,45000
+2024-08-01,North,Quick-commerce,Mango Alphonso,109,26160
+2024-08-01,North,Quick-commerce,Butterscotch,156,29640
+2024-08-01,North,Quick-commerce,Strawberry,111,21090
+2024-08-01,North,Quick-commerce,Kesar Pista,97,25220
+2024-08-01,North,Quick-commerce,Cookie Crunch,120,30000
+2024-08-01,North,Quick-commerce,Sugar-Free Vanilla,48,11040
+2024-08-01,South,Parlour,Vanilla,400,72000
+2024-08-01,South,Parlour,Chocolate,398,79600
+2024-08-01,South,Parlour,Mango Alphonso,159,38160
+2024-08-01,South,Parlour,Butterscotch,250,47500
+2024-08-01,South,Parlour,Strawberry,188,35720
+2024-08-01,South,Parlour,Kesar Pista,178,46280
+2024-08-01,South,Parlour,Cookie Crunch,228,57000
+2024-08-01,South,Parlour,Sugar-Free Vanilla,85,19550
+2024-08-01,South,Supermarket,Vanilla,510,91800
+2024-08-01,South,Supermarket,Chocolate,467,93400
+2024-08-01,South,Supermarket,Mango Alphonso,214,51360
+2024-08-01,South,Supermarket,Butterscotch,336,63840
+2024-08-01,South,Supermarket,Strawberry,238,45220
+2024-08-01,South,Supermarket,Kesar Pista,206,53560
+2024-08-01,South,Supermarket,Cookie Crunch,281,70250
+2024-08-01,South,Supermarket,Sugar-Free Vanilla,109,25070
+2024-08-01,South,Quick-commerce,Vanilla,223,40140
+2024-08-01,South,Quick-commerce,Chocolate,196,39200
+2024-08-01,South,Quick-commerce,Mango Alphonso,91,21840
+2024-08-01,South,Quick-commerce,Butterscotch,126,23940
+2024-08-01,South,Quick-commerce,Strawberry,104,19760
+2024-08-01,South,Quick-commerce,Kesar Pista,87,22620
+2024-08-01,South,Quick-commerce,Cookie Crunch,115,28750
+2024-08-01,South,Quick-commerce,Sugar-Free Vanilla,44,10120
+2024-08-01,East,Parlour,Vanilla,276,49680
+2024-08-01,East,Parlour,Chocolate,261,52200
+2024-08-01,East,Parlour,Mango Alphonso,112,26880
+2024-08-01,East,Parlour,Butterscotch,169,32110
+2024-08-01,East,Parlour,Strawberry,144,27360
+2024-08-01,East,Parlour,Kesar Pista,119,30940
+2024-08-01,East,Parlour,Cookie Crunch,155,38750
+2024-08-01,East,Parlour,Sugar-Free Vanilla,58,13340
+2024-08-01,East,Supermarket,Vanilla,341,61380
+2024-08-01,East,Supermarket,Chocolate,365,73000
+2024-08-01,East,Supermarket,Mango Alphonso,146,35040
+2024-08-01,East,Supermarket,Butterscotch,231,43890
+2024-08-01,East,Supermarket,Strawberry,180,34200
+2024-08-01,East,Supermarket,Kesar Pista,154,40040
+2024-08-01,East,Supermarket,Cookie Crunch,215,53750
+2024-08-01,East,Supermarket,Sugar-Free Vanilla,74,17020
+2024-08-01,East,Quick-commerce,Vanilla,150,27000
+2024-08-01,East,Quick-commerce,Chocolate,139,27800
+2024-08-01,East,Quick-commerce,Mango Alphonso,65,15600
+2024-08-01,East,Quick-commerce,Butterscotch,90,17100
+2024-08-01,East,Quick-commerce,Strawberry,68,12920
+2024-08-01,East,Quick-commerce,Kesar Pista,61,15860
+2024-08-01,East,Quick-commerce,Cookie Crunch,74,18500
+2024-08-01,East,Quick-commerce,Sugar-Free Vanilla,33,7590
+2024-08-01,West,Parlour,Vanilla,479,86220
+2024-08-01,West,Parlour,Chocolate,400,80000
+2024-08-01,West,Parlour,Mango Alphonso,192,46080
+2024-08-01,West,Parlour,Butterscotch,297,56430
+2024-08-01,West,Parlour,Strawberry,218,41420
+2024-08-01,West,Parlour,Kesar Pista,204,53040
+2024-08-01,West,Parlour,Cookie Crunch,215,53750
+2024-08-01,West,Parlour,Sugar-Free Vanilla,88,20240
+2024-08-01,West,Supermarket,Vanilla,605,108900
+2024-08-01,West,Supermarket,Chocolate,520,104000
+2024-08-01,West,Supermarket,Mango Alphonso,235,56400
+2024-08-01,West,Supermarket,Butterscotch,358,68020
+2024-08-01,West,Supermarket,Strawberry,251,47690
+2024-08-01,West,Supermarket,Kesar Pista,249,64740
+2024-08-01,West,Supermarket,Cookie Crunch,313,78250
+2024-08-01,West,Supermarket,Sugar-Free Vanilla,120,27600
+2024-08-01,West,Quick-commerce,Vanilla,212,38160
+2024-08-01,West,Quick-commerce,Chocolate,223,44600
+2024-08-01,West,Quick-commerce,Mango Alphonso,100,24000
+2024-08-01,West,Quick-commerce,Butterscotch,148,28120
+2024-08-01,West,Quick-commerce,Strawberry,111,21090
+2024-08-01,West,Quick-commerce,Kesar Pista,104,27040
+2024-08-01,West,Quick-commerce,Cookie Crunch,124,31000
+2024-08-01,West,Quick-commerce,Sugar-Free Vanilla,49,11270
+2024-09-01,North,Parlour,Vanilla,492,88560
+2024-09-01,North,Parlour,Chocolate,493,98600
+2024-09-01,North,Parlour,Mango Alphonso,201,48240
+2024-09-01,North,Parlour,Butterscotch,320,60800
+2024-09-01,North,Parlour,Strawberry,233,44270
+2024-09-01,North,Parlour,Kesar Pista,221,57460
+2024-09-01,North,Parlour,Cookie Crunch,266,66500
+2024-09-01,North,Parlour,Sugar-Free Vanilla,93,21390
+2024-09-01,North,Supermarket,Vanilla,597,107460
+2024-09-01,North,Supermarket,Chocolate,586,117200
+2024-09-01,North,Supermarket,Mango Alphonso,288,69120
+2024-09-01,North,Supermarket,Butterscotch,432,82080
+2024-09-01,North,Supermarket,Strawberry,292,55480
+2024-09-01,North,Supermarket,Kesar Pista,254,66040
+2024-09-01,North,Supermarket,Cookie Crunch,348,87000
+2024-09-01,North,Supermarket,Sugar-Free Vanilla,143,32890
+2024-09-01,North,Quick-commerce,Vanilla,267,48060
+2024-09-01,North,Quick-commerce,Chocolate,233,46600
+2024-09-01,North,Quick-commerce,Mango Alphonso,105,25200
+2024-09-01,North,Quick-commerce,Butterscotch,150,28500
+2024-09-01,North,Quick-commerce,Strawberry,106,20140
+2024-09-01,North,Quick-commerce,Kesar Pista,104,27040
+2024-09-01,North,Quick-commerce,Cookie Crunch,124,31000
+2024-09-01,North,Quick-commerce,Sugar-Free Vanilla,50,11500
+2024-09-01,South,Parlour,Vanilla,364,65520
+2024-09-01,South,Parlour,Chocolate,413,82600
+2024-09-01,South,Parlour,Mango Alphonso,182,43680
+2024-09-01,South,Parlour,Butterscotch,269,51110
+2024-09-01,South,Parlour,Strawberry,206,39140
+2024-09-01,South,Parlour,Kesar Pista,187,48620
+2024-09-01,South,Parlour,Cookie Crunch,215,53750
+2024-09-01,South,Parlour,Sugar-Free Vanilla,81,18630
+2024-09-01,South,Supermarket,Vanilla,484,87120
+2024-09-01,South,Supermarket,Chocolate,534,106800
+2024-09-01,South,Supermarket,Mango Alphonso,227,54480
+2024-09-01,South,Supermarket,Butterscotch,366,69540
+2024-09-01,South,Supermarket,Strawberry,275,52250
+2024-09-01,South,Supermarket,Kesar Pista,214,55640
+2024-09-01,South,Supermarket,Cookie Crunch,284,71000
+2024-09-01,South,Supermarket,Sugar-Free Vanilla,117,26910
+2024-09-01,South,Quick-commerce,Vanilla,204,36720
+2024-09-01,South,Quick-commerce,Chocolate,179,35800
+2024-09-01,South,Quick-commerce,Mango Alphonso,85,20400
+2024-09-01,South,Quick-commerce,Butterscotch,132,25080
+2024-09-01,South,Quick-commerce,Strawberry,101,19190
+2024-09-01,South,Quick-commerce,Kesar Pista,94,24440
+2024-09-01,South,Quick-commerce,Cookie Crunch,103,25750
+2024-09-01,South,Quick-commerce,Sugar-Free Vanilla,45,10350
+2024-09-01,East,Parlour,Vanilla,266,47880
+2024-09-01,East,Parlour,Chocolate,288,57600
+2024-09-01,East,Parlour,Mango Alphonso,127,30480
+2024-09-01,East,Parlour,Butterscotch,187,35530
+2024-09-01,East,Parlour,Strawberry,131,24890
+2024-09-01,East,Parlour,Kesar Pista,115,29900
+2024-09-01,East,Parlour,Cookie Crunch,140,35000
+2024-09-01,East,Parlour,Sugar-Free Vanilla,65,14950
+2024-09-01,East,Supermarket,Vanilla,366,65880
+2024-09-01,East,Supermarket,Chocolate,356,71200
+2024-09-01,East,Supermarket,Mango Alphonso,176,42240
+2024-09-01,East,Supermarket,Butterscotch,257,48830
+2024-09-01,East,Supermarket,Strawberry,179,34010
+2024-09-01,East,Supermarket,Kesar Pista,157,40820
+2024-09-01,East,Supermarket,Cookie Crunch,183,45750
+2024-09-01,East,Supermarket,Sugar-Free Vanilla,78,17940
+2024-09-01,East,Quick-commerce,Vanilla,150,27000
+2024-09-01,East,Quick-commerce,Chocolate,139,27800
+2024-09-01,East,Quick-commerce,Mango Alphonso,64,15360
+2024-09-01,East,Quick-commerce,Butterscotch,90,17100
+2024-09-01,East,Quick-commerce,Strawberry,69,13110
+2024-09-01,East,Quick-commerce,Kesar Pista,66,17160
+2024-09-01,East,Quick-commerce,Cookie Crunch,74,18500
+2024-09-01,East,Quick-commerce,Sugar-Free Vanilla,32,7360
+2024-09-01,West,Parlour,Vanilla,404,72720
+2024-09-01,West,Parlour,Chocolate,455,91000
+2024-09-01,West,Parlour,Mango Alphonso,191,45840
+2024-09-01,West,Parlour,Butterscotch,276,52440
+2024-09-01,West,Parlour,Strawberry,194,36860
+2024-09-01,West,Parlour,Kesar Pista,189,49140
+2024-09-01,West,Parlour,Cookie Crunch,231,57750
+2024-09-01,West,Parlour,Sugar-Free Vanilla,86,19780
+2024-09-01,West,Supermarket,Vanilla,644,115920
+2024-09-01,West,Supermarket,Chocolate,604,120800
+2024-09-01,West,Supermarket,Mango Alphonso,249,59760
+2024-09-01,West,Supermarket,Butterscotch,361,68590
+2024-09-01,West,Supermarket,Strawberry,298,56620
+2024-09-01,West,Supermarket,Kesar Pista,251,65260
+2024-09-01,West,Supermarket,Cookie Crunch,320,80000
+2024-09-01,West,Supermarket,Sugar-Free Vanilla,126,28980
+2024-09-01,West,Quick-commerce,Vanilla,214,38520
+2024-09-01,West,Quick-commerce,Chocolate,228,45600
+2024-09-01,West,Quick-commerce,Mango Alphonso,105,25200
+2024-09-01,West,Quick-commerce,Butterscotch,142,26980
+2024-09-01,West,Quick-commerce,Strawberry,108,20520
+2024-09-01,West,Quick-commerce,Kesar Pista,94,24440
+2024-09-01,West,Quick-commerce,Cookie Crunch,128,32000
+2024-09-01,West,Quick-commerce,Sugar-Free Vanilla,48,11040
+2024-10-01,North,Parlour,Vanilla,484,87120
+2024-10-01,North,Parlour,Chocolate,460,92000
+2024-10-01,North,Parlour,Mango Alphonso,184,44160
+2024-10-01,North,Parlour,Butterscotch,317,60230
+2024-10-01,North,Parlour,Strawberry,211,40090
+2024-10-01,North,Parlour,Kesar Pista,210,54600
+2024-10-01,North,Parlour,Cookie Crunch,236,59000
+2024-10-01,North,Parlour,Sugar-Free Vanilla,103,23690
+2024-10-01,North,Supermarket,Vanilla,578,104040
+2024-10-01,North,Supermarket,Chocolate,552,110400
+2024-10-01,North,Supermarket,Mango Alphonso,263,63120
+2024-10-01,North,Supermarket,Butterscotch,443,84170
+2024-10-01,North,Supermarket,Strawberry,287,54530
+2024-10-01,North,Supermarket,Kesar Pista,241,62660
+2024-10-01,North,Supermarket,Cookie Crunch,319,79750
+2024-10-01,North,Supermarket,Sugar-Free Vanilla,125,28750
+2024-10-01,North,Quick-commerce,Vanilla,234,42120
+2024-10-01,North,Quick-commerce,Chocolate,222,44400
+2024-10-01,North,Quick-commerce,Mango Alphonso,98,23520
+2024-10-01,North,Quick-commerce,Butterscotch,149,28310
+2024-10-01,North,Quick-commerce,Strawberry,103,19570
+2024-10-01,North,Quick-commerce,Kesar Pista,103,26780
+2024-10-01,North,Quick-commerce,Cookie Crunch,123,30750
+2024-10-01,North,Quick-commerce,Sugar-Free Vanilla,47,10810
+2024-10-01,South,Parlour,Vanilla,396,71280
+2024-10-01,South,Parlour,Chocolate,324,64800
+2024-10-01,South,Parlour,Mango Alphonso,169,40560
+2024-10-01,South,Parlour,Butterscotch,260,49400
+2024-10-01,South,Parlour,Strawberry,190,36100
+2024-10-01,South,Parlour,Kesar Pista,157,40820
+2024-10-01,South,Parlour,Cookie Crunch,203,50750
+2024-10-01,South,Parlour,Sugar-Free Vanilla,85,19550
+2024-10-01,South,Supermarket,Vanilla,552,99360
+2024-10-01,South,Supermarket,Chocolate,479,95800
+2024-10-01,South,Supermarket,Mango Alphonso,196,47040
+2024-10-01,South,Supermarket,Butterscotch,336,63840
+2024-10-01,South,Supermarket,Strawberry,244,46360
+2024-10-01,South,Supermarket,Kesar Pista,232,60320
+2024-10-01,South,Supermarket,Cookie Crunch,283,70750
+2024-10-01,South,Supermarket,Sugar-Free Vanilla,107,24610
+2024-10-01,South,Quick-commerce,Vanilla,194,34920
+2024-10-01,South,Quick-commerce,Chocolate,182,36400
+2024-10-01,South,Quick-commerce,Mango Alphonso,86,20640
+2024-10-01,South,Quick-commerce,Butterscotch,126,23940
+2024-10-01,South,Quick-commerce,Strawberry,95,18050
+2024-10-01,South,Quick-commerce,Kesar Pista,77,20020
+2024-10-01,South,Quick-commerce,Cookie Crunch,100,25000
+2024-10-01,South,Quick-commerce,Sugar-Free Vanilla,45,10350
+2024-10-01,East,Parlour,Vanilla,254,45720
+2024-10-01,East,Parlour,Chocolate,260,52000
+2024-10-01,East,Parlour,Mango Alphonso,116,27840
+2024-10-01,East,Parlour,Butterscotch,187,35530
+2024-10-01,East,Parlour,Strawberry,134,25460
+2024-10-01,East,Parlour,Kesar Pista,121,31460
+2024-10-01,East,Parlour,Cookie Crunch,134,33500
+2024-10-01,East,Parlour,Sugar-Free Vanilla,54,12420
+2024-10-01,East,Supermarket,Vanilla,368,66240
+2024-10-01,East,Supermarket,Chocolate,353,70600
+2024-10-01,East,Supermarket,Mango Alphonso,162,38880
+2024-10-01,East,Supermarket,Butterscotch,213,40470
+2024-10-01,East,Supermarket,Strawberry,153,29070
+2024-10-01,East,Supermarket,Kesar Pista,155,40300
+2024-10-01,East,Supermarket,Cookie Crunch,200,50000
+2024-10-01,East,Supermarket,Sugar-Free Vanilla,83,19090
+2024-10-01,East,Quick-commerce,Vanilla,142,25560
+2024-10-01,East,Quick-commerce,Chocolate,127,25400
+2024-10-01,East,Quick-commerce,Mango Alphonso,53,12720
+2024-10-01,East,Quick-commerce,Butterscotch,92,17480
+2024-10-01,East,Quick-commerce,Strawberry,69,13110
+2024-10-01,East,Quick-commerce,Kesar Pista,57,14820
+2024-10-01,East,Quick-commerce,Cookie Crunch,73,18250
+2024-10-01,East,Quick-commerce,Sugar-Free Vanilla,31,7130
+2024-10-01,West,Parlour,Vanilla,375,67500
+2024-10-01,West,Parlour,Chocolate,416,83200
+2024-10-01,West,Parlour,Mango Alphonso,169,40560
+2024-10-01,West,Parlour,Butterscotch,268,50920
+2024-10-01,West,Parlour,Strawberry,182,34580
+2024-10-01,West,Parlour,Kesar Pista,178,46280
+2024-10-01,West,Parlour,Cookie Crunch,219,54750
+2024-10-01,West,Parlour,Sugar-Free Vanilla,94,21620
+2024-10-01,West,Supermarket,Vanilla,517,93060
+2024-10-01,West,Supermarket,Chocolate,483,96600
+2024-10-01,West,Supermarket,Mango Alphonso,255,61200
+2024-10-01,West,Supermarket,Butterscotch,378,71820
+2024-10-01,West,Supermarket,Strawberry,250,47500
+2024-10-01,West,Supermarket,Kesar Pista,257,66820
+2024-10-01,West,Supermarket,Cookie Crunch,269,67250
+2024-10-01,West,Supermarket,Sugar-Free Vanilla,118,27140
+2024-10-01,West,Quick-commerce,Vanilla,202,36360
+2024-10-01,West,Quick-commerce,Chocolate,192,38400
+2024-10-01,West,Quick-commerce,Mango Alphonso,82,19680
+2024-10-01,West,Quick-commerce,Butterscotch,150,28500
+2024-10-01,West,Quick-commerce,Strawberry,109,20710
+2024-10-01,West,Quick-commerce,Kesar Pista,94,24440
+2024-10-01,West,Quick-commerce,Cookie Crunch,103,25750
+2024-10-01,West,Quick-commerce,Sugar-Free Vanilla,45,10350
+2024-11-01,North,Parlour,Vanilla,359,64620
+2024-11-01,North,Parlour,Chocolate,359,71800
+2024-11-01,North,Parlour,Mango Alphonso,163,39120
+2024-11-01,North,Parlour,Butterscotch,243,46170
+2024-11-01,North,Parlour,Strawberry,168,31920
+2024-11-01,North,Parlour,Kesar Pista,170,44200
+2024-11-01,North,Parlour,Cookie Crunch,182,45500
+2024-11-01,North,Parlour,Sugar-Free Vanilla,78,17940
+2024-11-01,North,Supermarket,Vanilla,496,89280
+2024-11-01,North,Supermarket,Chocolate,449,89800
+2024-11-01,North,Supermarket,Mango Alphonso,216,51840
+2024-11-01,North,Supermarket,Butterscotch,337,64030
+2024-11-01,North,Supermarket,Strawberry,260,49400
+2024-11-01,North,Supermarket,Kesar Pista,204,53040
+2024-11-01,North,Supermarket,Cookie Crunch,285,71250
+2024-11-01,North,Supermarket,Sugar-Free Vanilla,110,25300
+2024-11-01,North,Quick-commerce,Vanilla,182,32760
+2024-11-01,North,Quick-commerce,Chocolate,184,36800
+2024-11-01,North,Quick-commerce,Mango Alphonso,85,20400
+2024-11-01,North,Quick-commerce,Butterscotch,133,25270
+2024-11-01,North,Quick-commerce,Strawberry,83,15770
+2024-11-01,North,Quick-commerce,Kesar Pista,83,21580
+2024-11-01,North,Quick-commerce,Cookie Crunch,100,25000
+2024-11-01,North,Quick-commerce,Sugar-Free Vanilla,44,10120
+2024-11-01,South,Parlour,Vanilla,295,53100
+2024-11-01,South,Parlour,Chocolate,312,62400
+2024-11-01,South,Parlour,Mango Alphonso,135,32400
+2024-11-01,South,Parlour,Butterscotch,200,38000
+2024-11-01,South,Parlour,Strawberry,151,28690
+2024-11-01,South,Parlour,Kesar Pista,135,35100
+2024-11-01,South,Parlour,Cookie Crunch,167,41750
+2024-11-01,South,Parlour,Sugar-Free Vanilla,69,15870
+2024-11-01,South,Supermarket,Vanilla,428,77040
+2024-11-01,South,Supermarket,Chocolate,422,84400
+2024-11-01,South,Supermarket,Mango Alphonso,182,43680
+2024-11-01,South,Supermarket,Butterscotch,299,56810
+2024-11-01,South,Supermarket,Strawberry,203,38570
+2024-11-01,South,Supermarket,Kesar Pista,171,44460
+2024-11-01,South,Supermarket,Cookie Crunch,215,53750
+2024-11-01,South,Supermarket,Sugar-Free Vanilla,90,20700
+2024-11-01,South,Quick-commerce,Vanilla,166,29880
+2024-11-01,South,Quick-commerce,Chocolate,139,27800
+2024-11-01,South,Quick-commerce,Mango Alphonso,65,15600
+2024-11-01,South,Quick-commerce,Butterscotch,111,21090
+2024-11-01,South,Quick-commerce,Strawberry,71,13490
+2024-11-01,South,Quick-commerce,Kesar Pista,63,16380
+2024-11-01,South,Quick-commerce,Cookie Crunch,84,21000
+2024-11-01,South,Quick-commerce,Sugar-Free Vanilla,37,8510
+2024-11-01,East,Parlour,Vanilla,217,39060
+2024-11-01,East,Parlour,Chocolate,223,44600
+2024-11-01,East,Parlour,Mango Alphonso,99,23760
+2024-11-01,East,Parlour,Butterscotch,137,26030
+2024-11-01,East,Parlour,Strawberry,110,20900
+2024-11-01,East,Parlour,Kesar Pista,92,23920
+2024-11-01,East,Parlour,Cookie Crunch,120,30000
+2024-11-01,East,Parlour,Sugar-Free Vanilla,49,11270
+2024-11-01,East,Supermarket,Vanilla,281,50580
+2024-11-01,East,Supermarket,Chocolate,255,51000
+2024-11-01,East,Supermarket,Mango Alphonso,136,32640
+2024-11-01,East,Supermarket,Butterscotch,180,34200
+2024-11-01,East,Supermarket,Strawberry,151,28690
+2024-11-01,East,Supermarket,Kesar Pista,133,34580
+2024-11-01,East,Supermarket,Cookie Crunch,159,39750
+2024-11-01,East,Supermarket,Sugar-Free Vanilla,68,15640
+2024-11-01,East,Quick-commerce,Vanilla,122,21960
+2024-11-01,East,Quick-commerce,Chocolate,112,22400
+2024-11-01,East,Quick-commerce,Mango Alphonso,46,11040
+2024-11-01,East,Quick-commerce,Butterscotch,78,14820
+2024-11-01,East,Quick-commerce,Strawberry,48,9120
+2024-11-01,East,Quick-commerce,Kesar Pista,48,12480
+2024-11-01,East,Quick-commerce,Cookie Crunch,58,14500
+2024-11-01,East,Quick-commerce,Sugar-Free Vanilla,25,5750
+2024-11-01,West,Parlour,Vanilla,351,63180
+2024-11-01,West,Parlour,Chocolate,329,65800
+2024-11-01,West,Parlour,Mango Alphonso,155,37200
+2024-11-01,West,Parlour,Butterscotch,246,46740
+2024-11-01,West,Parlour,Strawberry,149,28310
+2024-11-01,West,Parlour,Kesar Pista,138,35880
+2024-11-01,West,Parlour,Cookie Crunch,161,40250
+2024-11-01,West,Parlour,Sugar-Free Vanilla,78,17940
+2024-11-01,West,Supermarket,Vanilla,462,83160
+2024-11-01,West,Supermarket,Chocolate,470,94000
+2024-11-01,West,Supermarket,Mango Alphonso,185,44400
+2024-11-01,West,Supermarket,Butterscotch,277,52630
+2024-11-01,West,Supermarket,Strawberry,231,43890
+2024-11-01,West,Supermarket,Kesar Pista,211,54860
+2024-11-01,West,Supermarket,Cookie Crunch,229,57250
+2024-11-01,West,Supermarket,Sugar-Free Vanilla,96,22080
+2024-11-01,West,Quick-commerce,Vanilla,162,29160
+2024-11-01,West,Quick-commerce,Chocolate,181,36200
+2024-11-01,West,Quick-commerce,Mango Alphonso,72,17280
+2024-11-01,West,Quick-commerce,Butterscotch,116,22040
+2024-11-01,West,Quick-commerce,Strawberry,76,14440
+2024-11-01,West,Quick-commerce,Kesar Pista,81,21060
+2024-11-01,West,Quick-commerce,Cookie Crunch,85,21250
+2024-11-01,West,Quick-commerce,Sugar-Free Vanilla,37,8510
+2024-12-01,North,Parlour,Vanilla,356,64080
+2024-12-01,North,Parlour,Chocolate,344,68800
+2024-12-01,North,Parlour,Mango Alphonso,161,38640
+2024-12-01,North,Parlour,Butterscotch,226,42940
+2024-12-01,North,Parlour,Strawberry,172,32680
+2024-12-01,North,Parlour,Kesar Pista,137,35620
+2024-12-01,North,Parlour,Cookie Crunch,177,44250
+2024-12-01,North,Parlour,Sugar-Free Vanilla,68,15640
+2024-12-01,North,Supermarket,Vanilla,461,82980
+2024-12-01,North,Supermarket,Chocolate,432,86400
+2024-12-01,North,Supermarket,Mango Alphonso,216,51840
+2024-12-01,North,Supermarket,Butterscotch,279,53010
+2024-12-01,North,Supermarket,Strawberry,214,40660
+2024-12-01,North,Supermarket,Kesar Pista,196,50960
+2024-12-01,North,Supermarket,Cookie Crunch,264,66000
+2024-12-01,North,Supermarket,Sugar-Free Vanilla,106,24380
+2024-12-01,North,Quick-commerce,Vanilla,163,29340
+2024-12-01,North,Quick-commerce,Chocolate,175,35000
+2024-12-01,North,Quick-commerce,Mango Alphonso,76,18240
+2024-12-01,North,Quick-commerce,Butterscotch,129,24510
+2024-12-01,North,Quick-commerce,Strawberry,82,15580
+2024-12-01,North,Quick-commerce,Kesar Pista,74,19240
+2024-12-01,North,Quick-commerce,Cookie Crunch,87,21750
+2024-12-01,North,Quick-commerce,Sugar-Free Vanilla,35,8050
+2024-12-01,South,Parlour,Vanilla,307,55260
+2024-12-01,South,Parlour,Chocolate,271,54200
+2024-12-01,South,Parlour,Mango Alphonso,127,30480
+2024-12-01,South,Parlour,Butterscotch,197,37430
+2024-12-01,South,Parlour,Strawberry,139,26410
+2024-12-01,South,Parlour,Kesar Pista,111,28860
+2024-12-01,South,Parlour,Cookie Crunch,159,39750
+2024-12-01,South,Parlour,Sugar-Free Vanilla,58,13340
+2024-12-01,South,Supermarket,Vanilla,356,64080
+2024-12-01,South,Supermarket,Chocolate,371,74200
+2024-12-01,South,Supermarket,Mango Alphonso,151,36240
+2024-12-01,South,Supermarket,Butterscotch,270,51300
+2024-12-01,South,Supermarket,Strawberry,173,32870
+2024-12-01,South,Supermarket,Kesar Pista,156,40560
+2024-12-01,South,Supermarket,Cookie Crunch,217,54250
+2024-12-01,South,Supermarket,Sugar-Free Vanilla,80,18400
+2024-12-01,South,Quick-commerce,Vanilla,137,24660
+2024-12-01,South,Quick-commerce,Chocolate,152,30400
+2024-12-01,South,Quick-commerce,Mango Alphonso,57,13680
+2024-12-01,South,Quick-commerce,Butterscotch,105,19950
+2024-12-01,South,Quick-commerce,Strawberry,65,12350
+2024-12-01,South,Quick-commerce,Kesar Pista,59,15340
+2024-12-01,South,Quick-commerce,Cookie Crunch,73,18250
+2024-12-01,South,Quick-commerce,Sugar-Free Vanilla,30,6900
+2024-12-01,East,Parlour,Vanilla,207,37260
+2024-12-01,East,Parlour,Chocolate,173,34600
+2024-12-01,East,Parlour,Mango Alphonso,78,18720
+2024-12-01,East,Parlour,Butterscotch,142,26980
+2024-12-01,East,Parlour,Strawberry,91,17290
+2024-12-01,East,Parlour,Kesar Pista,83,21580
+2024-12-01,East,Parlour,Cookie Crunch,98,24500
+2024-12-01,East,Parlour,Sugar-Free Vanilla,39,8970
+2024-12-01,East,Supermarket,Vanilla,282,50760
+2024-12-01,East,Supermarket,Chocolate,258,51600
+2024-12-01,East,Supermarket,Mango Alphonso,121,29040
+2024-12-01,East,Supermarket,Butterscotch,179,34010
+2024-12-01,East,Supermarket,Strawberry,135,25650
+2024-12-01,East,Supermarket,Kesar Pista,116,30160
+2024-12-01,East,Supermarket,Cookie Crunch,130,32500
+2024-12-01,East,Supermarket,Sugar-Free Vanilla,58,13340
+2024-12-01,East,Quick-commerce,Vanilla,112,20160
+2024-12-01,East,Quick-commerce,Chocolate,89,17800
+2024-12-01,East,Quick-commerce,Mango Alphonso,47,11280
+2024-12-01,East,Quick-commerce,Butterscotch,74,14060
+2024-12-01,East,Quick-commerce,Strawberry,49,9310
+2024-12-01,East,Quick-commerce,Kesar Pista,44,11440
+2024-12-01,East,Quick-commerce,Cookie Crunch,59,14750
+2024-12-01,East,Quick-commerce,Sugar-Free Vanilla,20,4600
+2024-12-01,West,Parlour,Vanilla,314,56520
+2024-12-01,West,Parlour,Chocolate,294,58800
+2024-12-01,West,Parlour,Mango Alphonso,140,33600
+2024-12-01,West,Parlour,Butterscotch,210,39900
+2024-12-01,West,Parlour,Strawberry,162,30780
+2024-12-01,West,Parlour,Kesar Pista,124,32240
+2024-12-01,West,Parlour,Cookie Crunch,151,37750
+2024-12-01,West,Parlour,Sugar-Free Vanilla,69,15870
+2024-12-01,West,Supermarket,Vanilla,387,69660
+2024-12-01,West,Supermarket,Chocolate,385,77000
+2024-12-01,West,Supermarket,Mango Alphonso,186,44640
+2024-12-01,West,Supermarket,Butterscotch,285,54150
+2024-12-01,West,Supermarket,Strawberry,195,37050
+2024-12-01,West,Supermarket,Kesar Pista,199,51740
+2024-12-01,West,Supermarket,Cookie Crunch,223,55750
+2024-12-01,West,Supermarket,Sugar-Free Vanilla,90,20700
+2024-12-01,West,Quick-commerce,Vanilla,166,29880
+2024-12-01,West,Quick-commerce,Chocolate,142,28400
+2024-12-01,West,Quick-commerce,Mango Alphonso,72,17280
+2024-12-01,West,Quick-commerce,Butterscotch,116,22040
+2024-12-01,West,Quick-commerce,Strawberry,80,15200
+2024-12-01,West,Quick-commerce,Kesar Pista,73,18980
+2024-12-01,West,Quick-commerce,Cookie Crunch,89,22250
+2024-12-01,West,Quick-commerce,Sugar-Free Vanilla,33,7590
+2025-01-01,North,Parlour,Vanilla,340,64260.0
+2025-01-01,North,Parlour,Chocolate,309,64890.0
+2025-01-01,North,Parlour,Mango Alphonso,100,25200.0
+2025-01-01,North,Parlour,Butterscotch,226,45087.0
+2025-01-01,North,Parlour,Strawberry,161,32119.5
+2025-01-01,North,Parlour,Kesar Pista,135,36855.0
+2025-01-01,North,Parlour,Cookie Crunch,177,46462.5
+2025-01-01,North,Parlour,Sugar-Free Vanilla,110,26565.0
+2025-01-01,North,Supermarket,Vanilla,435,82215.0
+2025-01-01,North,Supermarket,Chocolate,396,83160.0
+2025-01-01,North,Supermarket,Mango Alphonso,145,36540.0
+2025-01-01,North,Supermarket,Butterscotch,272,54264.0
+2025-01-01,North,Supermarket,Strawberry,227,45286.5
+2025-01-01,North,Supermarket,Kesar Pista,176,48048.0
+2025-01-01,North,Supermarket,Cookie Crunch,215,56437.5
+2025-01-01,North,Supermarket,Sugar-Free Vanilla,145,35017.5
+2025-01-01,North,Quick-commerce,Vanilla,202,38178.0
+2025-01-01,North,Quick-commerce,Chocolate,183,38430.0
+2025-01-01,North,Quick-commerce,Mango Alphonso,58,14616.0
+2025-01-01,North,Quick-commerce,Butterscotch,128,25536.0
+2025-01-01,North,Quick-commerce,Strawberry,88,17556.0
+2025-01-01,North,Quick-commerce,Kesar Pista,75,20475.0
+2025-01-01,North,Quick-commerce,Cookie Crunch,97,25462.5
+2025-01-01,North,Quick-commerce,Sugar-Free Vanilla,61,14731.5
+2025-01-01,South,Parlour,Vanilla,300,56700.0
+2025-01-01,South,Parlour,Chocolate,292,61320.0
+2025-01-01,South,Parlour,Mango Alphonso,118,29736.0
+2025-01-01,South,Parlour,Butterscotch,208,41496.0
+2025-01-01,South,Parlour,Strawberry,139,27730.5
+2025-01-01,South,Parlour,Kesar Pista,119,32487.0
+2025-01-01,South,Parlour,Cookie Crunch,152,39900.0
+2025-01-01,South,Parlour,Sugar-Free Vanilla,84,20286.0
+2025-01-01,South,Supermarket,Vanilla,384,72576.0
+2025-01-01,South,Supermarket,Chocolate,335,70350.0
+2025-01-01,South,Supermarket,Mango Alphonso,135,34020.0
+2025-01-01,South,Supermarket,Butterscotch,265,52867.5
+2025-01-01,South,Supermarket,Strawberry,173,34513.5
+2025-01-01,South,Supermarket,Kesar Pista,168,45864.0
+2025-01-01,South,Supermarket,Cookie Crunch,198,51975.0
+2025-01-01,South,Supermarket,Sugar-Free Vanilla,123,29704.5
+2025-01-01,South,Quick-commerce,Vanilla,169,31941.0
+2025-01-01,South,Quick-commerce,Chocolate,165,34650.0
+2025-01-01,South,Quick-commerce,Mango Alphonso,66,16632.0
+2025-01-01,South,Quick-commerce,Butterscotch,108,21546.0
+2025-01-01,South,Quick-commerce,Strawberry,78,15561.0
+2025-01-01,South,Quick-commerce,Kesar Pista,62,16926.0
+2025-01-01,South,Quick-commerce,Cookie Crunch,90,23625.0
+2025-01-01,South,Quick-commerce,Sugar-Free Vanilla,53,12799.5
+2025-01-01,East,Parlour,Vanilla,191,36099.0
+2025-01-01,East,Parlour,Chocolate,178,37380.0
+2025-01-01,East,Parlour,Mango Alphonso,82,20664.0
+2025-01-01,East,Parlour,Butterscotch,128,25536.0
+2025-01-01,East,Parlour,Strawberry,92,18354.0
+2025-01-01,East,Parlour,Kesar Pista,77,21021.0
+2025-01-01,East,Parlour,Cookie Crunch,113,29662.5
+2025-01-01,East,Parlour,Sugar-Free Vanilla,63,15214.5
+2025-01-01,East,Supermarket,Vanilla,255,48195.0
+2025-01-01,East,Supermarket,Chocolate,230,48300.0
+2025-01-01,East,Supermarket,Mango Alphonso,105,26460.0
+2025-01-01,East,Supermarket,Butterscotch,157,31321.5
+2025-01-01,East,Supermarket,Strawberry,130,25935.0
+2025-01-01,East,Supermarket,Kesar Pista,105,28665.0
+2025-01-01,East,Supermarket,Cookie Crunch,134,35175.0
+2025-01-01,East,Supermarket,Sugar-Free Vanilla,78,18837.0
+2025-01-01,East,Quick-commerce,Vanilla,108,20412.0
+2025-01-01,East,Quick-commerce,Chocolate,110,23100.0
+2025-01-01,East,Quick-commerce,Mango Alphonso,46,11592.0
+2025-01-01,East,Quick-commerce,Butterscotch,75,14962.5
+2025-01-01,East,Quick-commerce,Strawberry,48,9576.0
+2025-01-01,East,Quick-commerce,Kesar Pista,43,11739.0
+2025-01-01,East,Quick-commerce,Cookie Crunch,54,14175.0
+2025-01-01,East,Quick-commerce,Sugar-Free Vanilla,35,8452.5
+2025-01-01,West,Parlour,Vanilla,325,61425.0
+2025-01-01,West,Parlour,Chocolate,286,60060.0
+2025-01-01,West,Parlour,Mango Alphonso,128,32256.0
+2025-01-01,West,Parlour,Butterscotch,209,41695.5
+2025-01-01,West,Parlour,Strawberry,148,29526.0
+2025-01-01,West,Parlour,Kesar Pista,129,35217.0
+2025-01-01,West,Parlour,Cookie Crunch,173,45412.5
+2025-01-01,West,Parlour,Sugar-Free Vanilla,90,21735.0
+2025-01-01,West,Supermarket,Vanilla,404,76356.0
+2025-01-01,West,Supermarket,Chocolate,373,78330.0
+2025-01-01,West,Supermarket,Mango Alphonso,167,42084.0
+2025-01-01,West,Supermarket,Butterscotch,272,54264.0
+2025-01-01,West,Supermarket,Strawberry,201,40099.5
+2025-01-01,West,Supermarket,Kesar Pista,160,43680.0
+2025-01-01,West,Supermarket,Cookie Crunch,210,55125.0
+2025-01-01,West,Supermarket,Sugar-Free Vanilla,130,31395.0
+2025-01-01,West,Quick-commerce,Vanilla,157,29673.0
+2025-01-01,West,Quick-commerce,Chocolate,159,33390.0
+2025-01-01,West,Quick-commerce,Mango Alphonso,65,16380.0
+2025-01-01,West,Quick-commerce,Butterscotch,108,21546.0
+2025-01-01,West,Quick-commerce,Strawberry,79,15760.5
+2025-01-01,West,Quick-commerce,Kesar Pista,72,19656.0
+2025-01-01,West,Quick-commerce,Cookie Crunch,82,21525.0
+2025-01-01,West,Quick-commerce,Sugar-Free Vanilla,57,13765.5
+2025-02-01,North,Parlour,Vanilla,374,70686.0
+2025-02-01,North,Parlour,Chocolate,372,78120.0
+2025-02-01,North,Parlour,Mango Alphonso,125,31500.0
+2025-02-01,North,Parlour,Butterscotch,267,53266.5
+2025-02-01,North,Parlour,Strawberry,203,40498.5
+2025-02-01,North,Parlour,Kesar Pista,182,49686.0
+2025-02-01,North,Parlour,Cookie Crunch,192,50400.0
+2025-02-01,North,Parlour,Sugar-Free Vanilla,133,32119.5
+2025-02-01,North,Supermarket,Vanilla,459,86751.0
+2025-02-01,North,Supermarket,Chocolate,435,91350.0
+2025-02-01,North,Supermarket,Mango Alphonso,164,41328.0
+2025-02-01,North,Supermarket,Butterscotch,361,72019.5
+2025-02-01,North,Supermarket,Strawberry,244,48678.0
+2025-02-01,North,Supermarket,Kesar Pista,220,60060.0
+2025-02-01,North,Supermarket,Cookie Crunch,276,72450.0
+2025-02-01,North,Supermarket,Sugar-Free Vanilla,154,37191.0
+2025-02-01,North,Quick-commerce,Vanilla,220,41580.0
+2025-02-01,North,Quick-commerce,Chocolate,205,43050.0
+2025-02-01,North,Quick-commerce,Mango Alphonso,69,17388.0
+2025-02-01,North,Quick-commerce,Butterscotch,168,33516.0
+2025-02-01,North,Quick-commerce,Strawberry,116,23142.0
+2025-02-01,North,Quick-commerce,Kesar Pista,109,29757.0
+2025-02-01,North,Quick-commerce,Cookie Crunch,135,35437.5
+2025-02-01,North,Quick-commerce,Sugar-Free Vanilla,68,16422.0
+2025-02-01,South,Parlour,Vanilla,356,67284.0
+2025-02-01,South,Parlour,Chocolate,301,63210.0
+2025-02-01,South,Parlour,Mango Alphonso,134,33768.0
+2025-02-01,South,Parlour,Butterscotch,223,44488.5
+2025-02-01,South,Parlour,Strawberry,155,30922.5
+2025-02-01,South,Parlour,Kesar Pista,137,37401.0
+2025-02-01,South,Parlour,Cookie Crunch,169,44362.5
+2025-02-01,South,Parlour,Sugar-Free Vanilla,100,24150.0
+2025-02-01,South,Supermarket,Vanilla,393,74277.0
+2025-02-01,South,Supermarket,Chocolate,402,84420.0
+2025-02-01,South,Supermarket,Mango Alphonso,153,38556.0
+2025-02-01,South,Supermarket,Butterscotch,281,56059.5
+2025-02-01,South,Supermarket,Strawberry,217,43291.5
+2025-02-01,South,Supermarket,Kesar Pista,175,47775.0
+2025-02-01,South,Supermarket,Cookie Crunch,230,60375.0
+2025-02-01,South,Supermarket,Sugar-Free Vanilla,139,33568.5
+2025-02-01,South,Quick-commerce,Vanilla,211,39879.0
+2025-02-01,South,Quick-commerce,Chocolate,179,37590.0
+2025-02-01,South,Quick-commerce,Mango Alphonso,73,18396.0
+2025-02-01,South,Quick-commerce,Butterscotch,124,24738.0
+2025-02-01,South,Quick-commerce,Strawberry,96,19152.0
+2025-02-01,South,Quick-commerce,Kesar Pista,89,24297.0
+2025-02-01,South,Quick-commerce,Cookie Crunch,107,28087.5
+2025-02-01,South,Quick-commerce,Sugar-Free Vanilla,58,14007.0
+2025-02-01,East,Parlour,Vanilla,246,46494.0
+2025-02-01,East,Parlour,Chocolate,222,46620.0
+2025-02-01,East,Parlour,Mango Alphonso,97,24444.0
+2025-02-01,East,Parlour,Butterscotch,164,32718.0
+2025-02-01,East,Parlour,Strawberry,110,21945.0
+2025-02-01,East,Parlour,Kesar Pista,109,29757.0
+2025-02-01,East,Parlour,Cookie Crunch,124,32550.0
+2025-02-01,East,Parlour,Sugar-Free Vanilla,74,17871.0
+2025-02-01,East,Supermarket,Vanilla,302,57078.0
+2025-02-01,East,Supermarket,Chocolate,301,63210.0
+2025-02-01,East,Supermarket,Mango Alphonso,119,29988.0
+2025-02-01,East,Supermarket,Butterscotch,183,36508.5
+2025-02-01,East,Supermarket,Strawberry,128,25536.0
+2025-02-01,East,Supermarket,Kesar Pista,125,34125.0
+2025-02-01,East,Supermarket,Cookie Crunch,148,38850.0
+2025-02-01,East,Supermarket,Sugar-Free Vanilla,87,21010.5
+2025-02-01,East,Quick-commerce,Vanilla,127,24003.0
+2025-02-01,East,Quick-commerce,Chocolate,132,27720.0
+2025-02-01,East,Quick-commerce,Mango Alphonso,53,13356.0
+2025-02-01,East,Quick-commerce,Butterscotch,92,18354.0
+2025-02-01,East,Quick-commerce,Strawberry,60,11970.0
+2025-02-01,East,Quick-commerce,Kesar Pista,63,17199.0
+2025-02-01,East,Quick-commerce,Cookie Crunch,67,17587.5
+2025-02-01,East,Quick-commerce,Sugar-Free Vanilla,46,11109.0
+2025-02-01,West,Parlour,Vanilla,393,74277.0
+2025-02-01,West,Parlour,Chocolate,357,74970.0
+2025-02-01,West,Parlour,Mango Alphonso,145,36540.0
+2025-02-01,West,Parlour,Butterscotch,243,48478.5
+2025-02-01,West,Parlour,Strawberry,177,35311.5
+2025-02-01,West,Parlour,Kesar Pista,166,45318.0
+2025-02-01,West,Parlour,Cookie Crunch,207,54337.5
+2025-02-01,West,Parlour,Sugar-Free Vanilla,113,27289.5
+2025-02-01,West,Supermarket,Vanilla,491,92799.0
+2025-02-01,West,Supermarket,Chocolate,454,95340.0
+2025-02-01,West,Supermarket,Mango Alphonso,176,44352.0
+2025-02-01,West,Supermarket,Butterscotch,307,61246.5
+2025-02-01,West,Supermarket,Strawberry,205,40897.5
+2025-02-01,West,Supermarket,Kesar Pista,181,49413.0
+2025-02-01,West,Supermarket,Cookie Crunch,223,58537.5
+2025-02-01,West,Supermarket,Sugar-Free Vanilla,155,37432.5
+2025-02-01,West,Quick-commerce,Vanilla,211,39879.0
+2025-02-01,West,Quick-commerce,Chocolate,217,45570.0
+2025-02-01,West,Quick-commerce,Mango Alphonso,86,21672.0
+2025-02-01,West,Quick-commerce,Butterscotch,136,27132.0
+2025-02-01,West,Quick-commerce,Strawberry,99,19750.5
+2025-02-01,West,Quick-commerce,Kesar Pista,92,25116.0
+2025-02-01,West,Quick-commerce,Cookie Crunch,113,29662.5
+2025-02-01,West,Quick-commerce,Sugar-Free Vanilla,68,16422.0
+2025-03-01,North,Parlour,Vanilla,533,100737.0
+2025-03-01,North,Parlour,Chocolate,530,111300.0
+2025-03-01,North,Parlour,Mango Alphonso,164,41328.0
+2025-03-01,North,Parlour,Butterscotch,374,74613.0
+2025-03-01,North,Parlour,Strawberry,263,52468.5
+2025-03-01,North,Parlour,Kesar Pista,250,68250.0
+2025-03-01,North,Parlour,Cookie Crunch,317,83212.5
+2025-03-01,North,Parlour,Sugar-Free Vanilla,183,44194.5
+2025-03-01,North,Supermarket,Vanilla,637,120393.0
+2025-03-01,North,Supermarket,Chocolate,611,128310.0
+2025-03-01,North,Supermarket,Mango Alphonso,217,54684.0
+2025-03-01,North,Supermarket,Butterscotch,445,88777.5
+2025-03-01,North,Supermarket,Strawberry,347,69226.5
+2025-03-01,North,Supermarket,Kesar Pista,309,84357.0
+2025-03-01,North,Supermarket,Cookie Crunch,395,103687.5
+2025-03-01,North,Supermarket,Sugar-Free Vanilla,233,56269.5
+2025-03-01,North,Quick-commerce,Vanilla,351,66339.0
+2025-03-01,North,Quick-commerce,Chocolate,352,73920.0
+2025-03-01,North,Quick-commerce,Mango Alphonso,101,25452.0
+2025-03-01,North,Quick-commerce,Butterscotch,235,46882.5
+2025-03-01,North,Quick-commerce,Strawberry,189,37705.5
+2025-03-01,North,Quick-commerce,Kesar Pista,162,44226.0
+2025-03-01,North,Quick-commerce,Cookie Crunch,186,48825.0
+2025-03-01,North,Quick-commerce,Sugar-Free Vanilla,115,27772.5
+2025-03-01,South,Parlour,Vanilla,518,97902.0
+2025-03-01,South,Parlour,Chocolate,436,91560.0
+2025-03-01,South,Parlour,Mango Alphonso,183,46116.0
+2025-03-01,South,Parlour,Butterscotch,336,67032.0
+2025-03-01,South,Parlour,Strawberry,241,48079.5
+2025-03-01,South,Parlour,Kesar Pista,211,57603.0
+2025-03-01,South,Parlour,Cookie Crunch,266,69825.0
+2025-03-01,South,Parlour,Sugar-Free Vanilla,155,37432.5
+2025-03-01,South,Supermarket,Vanilla,603,113967.0
+2025-03-01,South,Supermarket,Chocolate,557,116970.0
+2025-03-01,South,Supermarket,Mango Alphonso,236,59472.0
+2025-03-01,South,Supermarket,Butterscotch,382,76209.0
+2025-03-01,South,Supermarket,Strawberry,269,53665.5
+2025-03-01,South,Supermarket,Kesar Pista,242,66066.0
+2025-03-01,South,Supermarket,Cookie Crunch,285,74812.5
+2025-03-01,South,Supermarket,Sugar-Free Vanilla,170,41055.0
+2025-03-01,South,Quick-commerce,Vanilla,330,62370.0
+2025-03-01,South,Quick-commerce,Chocolate,288,60480.0
+2025-03-01,South,Quick-commerce,Mango Alphonso,113,28476.0
+2025-03-01,South,Quick-commerce,Butterscotch,187,37306.5
+2025-03-01,South,Quick-commerce,Strawberry,132,26334.0
+2025-03-01,South,Quick-commerce,Kesar Pista,139,37947.0
+2025-03-01,South,Quick-commerce,Cookie Crunch,146,38325.0
+2025-03-01,South,Quick-commerce,Sugar-Free Vanilla,99,23908.5
+2025-03-01,East,Parlour,Vanilla,356,67284.0
+2025-03-01,East,Parlour,Chocolate,342,71820.0
+2025-03-01,East,Parlour,Mango Alphonso,119,29988.0
+2025-03-01,East,Parlour,Butterscotch,215,42892.5
+2025-03-01,East,Parlour,Strawberry,167,33316.5
+2025-03-01,East,Parlour,Kesar Pista,132,36036.0
+2025-03-01,East,Parlour,Cookie Crunch,170,44625.0
+2025-03-01,East,Parlour,Sugar-Free Vanilla,97,23425.5
+2025-03-01,East,Supermarket,Vanilla,434,82026.0
+2025-03-01,East,Supermarket,Chocolate,409,85890.0
+2025-03-01,East,Supermarket,Mango Alphonso,170,42840.0
+2025-03-01,East,Supermarket,Butterscotch,253,50473.5
+2025-03-01,East,Supermarket,Strawberry,191,38104.5
+2025-03-01,East,Supermarket,Kesar Pista,171,46683.0
+2025-03-01,East,Supermarket,Cookie Crunch,221,58012.5
+2025-03-01,East,Supermarket,Sugar-Free Vanilla,120,28980.0
+2025-03-01,East,Quick-commerce,Vanilla,210,39690.0
+2025-03-01,East,Quick-commerce,Chocolate,193,40530.0
+2025-03-01,East,Quick-commerce,Mango Alphonso,88,22176.0
+2025-03-01,East,Quick-commerce,Butterscotch,140,27930.0
+2025-03-01,East,Quick-commerce,Strawberry,102,20349.0
+2025-03-01,East,Quick-commerce,Kesar Pista,87,23751.0
+2025-03-01,East,Quick-commerce,Cookie Crunch,118,30975.0
+2025-03-01,East,Quick-commerce,Sugar-Free Vanilla,65,15697.5
+2025-03-01,West,Parlour,Vanilla,559,105651.0
+2025-03-01,West,Parlour,Chocolate,486,102060.0
+2025-03-01,West,Parlour,Mango Alphonso,225,56700.0
+2025-03-01,West,Parlour,Butterscotch,383,76408.5
+2025-03-01,West,Parlour,Strawberry,248,49476.0
+2025-03-01,West,Parlour,Kesar Pista,215,58695.0
+2025-03-01,West,Parlour,Cookie Crunch,268,70350.0
+2025-03-01,West,Parlour,Sugar-Free Vanilla,164,39606.0
+2025-03-01,West,Supermarket,Vanilla,700,132300.0
+2025-03-01,West,Supermarket,Chocolate,648,136080.0
+2025-03-01,West,Supermarket,Mango Alphonso,268,67536.0
+2025-03-01,West,Supermarket,Butterscotch,396,79002.0
+2025-03-01,West,Supermarket,Strawberry,289,57655.5
+2025-03-01,West,Supermarket,Kesar Pista,282,76986.0
+2025-03-01,West,Supermarket,Cookie Crunch,360,94500.0
+2025-03-01,West,Supermarket,Sugar-Free Vanilla,201,48541.5
+2025-03-01,West,Quick-commerce,Vanilla,307,58023.0
+2025-03-01,West,Quick-commerce,Chocolate,339,71190.0
+2025-03-01,West,Quick-commerce,Mango Alphonso,141,35532.0
+2025-03-01,West,Quick-commerce,Butterscotch,212,42294.0
+2025-03-01,West,Quick-commerce,Strawberry,167,33316.5
+2025-03-01,West,Quick-commerce,Kesar Pista,136,37128.0
+2025-03-01,West,Quick-commerce,Cookie Crunch,189,49612.5
+2025-03-01,West,Quick-commerce,Sugar-Free Vanilla,96,23184.0
+2025-04-01,North,Parlour,Vanilla,790,149310.0
+2025-04-01,North,Parlour,Chocolate,830,174300.0
+2025-04-01,North,Parlour,Mango Alphonso,605,152460.0
+2025-04-01,North,Parlour,Butterscotch,528,105336.0
+2025-04-01,North,Parlour,Strawberry,370,73815.0
+2025-04-01,North,Parlour,Kesar Pista,310,84630.0
+2025-04-01,North,Parlour,Cookie Crunch,382,100275.0
+2025-04-01,North,Parlour,Sugar-Free Vanilla,249,60133.5
+2025-04-01,North,Supermarket,Vanilla,895,169155.0
+2025-04-01,North,Supermarket,Chocolate,989,207690.0
+2025-04-01,North,Supermarket,Mango Alphonso,737,185724.0
+2025-04-01,North,Supermarket,Butterscotch,571,113914.5
+2025-04-01,North,Supermarket,Strawberry,489,97555.5
+2025-04-01,North,Supermarket,Kesar Pista,432,117936.0
+2025-04-01,North,Supermarket,Cookie Crunch,510,133875.0
+2025-04-01,North,Supermarket,Sugar-Free Vanilla,311,75106.5
+2025-04-01,North,Quick-commerce,Vanilla,502,94878.0
+2025-04-01,North,Quick-commerce,Chocolate,493,103530.0
+2025-04-01,North,Quick-commerce,Mango Alphonso,461,116172.0
+2025-04-01,North,Quick-commerce,Butterscotch,375,74812.5
+2025-04-01,North,Quick-commerce,Strawberry,239,47680.5
+2025-04-01,North,Quick-commerce,Kesar Pista,241,65793.0
+2025-04-01,North,Quick-commerce,Cookie Crunch,280,73500.0
+2025-04-01,North,Quick-commerce,Sugar-Free Vanilla,151,36466.5
+2025-04-01,South,Parlour,Vanilla,611,115479.0
+2025-04-01,South,Parlour,Chocolate,604,126840.0
+2025-04-01,South,Parlour,Mango Alphonso,748,188496.0
+2025-04-01,South,Parlour,Butterscotch,449,89575.5
+2025-04-01,South,Parlour,Strawberry,332,66234.0
+2025-04-01,South,Parlour,Kesar Pista,287,78351.0
+2025-04-01,South,Parlour,Cookie Crunch,322,84525.0
+2025-04-01,South,Parlour,Sugar-Free Vanilla,198,47817.0
+2025-04-01,South,Supermarket,Vanilla,756,142884.0
+2025-04-01,South,Supermarket,Chocolate,682,143220.0
+2025-04-01,South,Supermarket,Mango Alphonso,815,205380.0
+2025-04-01,South,Supermarket,Butterscotch,556,110922.0
+2025-04-01,South,Supermarket,Strawberry,372,74214.0
+2025-04-01,South,Supermarket,Kesar Pista,311,84903.0
+2025-04-01,South,Supermarket,Cookie Crunch,446,117075.0
+2025-04-01,South,Supermarket,Sugar-Free Vanilla,249,60133.5
+2025-04-01,South,Quick-commerce,Vanilla,407,76923.0
+2025-04-01,South,Quick-commerce,Chocolate,431,90510.0
+2025-04-01,South,Quick-commerce,Mango Alphonso,450,113400.0
+2025-04-01,South,Quick-commerce,Butterscotch,279,55660.5
+2025-04-01,South,Quick-commerce,Strawberry,212,42294.0
+2025-04-01,South,Quick-commerce,Kesar Pista,198,54054.0
+2025-04-01,South,Quick-commerce,Cookie Crunch,224,58800.0
+2025-04-01,South,Quick-commerce,Sugar-Free Vanilla,138,33327.0
+2025-04-01,East,Parlour,Vanilla,482,91098.0
+2025-04-01,East,Parlour,Chocolate,408,85680.0
+2025-04-01,East,Parlour,Mango Alphonso,537,135324.0
+2025-04-01,East,Parlour,Butterscotch,284,56658.0
+2025-04-01,East,Parlour,Strawberry,223,44488.5
+2025-04-01,East,Parlour,Kesar Pista,200,54600.0
+2025-04-01,East,Parlour,Cookie Crunch,268,70350.0
+2025-04-01,East,Parlour,Sugar-Free Vanilla,147,35500.5
+2025-04-01,East,Supermarket,Vanilla,539,101871.0
+2025-04-01,East,Supermarket,Chocolate,522,109620.0
+2025-04-01,East,Supermarket,Mango Alphonso,595,149940.0
+2025-04-01,East,Supermarket,Butterscotch,403,80398.5
+2025-04-01,East,Supermarket,Strawberry,250,49875.0
+2025-04-01,East,Supermarket,Kesar Pista,213,58149.0
+2025-04-01,East,Supermarket,Cookie Crunch,305,80062.5
+2025-04-01,East,Supermarket,Sugar-Free Vanilla,166,40089.0
+2025-04-01,East,Quick-commerce,Vanilla,330,62370.0
+2025-04-01,East,Quick-commerce,Chocolate,308,64680.0
+2025-04-01,East,Quick-commerce,Mango Alphonso,350,88200.0
+2025-04-01,East,Quick-commerce,Butterscotch,220,43890.0
+2025-04-01,East,Quick-commerce,Strawberry,145,28927.5
+2025-04-01,East,Quick-commerce,Kesar Pista,123,33579.0
+2025-04-01,East,Quick-commerce,Cookie Crunch,167,43837.5
+2025-04-01,East,Quick-commerce,Sugar-Free Vanilla,104,25116.0
+2025-04-01,West,Parlour,Vanilla,686,129654.0
+2025-04-01,West,Parlour,Chocolate,738,154980.0
+2025-04-01,West,Parlour,Mango Alphonso,766,193032.0
+2025-04-01,West,Parlour,Butterscotch,508,101346.0
+2025-04-01,West,Parlour,Strawberry,358,71421.0
+2025-04-01,West,Parlour,Kesar Pista,334,91182.0
+2025-04-01,West,Parlour,Cookie Crunch,351,92137.5
+2025-04-01,West,Parlour,Sugar-Free Vanilla,240,57960.0
+2025-04-01,West,Supermarket,Vanilla,859,162351.0
+2025-04-01,West,Supermarket,Chocolate,791,166110.0
+2025-04-01,West,Supermarket,Mango Alphonso,828,208656.0
+2025-04-01,West,Supermarket,Butterscotch,543,108328.5
+2025-04-01,West,Supermarket,Strawberry,375,74812.5
+2025-04-01,West,Supermarket,Kesar Pista,403,110019.0
+2025-04-01,West,Supermarket,Cookie Crunch,455,119437.5
+2025-04-01,West,Supermarket,Sugar-Free Vanilla,295,71242.5
+2025-04-01,West,Quick-commerce,Vanilla,500,94500.0
+2025-04-01,West,Quick-commerce,Chocolate,449,94290.0
+2025-04-01,West,Quick-commerce,Mango Alphonso,548,138096.0
+2025-04-01,West,Quick-commerce,Butterscotch,310,61845.0
+2025-04-01,West,Quick-commerce,Strawberry,229,45685.5
+2025-04-01,West,Quick-commerce,Kesar Pista,224,61152.0
+2025-04-01,West,Quick-commerce,Cookie Crunch,279,73237.5
+2025-04-01,West,Quick-commerce,Sugar-Free Vanilla,149,35983.5
+2025-05-01,North,Parlour,Vanilla,846,159894.0
+2025-05-01,North,Parlour,Chocolate,848,178080.0
+2025-05-01,North,Parlour,Mango Alphonso,789,198828.0
+2025-05-01,North,Parlour,Butterscotch,639,127480.5
+2025-05-01,North,Parlour,Strawberry,470,93765.0
+2025-05-01,North,Parlour,Kesar Pista,383,104559.0
+2025-05-01,North,Parlour,Cookie Crunch,524,137550.0
+2025-05-01,North,Parlour,Sugar-Free Vanilla,284,68586.0
+2025-05-01,North,Supermarket,Vanilla,1042,196938.0
+2025-05-01,North,Supermarket,Chocolate,1078,226380.0
+2025-05-01,North,Supermarket,Mango Alphonso,838,211176.0
+2025-05-01,North,Supermarket,Butterscotch,737,147031.5
+2025-05-01,North,Supermarket,Strawberry,519,103540.5
+2025-05-01,North,Supermarket,Kesar Pista,409,111657.0
+2025-05-01,North,Supermarket,Cookie Crunch,557,146212.5
+2025-05-01,North,Supermarket,Sugar-Free Vanilla,345,83317.5
+2025-05-01,North,Quick-commerce,Vanilla,661,124929.0
+2025-05-01,North,Quick-commerce,Chocolate,602,126420.0
+2025-05-01,North,Quick-commerce,Mango Alphonso,480,120960.0
+2025-05-01,North,Quick-commerce,Butterscotch,451,89974.5
+2025-05-01,North,Quick-commerce,Strawberry,300,59850.0
+2025-05-01,North,Quick-commerce,Kesar Pista,287,78351.0
+2025-05-01,North,Quick-commerce,Cookie Crunch,338,88725.0
+2025-05-01,North,Quick-commerce,Sugar-Free Vanilla,211,50956.5
+2025-05-01,South,Parlour,Vanilla,739,139671.0
+2025-05-01,South,Parlour,Chocolate,659,138390.0
+2025-05-01,South,Parlour,Mango Alphonso,861,216972.0
+2025-05-01,South,Parlour,Butterscotch,493,98353.5
+2025-05-01,South,Parlour,Strawberry,399,79600.5
+2025-05-01,South,Parlour,Kesar Pista,312,85176.0
+2025-05-01,South,Parlour,Cookie Crunch,437,114712.5
+2025-05-01,South,Parlour,Sugar-Free Vanilla,258,62307.0
+2025-05-01,South,Supermarket,Vanilla,795,150255.0
+2025-05-01,South,Supermarket,Chocolate,850,178500.0
+2025-05-01,South,Supermarket,Mango Alphonso,889,224028.0
+2025-05-01,South,Supermarket,Butterscotch,614,122493.0
+2025-05-01,South,Supermarket,Strawberry,429,85585.5
+2025-05-01,South,Supermarket,Kesar Pista,406,110838.0
+2025-05-01,South,Supermarket,Cookie Crunch,423,111037.5
+2025-05-01,South,Supermarket,Sugar-Free Vanilla,276,66654.0
+2025-05-01,South,Quick-commerce,Vanilla,577,109053.0
+2025-05-01,South,Quick-commerce,Chocolate,472,99120.0
+2025-05-01,South,Quick-commerce,Mango Alphonso,525,132300.0
+2025-05-01,South,Quick-commerce,Butterscotch,384,76608.0
+2025-05-01,South,Quick-commerce,Strawberry,253,50473.5
+2025-05-01,South,Quick-commerce,Kesar Pista,229,62517.0
+2025-05-01,South,Quick-commerce,Cookie Crunch,290,76125.0
+2025-05-01,South,Quick-commerce,Sugar-Free Vanilla,173,41779.5
+2025-05-01,East,Parlour,Vanilla,553,104517.0
+2025-05-01,East,Parlour,Chocolate,554,116340.0
+2025-05-01,East,Parlour,Mango Alphonso,547,137844.0
+2025-05-01,East,Parlour,Butterscotch,374,74613.0
+2025-05-01,East,Parlour,Strawberry,258,51471.0
+2025-05-01,East,Parlour,Kesar Pista,230,62790.0
+2025-05-01,East,Parlour,Cookie Crunch,274,71925.0
+2025-05-01,East,Parlour,Sugar-Free Vanilla,171,41296.5
+2025-05-01,East,Supermarket,Vanilla,578,109242.0
+2025-05-01,East,Supermarket,Chocolate,535,112350.0
+2025-05-01,East,Supermarket,Mango Alphonso,670,168840.0
+2025-05-01,East,Supermarket,Butterscotch,406,80997.0
+2025-05-01,East,Supermarket,Strawberry,283,56458.5
+2025-05-01,East,Supermarket,Kesar Pista,264,72072.0
+2025-05-01,East,Supermarket,Cookie Crunch,303,79537.5
+2025-05-01,East,Supermarket,Sugar-Free Vanilla,180,43470.0
+2025-05-01,East,Quick-commerce,Vanilla,378,71442.0
+2025-05-01,East,Quick-commerce,Chocolate,400,84000.0
+2025-05-01,East,Quick-commerce,Mango Alphonso,385,97020.0
+2025-05-01,East,Quick-commerce,Butterscotch,276,55062.0
+2025-05-01,East,Quick-commerce,Strawberry,182,36309.0
+2025-05-01,East,Quick-commerce,Kesar Pista,151,41223.0
+2025-05-01,East,Quick-commerce,Cookie Crunch,214,56175.0
+2025-05-01,East,Quick-commerce,Sugar-Free Vanilla,118,28497.0
+2025-05-01,West,Parlour,Vanilla,905,171045.0
+2025-05-01,West,Parlour,Chocolate,790,165900.0
+2025-05-01,West,Parlour,Mango Alphonso,809,203868.0
+2025-05-01,West,Parlour,Butterscotch,579,115510.5
+2025-05-01,West,Parlour,Strawberry,427,85186.5
+2025-05-01,West,Parlour,Kesar Pista,346,94458.0
+2025-05-01,West,Parlour,Cookie Crunch,426,111825.0
+2025-05-01,West,Parlour,Sugar-Free Vanilla,238,57477.0
+2025-05-01,West,Supermarket,Vanilla,964,182196.0
+2025-05-01,West,Supermarket,Chocolate,982,206220.0
+2025-05-01,West,Supermarket,Mango Alphonso,1076,271152.0
+2025-05-01,West,Supermarket,Butterscotch,664,132468.0
+2025-05-01,West,Supermarket,Strawberry,494,98553.0
+2025-05-01,West,Supermarket,Kesar Pista,421,114933.0
+2025-05-01,West,Supermarket,Cookie Crunch,530,139125.0
+2025-05-01,West,Supermarket,Sugar-Free Vanilla,298,71967.0
+2025-05-01,West,Quick-commerce,Vanilla,555,104895.0
+2025-05-01,West,Quick-commerce,Chocolate,538,112980.0
+2025-05-01,West,Quick-commerce,Mango Alphonso,586,147672.0
+2025-05-01,West,Quick-commerce,Butterscotch,424,84588.0
+2025-05-01,West,Quick-commerce,Strawberry,259,51670.5
+2025-05-01,West,Quick-commerce,Kesar Pista,260,70980.0
+2025-05-01,West,Quick-commerce,Cookie Crunch,306,80325.0
+2025-05-01,West,Quick-commerce,Sugar-Free Vanilla,198,47817.0
+2025-06-01,North,Parlour,Vanilla,808,152712.0
+2025-06-01,North,Parlour,Chocolate,779,163590.0
+2025-06-01,North,Parlour,Mango Alphonso,587,147924.0
+2025-06-01,North,Parlour,Butterscotch,513,102343.5
+2025-06-01,North,Parlour,Strawberry,419,83590.5
+2025-06-01,North,Parlour,Kesar Pista,358,97734.0
+2025-06-01,North,Parlour,Cookie Crunch,421,110512.5
+2025-06-01,North,Parlour,Sugar-Free Vanilla,262,63273.0
+2025-06-01,North,Supermarket,Vanilla,937,177093.0
+2025-06-01,North,Supermarket,Chocolate,767,161070.0
+2025-06-01,North,Supermarket,Mango Alphonso,771,194292.0
+2025-06-01,North,Supermarket,Butterscotch,603,120298.5
+2025-06-01,North,Supermarket,Strawberry,415,82792.5
+2025-06-01,North,Supermarket,Kesar Pista,391,106743.0
+2025-06-01,North,Supermarket,Cookie Crunch,447,117337.5
+2025-06-01,North,Supermarket,Sugar-Free Vanilla,294,71001.0
+2025-06-01,North,Quick-commerce,Vanilla,640,120960.0
+2025-06-01,North,Quick-commerce,Chocolate,593,124530.0
+2025-06-01,North,Quick-commerce,Mango Alphonso,454,114408.0
+2025-06-01,North,Quick-commerce,Butterscotch,442,88179.0
+2025-06-01,North,Quick-commerce,Strawberry,285,56857.5
+2025-06-01,North,Quick-commerce,Kesar Pista,281,76713.0
+2025-06-01,North,Quick-commerce,Cookie Crunch,289,75862.5
+2025-06-01,North,Quick-commerce,Sugar-Free Vanilla,174,42021.0
+2025-06-01,South,Parlour,Vanilla,621,117369.0
+2025-06-01,South,Parlour,Chocolate,592,124320.0
+2025-06-01,South,Parlour,Mango Alphonso,676,170352.0
+2025-06-01,South,Parlour,Butterscotch,463,92368.5
+2025-06-01,South,Parlour,Strawberry,308,61446.0
+2025-06-01,South,Parlour,Kesar Pista,311,84903.0
+2025-06-01,South,Parlour,Cookie Crunch,377,98962.5
+2025-06-01,South,Parlour,Sugar-Free Vanilla,222,53613.0
+2025-06-01,South,Supermarket,Vanilla,697,131733.0
+2025-06-01,South,Supermarket,Chocolate,717,150570.0
+2025-06-01,South,Supermarket,Mango Alphonso,779,196308.0
+2025-06-01,South,Supermarket,Butterscotch,452,90174.0
+2025-06-01,South,Supermarket,Strawberry,335,66832.5
+2025-06-01,South,Supermarket,Kesar Pista,316,86268.0
+2025-06-01,South,Supermarket,Cookie Crunch,384,100800.0
+2025-06-01,South,Supermarket,Sugar-Free Vanilla,213,51439.5
+2025-06-01,South,Quick-commerce,Vanilla,549,103761.0
+2025-06-01,South,Quick-commerce,Chocolate,448,94080.0
+2025-06-01,South,Quick-commerce,Mango Alphonso,548,138096.0
+2025-06-01,South,Quick-commerce,Butterscotch,351,70024.5
+2025-06-01,South,Quick-commerce,Strawberry,245,48877.5
+2025-06-01,South,Quick-commerce,Kesar Pista,231,63063.0
+2025-06-01,South,Quick-commerce,Cookie Crunch,268,70350.0
+2025-06-01,South,Quick-commerce,Sugar-Free Vanilla,167,40330.5
+2025-06-01,East,Parlour,Vanilla,423,79947.0
+2025-06-01,East,Parlour,Chocolate,404,84840.0
+2025-06-01,East,Parlour,Mango Alphonso,505,127260.0
+2025-06-01,East,Parlour,Butterscotch,316,63042.0
+2025-06-01,East,Parlour,Strawberry,229,45685.5
+2025-06-01,East,Parlour,Kesar Pista,211,57603.0
+2025-06-01,East,Parlour,Cookie Crunch,240,63000.0
+2025-06-01,East,Parlour,Sugar-Free Vanilla,149,35983.5
+2025-06-01,East,Supermarket,Vanilla,513,96957.0
+2025-06-01,East,Supermarket,Chocolate,501,105210.0
+2025-06-01,East,Supermarket,Mango Alphonso,517,130284.0
+2025-06-01,East,Supermarket,Butterscotch,374,74613.0
+2025-06-01,East,Supermarket,Strawberry,244,48678.0
+2025-06-01,East,Supermarket,Kesar Pista,233,63609.0
+2025-06-01,East,Supermarket,Cookie Crunch,279,73237.5
+2025-06-01,East,Supermarket,Sugar-Free Vanilla,153,36949.5
+2025-06-01,East,Quick-commerce,Vanilla,323,61047.0
+2025-06-01,East,Quick-commerce,Chocolate,307,64470.0
+2025-06-01,East,Quick-commerce,Mango Alphonso,367,92484.0
+2025-06-01,East,Quick-commerce,Butterscotch,235,46882.5
+2025-06-01,East,Quick-commerce,Strawberry,158,31521.0
+2025-06-01,East,Quick-commerce,Kesar Pista,155,42315.0
+2025-06-01,East,Quick-commerce,Cookie Crunch,178,46725.0
+2025-06-01,East,Quick-commerce,Sugar-Free Vanilla,115,27772.5
+2025-06-01,West,Parlour,Vanilla,768,145152.0
+2025-06-01,West,Parlour,Chocolate,749,157290.0
+2025-06-01,West,Parlour,Mango Alphonso,845,212940.0
+2025-06-01,West,Parlour,Butterscotch,453,90373.5
+2025-06-01,West,Parlour,Strawberry,340,67830.0
+2025-06-01,West,Parlour,Kesar Pista,318,86814.0
+2025-06-01,West,Parlour,Cookie Crunch,370,97125.0
+2025-06-01,West,Parlour,Sugar-Free Vanilla,226,54579.0
+2025-06-01,West,Supermarket,Vanilla,769,145341.0
+2025-06-01,West,Supermarket,Chocolate,730,153300.0
+2025-06-01,West,Supermarket,Mango Alphonso,780,196560.0
+2025-06-01,West,Supermarket,Butterscotch,515,102742.5
+2025-06-01,West,Supermarket,Strawberry,375,74812.5
+2025-06-01,West,Supermarket,Kesar Pista,354,96642.0
+2025-06-01,West,Supermarket,Cookie Crunch,401,105262.5
+2025-06-01,West,Supermarket,Sugar-Free Vanilla,269,64963.5
+2025-06-01,West,Quick-commerce,Vanilla,518,97902.0
+2025-06-01,West,Quick-commerce,Chocolate,511,107310.0
+2025-06-01,West,Quick-commerce,Mango Alphonso,593,149436.0
+2025-06-01,West,Quick-commerce,Butterscotch,356,71022.0
+2025-06-01,West,Quick-commerce,Strawberry,278,55461.0
+2025-06-01,West,Quick-commerce,Kesar Pista,238,64974.0
+2025-06-01,West,Quick-commerce,Cookie Crunch,292,76650.0
+2025-06-01,West,Quick-commerce,Sugar-Free Vanilla,173,41779.5
+2025-07-01,North,Parlour,Vanilla,550,103950.0
+2025-07-01,North,Parlour,Chocolate,492,103320.0
+2025-07-01,North,Parlour,Mango Alphonso,187,47124.0
+2025-07-01,North,Parlour,Butterscotch,381,76009.5
+2025-07-01,North,Parlour,Strawberry,298,59451.0
+2025-07-01,North,Parlour,Kesar Pista,231,63063.0
+2025-07-01,North,Parlour,Cookie Crunch,291,76387.5
+2025-07-01,North,Parlour,Sugar-Free Vanilla,162,39123.0
+2025-07-01,North,Supermarket,Vanilla,605,114345.0
+2025-07-01,North,Supermarket,Chocolate,621,130410.0
+2025-07-01,North,Supermarket,Mango Alphonso,187,47124.0
+2025-07-01,North,Supermarket,Butterscotch,401,79999.5
+2025-07-01,North,Supermarket,Strawberry,290,57855.0
+2025-07-01,North,Supermarket,Kesar Pista,278,75894.0
+2025-07-01,North,Supermarket,Cookie Crunch,313,82162.5
+2025-07-01,North,Supermarket,Sugar-Free Vanilla,203,49024.5
+2025-07-01,North,Quick-commerce,Vanilla,477,90153.0
+2025-07-01,North,Quick-commerce,Chocolate,457,95970.0
+2025-07-01,North,Quick-commerce,Mango Alphonso,133,33516.0
+2025-07-01,North,Quick-commerce,Butterscotch,298,59451.0
+2025-07-01,North,Quick-commerce,Strawberry,220,43890.0
+2025-07-01,North,Quick-commerce,Kesar Pista,183,49959.0
+2025-07-01,North,Quick-commerce,Cookie Crunch,241,63262.5
+2025-07-01,North,Quick-commerce,Sugar-Free Vanilla,130,31395.0
+2025-07-01,South,Parlour,Vanilla,477,90153.0
+2025-07-01,South,Parlour,Chocolate,478,100380.0
+2025-07-01,South,Parlour,Mango Alphonso,180,45360.0
+2025-07-01,South,Parlour,Butterscotch,349,69625.5
+2025-07-01,South,Parlour,Strawberry,235,46882.5
+2025-07-01,South,Parlour,Kesar Pista,189,51597.0
+2025-07-01,South,Parlour,Cookie Crunch,273,71662.5
+2025-07-01,South,Parlour,Sugar-Free Vanilla,145,35017.5
+2025-07-01,South,Supermarket,Vanilla,534,100926.0
+2025-07-01,South,Supermarket,Chocolate,465,97650.0
+2025-07-01,South,Supermarket,Mango Alphonso,216,54432.0
+2025-07-01,South,Supermarket,Butterscotch,354,70623.0
+2025-07-01,South,Supermarket,Strawberry,226,45087.0
+2025-07-01,South,Supermarket,Kesar Pista,217,59241.0
+2025-07-01,South,Supermarket,Cookie Crunch,264,69300.0
+2025-07-01,South,Supermarket,Sugar-Free Vanilla,143,34534.5
+2025-07-01,South,Quick-commerce,Vanilla,352,66528.0
+2025-07-01,South,Quick-commerce,Chocolate,350,73500.0
+2025-07-01,South,Quick-commerce,Mango Alphonso,149,37548.0
+2025-07-01,South,Quick-commerce,Butterscotch,251,50074.5
+2025-07-01,South,Quick-commerce,Strawberry,185,36907.5
+2025-07-01,South,Quick-commerce,Kesar Pista,163,44499.0
+2025-07-01,South,Quick-commerce,Cookie Crunch,192,50400.0
+2025-07-01,South,Quick-commerce,Sugar-Free Vanilla,121,29221.5
+2025-07-01,East,Parlour,Vanilla,311,58779.0
+2025-07-01,East,Parlour,Chocolate,349,73290.0
+2025-07-01,East,Parlour,Mango Alphonso,138,34776.0
+2025-07-01,East,Parlour,Butterscotch,213,42493.5
+2025-07-01,East,Parlour,Strawberry,154,30723.0
+2025-07-01,East,Parlour,Kesar Pista,152,41496.0
+2025-07-01,East,Parlour,Cookie Crunch,176,46200.0
+2025-07-01,East,Parlour,Sugar-Free Vanilla,108,26082.0
+2025-07-01,East,Supermarket,Vanilla,339,64071.0
+2025-07-01,East,Supermarket,Chocolate,358,75180.0
+2025-07-01,East,Supermarket,Mango Alphonso,136,34272.0
+2025-07-01,East,Supermarket,Butterscotch,244,48678.0
+2025-07-01,East,Supermarket,Strawberry,184,36708.0
+2025-07-01,East,Supermarket,Kesar Pista,154,42042.0
+2025-07-01,East,Supermarket,Cookie Crunch,196,51450.0
+2025-07-01,East,Supermarket,Sugar-Free Vanilla,115,27772.5
+2025-07-01,East,Quick-commerce,Vanilla,276,52164.0
+2025-07-01,East,Quick-commerce,Chocolate,229,48090.0
+2025-07-01,East,Quick-commerce,Mango Alphonso,104,26208.0
+2025-07-01,East,Quick-commerce,Butterscotch,194,38703.0
+2025-07-01,East,Quick-commerce,Strawberry,134,26733.0
+2025-07-01,East,Quick-commerce,Kesar Pista,120,32760.0
+2025-07-01,East,Quick-commerce,Cookie Crunch,141,37012.5
+2025-07-01,East,Quick-commerce,Sugar-Free Vanilla,86,20769.0
+2025-07-01,West,Parlour,Vanilla,533,100737.0
+2025-07-01,West,Parlour,Chocolate,466,97860.0
+2025-07-01,West,Parlour,Mango Alphonso,212,53424.0
+2025-07-01,West,Parlour,Butterscotch,358,71421.0
+2025-07-01,West,Parlour,Strawberry,267,53266.5
+2025-07-01,West,Parlour,Kesar Pista,209,57057.0
+2025-07-01,West,Parlour,Cookie Crunch,284,74550.0
+2025-07-01,West,Parlour,Sugar-Free Vanilla,148,35742.0
+2025-07-01,West,Supermarket,Vanilla,605,114345.0
+2025-07-01,West,Supermarket,Chocolate,487,102270.0
+2025-07-01,West,Supermarket,Mango Alphonso,198,49896.0
+2025-07-01,West,Supermarket,Butterscotch,356,71022.0
+2025-07-01,West,Supermarket,Strawberry,246,49077.0
+2025-07-01,West,Supermarket,Kesar Pista,247,67431.0
+2025-07-01,West,Supermarket,Cookie Crunch,286,75075.0
+2025-07-01,West,Supermarket,Sugar-Free Vanilla,182,43953.0
+2025-07-01,West,Quick-commerce,Vanilla,453,85617.0
+2025-07-01,West,Quick-commerce,Chocolate,428,89880.0
+2025-07-01,West,Quick-commerce,Mango Alphonso,173,43596.0
+2025-07-01,West,Quick-commerce,Butterscotch,254,50673.0
+2025-07-01,West,Quick-commerce,Strawberry,185,36907.5
+2025-07-01,West,Quick-commerce,Kesar Pista,169,46137.0
+2025-07-01,West,Quick-commerce,Cookie Crunch,211,55387.5
+2025-07-01,West,Quick-commerce,Sugar-Free Vanilla,134,32361.0
+2025-08-01,North,Parlour,Vanilla,517,97713.0
+2025-08-01,North,Parlour,Chocolate,472,99120.0
+2025-08-01,North,Parlour,Mango Alphonso,144,36288.0
+2025-08-01,North,Parlour,Butterscotch,371,74014.5
+2025-08-01,North,Parlour,Strawberry,237,47281.5
+2025-08-01,North,Parlour,Kesar Pista,214,58422.0
+2025-08-01,North,Parlour,Cookie Crunch,284,74550.0
+2025-08-01,North,Parlour,Sugar-Free Vanilla,167,40330.5
+2025-08-01,North,Supermarket,Vanilla,539,101871.0
+2025-08-01,North,Supermarket,Chocolate,519,108990.0
+2025-08-01,North,Supermarket,Mango Alphonso,161,40572.0
+2025-08-01,North,Supermarket,Butterscotch,328,65436.0
+2025-08-01,North,Supermarket,Strawberry,237,47281.5
+2025-08-01,North,Supermarket,Kesar Pista,227,61971.0
+2025-08-01,North,Supermarket,Cookie Crunch,259,67987.5
+2025-08-01,North,Supermarket,Sugar-Free Vanilla,178,42987.0
+2025-08-01,North,Quick-commerce,Vanilla,414,78246.0
+2025-08-01,North,Quick-commerce,Chocolate,393,82530.0
+2025-08-01,North,Quick-commerce,Mango Alphonso,122,30744.0
+2025-08-01,North,Quick-commerce,Butterscotch,299,59650.5
+2025-08-01,North,Quick-commerce,Strawberry,198,39501.0
+2025-08-01,North,Quick-commerce,Kesar Pista,179,48867.0
+2025-08-01,North,Quick-commerce,Cookie Crunch,245,64312.5
+2025-08-01,North,Quick-commerce,Sugar-Free Vanilla,142,34293.0
+2025-08-01,South,Parlour,Vanilla,409,77301.0
+2025-08-01,South,Parlour,Chocolate,377,79170.0
+2025-08-01,South,Parlour,Mango Alphonso,175,44100.0
+2025-08-01,South,Parlour,Butterscotch,279,55660.5
+2025-08-01,South,Parlour,Strawberry,224,44688.0
+2025-08-01,South,Parlour,Kesar Pista,195,53235.0
+2025-08-01,South,Parlour,Cookie Crunch,245,64312.5
+2025-08-01,South,Parlour,Sugar-Free Vanilla,141,34051.5
+2025-08-01,South,Supermarket,Vanilla,419,79191.0
+2025-08-01,South,Supermarket,Chocolate,398,83580.0
+2025-08-01,South,Supermarket,Mango Alphonso,180,45360.0
+2025-08-01,South,Supermarket,Butterscotch,282,56259.0
+2025-08-01,South,Supermarket,Strawberry,206,41097.0
+2025-08-01,South,Supermarket,Kesar Pista,178,48594.0
+2025-08-01,South,Supermarket,Cookie Crunch,228,59850.0
+2025-08-01,South,Supermarket,Sugar-Free Vanilla,128,30912.0
+2025-08-01,South,Quick-commerce,Vanilla,362,68418.0
+2025-08-01,South,Quick-commerce,Chocolate,372,78120.0
+2025-08-01,South,Quick-commerce,Mango Alphonso,147,37044.0
+2025-08-01,South,Quick-commerce,Butterscotch,222,44289.0
+2025-08-01,South,Quick-commerce,Strawberry,175,34912.5
+2025-08-01,South,Quick-commerce,Kesar Pista,157,42861.0
+2025-08-01,South,Quick-commerce,Cookie Crunch,178,46725.0
+2025-08-01,South,Quick-commerce,Sugar-Free Vanilla,115,27772.5
+2025-08-01,East,Parlour,Vanilla,302,57078.0
+2025-08-01,East,Parlour,Chocolate,294,61740.0
+2025-08-01,East,Parlour,Mango Alphonso,108,27216.0
+2025-08-01,East,Parlour,Butterscotch,197,39301.5
+2025-08-01,East,Parlour,Strawberry,149,29725.5
+2025-08-01,East,Parlour,Kesar Pista,118,32214.0
+2025-08-01,East,Parlour,Cookie Crunch,166,43575.0
+2025-08-01,East,Parlour,Sugar-Free Vanilla,84,20286.0
+2025-08-01,East,Supermarket,Vanilla,309,58401.0
+2025-08-01,East,Supermarket,Chocolate,316,66360.0
+2025-08-01,East,Supermarket,Mango Alphonso,118,29736.0
+2025-08-01,East,Supermarket,Butterscotch,222,44289.0
+2025-08-01,East,Supermarket,Strawberry,157,31321.5
+2025-08-01,East,Supermarket,Kesar Pista,130,35490.0
+2025-08-01,East,Supermarket,Cookie Crunch,151,39637.5
+2025-08-01,East,Supermarket,Sugar-Free Vanilla,104,25116.0
+2025-08-01,East,Quick-commerce,Vanilla,242,45738.0
+2025-08-01,East,Quick-commerce,Chocolate,246,51660.0
+2025-08-01,East,Quick-commerce,Mango Alphonso,107,26964.0
+2025-08-01,East,Quick-commerce,Butterscotch,154,30723.0
+2025-08-01,East,Quick-commerce,Strawberry,122,24339.0
+2025-08-01,East,Quick-commerce,Kesar Pista,109,29757.0
+2025-08-01,East,Quick-commerce,Cookie Crunch,138,36225.0
+2025-08-01,East,Quick-commerce,Sugar-Free Vanilla,85,20527.5
+2025-08-01,West,Parlour,Vanilla,510,96390.0
+2025-08-01,West,Parlour,Chocolate,420,88200.0
+2025-08-01,West,Parlour,Mango Alphonso,200,50400.0
+2025-08-01,West,Parlour,Butterscotch,294,58653.0
+2025-08-01,West,Parlour,Strawberry,243,48478.5
+2025-08-01,West,Parlour,Kesar Pista,222,60606.0
+2025-08-01,West,Parlour,Cookie Crunch,242,63525.0
+2025-08-01,West,Parlour,Sugar-Free Vanilla,146,35259.0
+2025-08-01,West,Supermarket,Vanilla,522,98658.0
+2025-08-01,West,Supermarket,Chocolate,500,105000.0
+2025-08-01,West,Supermarket,Mango Alphonso,206,51912.0
+2025-08-01,West,Supermarket,Butterscotch,344,68628.0
+2025-08-01,West,Supermarket,Strawberry,206,41097.0
+2025-08-01,West,Supermarket,Kesar Pista,209,57057.0
+2025-08-01,West,Supermarket,Cookie Crunch,232,60900.0
+2025-08-01,West,Supermarket,Sugar-Free Vanilla,164,39606.0
+2025-08-01,West,Quick-commerce,Vanilla,378,71442.0
+2025-08-01,West,Quick-commerce,Chocolate,413,86730.0
+2025-08-01,West,Quick-commerce,Mango Alphonso,157,39564.0
+2025-08-01,West,Quick-commerce,Butterscotch,263,52468.5
+2025-08-01,West,Quick-commerce,Strawberry,205,40897.5
+2025-08-01,West,Quick-commerce,Kesar Pista,181,49413.0
+2025-08-01,West,Quick-commerce,Cookie Crunch,206,54075.0
+2025-08-01,West,Quick-commerce,Sugar-Free Vanilla,115,27772.5
+2025-09-01,North,Parlour,Vanilla,475,89775.0
+2025-09-01,North,Parlour,Chocolate,457,95970.0
+2025-09-01,North,Parlour,Mango Alphonso,153,38556.0
+2025-09-01,North,Parlour,Butterscotch,326,65037.0
+2025-09-01,North,Parlour,Strawberry,230,45885.0
+2025-09-01,North,Parlour,Kesar Pista,231,63063.0
+2025-09-01,North,Parlour,Cookie Crunch,285,74812.5
+2025-09-01,North,Parlour,Sugar-Free Vanilla,162,39123.0
+2025-09-01,North,Supermarket,Vanilla,529,99981.0
+2025-09-01,North,Supermarket,Chocolate,448,94080.0
+2025-09-01,North,Supermarket,Mango Alphonso,162,40824.0
+2025-09-01,North,Supermarket,Butterscotch,362,72219.0
+2025-09-01,North,Supermarket,Strawberry,255,50872.5
+2025-09-01,North,Supermarket,Kesar Pista,216,58968.0
+2025-09-01,North,Supermarket,Cookie Crunch,242,63525.0
+2025-09-01,North,Supermarket,Sugar-Free Vanilla,162,39123.0
+2025-09-01,North,Quick-commerce,Vanilla,423,79947.0
+2025-09-01,North,Quick-commerce,Chocolate,399,83790.0
+2025-09-01,North,Quick-commerce,Mango Alphonso,131,33012.0
+2025-09-01,North,Quick-commerce,Butterscotch,286,57057.0
+2025-09-01,North,Quick-commerce,Strawberry,205,40897.5
+2025-09-01,North,Quick-commerce,Kesar Pista,183,49959.0
+2025-09-01,North,Quick-commerce,Cookie Crunch,249,65362.5
+2025-09-01,North,Quick-commerce,Sugar-Free Vanilla,153,36949.5
+2025-09-01,South,Parlour,Vanilla,412,77868.0
+2025-09-01,South,Parlour,Chocolate,426,89460.0
+2025-09-01,South,Parlour,Mango Alphonso,152,38304.0
+2025-09-01,South,Parlour,Butterscotch,295,58852.5
+2025-09-01,South,Parlour,Strawberry,212,42294.0
+2025-09-01,South,Parlour,Kesar Pista,168,45864.0
+2025-09-01,South,Parlour,Cookie Crunch,207,54337.5
+2025-09-01,South,Parlour,Sugar-Free Vanilla,128,30912.0
+2025-09-01,South,Supermarket,Vanilla,412,77868.0
+2025-09-01,South,Supermarket,Chocolate,400,84000.0
+2025-09-01,South,Supermarket,Mango Alphonso,178,44856.0
+2025-09-01,South,Supermarket,Butterscotch,291,58054.5
+2025-09-01,South,Supermarket,Strawberry,192,38304.0
+2025-09-01,South,Supermarket,Kesar Pista,166,45318.0
+2025-09-01,South,Supermarket,Cookie Crunch,238,62475.0
+2025-09-01,South,Supermarket,Sugar-Free Vanilla,125,30187.5
+2025-09-01,South,Quick-commerce,Vanilla,385,72765.0
+2025-09-01,South,Quick-commerce,Chocolate,339,71190.0
+2025-09-01,South,Quick-commerce,Mango Alphonso,138,34776.0
+2025-09-01,South,Quick-commerce,Butterscotch,234,46683.0
+2025-09-01,South,Quick-commerce,Strawberry,188,37506.0
+2025-09-01,South,Quick-commerce,Kesar Pista,165,45045.0
+2025-09-01,South,Quick-commerce,Cookie Crunch,194,50925.0
+2025-09-01,South,Quick-commerce,Sugar-Free Vanilla,118,28497.0
+2025-09-01,East,Parlour,Vanilla,298,56322.0
+2025-09-01,East,Parlour,Chocolate,288,60480.0
+2025-09-01,East,Parlour,Mango Alphonso,122,30744.0
+2025-09-01,East,Parlour,Butterscotch,189,37705.5
+2025-09-01,East,Parlour,Strawberry,136,27132.0
+2025-09-01,East,Parlour,Kesar Pista,135,36855.0
+2025-09-01,East,Parlour,Cookie Crunch,169,44362.5
+2025-09-01,East,Parlour,Sugar-Free Vanilla,85,20527.5
+2025-09-01,East,Supermarket,Vanilla,290,54810.0
+2025-09-01,East,Supermarket,Chocolate,291,61110.0
+2025-09-01,East,Supermarket,Mango Alphonso,106,26712.0
+2025-09-01,East,Supermarket,Butterscotch,198,39501.0
+2025-09-01,East,Supermarket,Strawberry,128,25536.0
+2025-09-01,East,Supermarket,Kesar Pista,127,34671.0
+2025-09-01,East,Supermarket,Cookie Crunch,154,40425.0
+2025-09-01,East,Supermarket,Sugar-Free Vanilla,93,22459.5
+2025-09-01,East,Quick-commerce,Vanilla,245,46305.0
+2025-09-01,East,Quick-commerce,Chocolate,242,50820.0
+2025-09-01,East,Quick-commerce,Mango Alphonso,104,26208.0
+2025-09-01,East,Quick-commerce,Butterscotch,162,32319.0
+2025-09-01,East,Quick-commerce,Strawberry,118,23541.0
+2025-09-01,East,Quick-commerce,Kesar Pista,115,31395.0
+2025-09-01,East,Quick-commerce,Cookie Crunch,127,33337.5
+2025-09-01,East,Quick-commerce,Sugar-Free Vanilla,82,19803.0
+2025-09-01,West,Parlour,Vanilla,501,94689.0
+2025-09-01,West,Parlour,Chocolate,445,93450.0
+2025-09-01,West,Parlour,Mango Alphonso,186,46872.0
+2025-09-01,West,Parlour,Butterscotch,312,62244.0
+2025-09-01,West,Parlour,Strawberry,205,40897.5
+2025-09-01,West,Parlour,Kesar Pista,201,54873.0
+2025-09-01,West,Parlour,Cookie Crunch,262,68775.0
+2025-09-01,West,Parlour,Sugar-Free Vanilla,153,36949.5
+2025-09-01,West,Supermarket,Vanilla,452,85428.0
+2025-09-01,West,Supermarket,Chocolate,467,98070.0
+2025-09-01,West,Supermarket,Mango Alphonso,191,48132.0
+2025-09-01,West,Supermarket,Butterscotch,312,62244.0
+2025-09-01,West,Supermarket,Strawberry,200,39900.0
+2025-09-01,West,Supermarket,Kesar Pista,192,52416.0
+2025-09-01,West,Supermarket,Cookie Crunch,221,58012.5
+2025-09-01,West,Supermarket,Sugar-Free Vanilla,158,38157.0
+2025-09-01,West,Quick-commerce,Vanilla,450,85050.0
+2025-09-01,West,Quick-commerce,Chocolate,361,75810.0
+2025-09-01,West,Quick-commerce,Mango Alphonso,178,44856.0
+2025-09-01,West,Quick-commerce,Butterscotch,250,49875.0
+2025-09-01,West,Quick-commerce,Strawberry,194,38703.0
+2025-09-01,West,Quick-commerce,Kesar Pista,187,51051.0
+2025-09-01,West,Quick-commerce,Cookie Crunch,229,60112.5
+2025-09-01,West,Quick-commerce,Sugar-Free Vanilla,141,34051.5
+2025-10-01,North,Parlour,Vanilla,500,94500.0
+2025-10-01,North,Parlour,Chocolate,455,95550.0
+2025-10-01,North,Parlour,Mango Alphonso,160,40320.0
+2025-10-01,North,Parlour,Butterscotch,316,63042.0
+2025-10-01,North,Parlour,Strawberry,248,49476.0
+2025-10-01,North,Parlour,Kesar Pista,225,61425.0
+2025-10-01,North,Parlour,Cookie Crunch,248,65100.0
+2025-10-01,North,Parlour,Sugar-Free Vanilla,156,37674.0
+2025-10-01,North,Supermarket,Vanilla,470,88830.0
+2025-10-01,North,Supermarket,Chocolate,437,91770.0
+2025-10-01,North,Supermarket,Mango Alphonso,141,35532.0
+2025-10-01,North,Supermarket,Butterscotch,295,58852.5
+2025-10-01,North,Supermarket,Strawberry,203,40498.5
+2025-10-01,North,Supermarket,Kesar Pista,197,53781.0
+2025-10-01,North,Supermarket,Cookie Crunch,240,63000.0
+2025-10-01,North,Supermarket,Sugar-Free Vanilla,148,35742.0
+2025-10-01,North,Quick-commerce,Vanilla,422,79758.0
+2025-10-01,North,Quick-commerce,Chocolate,383,80430.0
+2025-10-01,North,Quick-commerce,Mango Alphonso,121,30492.0
+2025-10-01,North,Quick-commerce,Butterscotch,286,57057.0
+2025-10-01,North,Quick-commerce,Strawberry,220,43890.0
+2025-10-01,North,Quick-commerce,Kesar Pista,193,52689.0
+2025-10-01,North,Quick-commerce,Cookie Crunch,235,61687.5
+2025-10-01,North,Quick-commerce,Sugar-Free Vanilla,148,35742.0
+2025-10-01,South,Parlour,Vanilla,384,72576.0
+2025-10-01,South,Parlour,Chocolate,374,78540.0
+2025-10-01,South,Parlour,Mango Alphonso,152,38304.0
+2025-10-01,South,Parlour,Butterscotch,294,58653.0
+2025-10-01,South,Parlour,Strawberry,201,40099.5
+2025-10-01,South,Parlour,Kesar Pista,160,43680.0
+2025-10-01,South,Parlour,Cookie Crunch,225,59062.5
+2025-10-01,South,Parlour,Sugar-Free Vanilla,124,29946.0
+2025-10-01,South,Supermarket,Vanilla,400,75600.0
+2025-10-01,South,Supermarket,Chocolate,389,81690.0
+2025-10-01,South,Supermarket,Mango Alphonso,135,34020.0
+2025-10-01,South,Supermarket,Butterscotch,238,47481.0
+2025-10-01,South,Supermarket,Strawberry,166,33117.0
+2025-10-01,South,Supermarket,Kesar Pista,148,40404.0
+2025-10-01,South,Supermarket,Cookie Crunch,203,53287.5
+2025-10-01,South,Supermarket,Sugar-Free Vanilla,123,29704.5
+2025-10-01,South,Quick-commerce,Vanilla,338,63882.0
+2025-10-01,South,Quick-commerce,Chocolate,371,77910.0
+2025-10-01,South,Quick-commerce,Mango Alphonso,144,36288.0
+2025-10-01,South,Quick-commerce,Butterscotch,235,46882.5
+2025-10-01,South,Quick-commerce,Strawberry,167,33316.5
+2025-10-01,South,Quick-commerce,Kesar Pista,171,46683.0
+2025-10-01,South,Quick-commerce,Cookie Crunch,178,46725.0
+2025-10-01,South,Quick-commerce,Sugar-Free Vanilla,116,28014.0
+2025-10-01,East,Parlour,Vanilla,271,51219.0
+2025-10-01,East,Parlour,Chocolate,287,60270.0
+2025-10-01,East,Parlour,Mango Alphonso,117,29484.0
+2025-10-01,East,Parlour,Butterscotch,182,36309.0
+2025-10-01,East,Parlour,Strawberry,138,27531.0
+2025-10-01,East,Parlour,Kesar Pista,126,34398.0
+2025-10-01,East,Parlour,Cookie Crunch,143,37537.5
+2025-10-01,East,Parlour,Sugar-Free Vanilla,85,20527.5
+2025-10-01,East,Supermarket,Vanilla,247,46683.0
+2025-10-01,East,Supermarket,Chocolate,261,54810.0
+2025-10-01,East,Supermarket,Mango Alphonso,99,24948.0
+2025-10-01,East,Supermarket,Butterscotch,170,33915.0
+2025-10-01,East,Supermarket,Strawberry,115,22942.5
+2025-10-01,East,Supermarket,Kesar Pista,124,33852.0
+2025-10-01,East,Supermarket,Cookie Crunch,150,39375.0
+2025-10-01,East,Supermarket,Sugar-Free Vanilla,89,21493.5
+2025-10-01,East,Quick-commerce,Vanilla,267,50463.0
+2025-10-01,East,Quick-commerce,Chocolate,244,51240.0
+2025-10-01,East,Quick-commerce,Mango Alphonso,103,25956.0
+2025-10-01,East,Quick-commerce,Butterscotch,190,37905.0
+2025-10-01,East,Quick-commerce,Strawberry,135,26932.5
+2025-10-01,East,Quick-commerce,Kesar Pista,115,31395.0
+2025-10-01,East,Quick-commerce,Cookie Crunch,144,37800.0
+2025-10-01,East,Quick-commerce,Sugar-Free Vanilla,78,18837.0
+2025-10-01,West,Parlour,Vanilla,438,82782.0
+2025-10-01,West,Parlour,Chocolate,394,82740.0
+2025-10-01,West,Parlour,Mango Alphonso,171,43092.0
+2025-10-01,West,Parlour,Butterscotch,312,62244.0
+2025-10-01,West,Parlour,Strawberry,211,42094.5
+2025-10-01,West,Parlour,Kesar Pista,204,55692.0
+2025-10-01,West,Parlour,Cookie Crunch,224,58800.0
+2025-10-01,West,Parlour,Sugar-Free Vanilla,144,34776.0
+2025-10-01,West,Supermarket,Vanilla,443,83727.0
+2025-10-01,West,Supermarket,Chocolate,431,90510.0
+2025-10-01,West,Supermarket,Mango Alphonso,167,42084.0
+2025-10-01,West,Supermarket,Butterscotch,305,60847.5
+2025-10-01,West,Supermarket,Strawberry,201,40099.5
+2025-10-01,West,Supermarket,Kesar Pista,166,45318.0
+2025-10-01,West,Supermarket,Cookie Crunch,208,54600.0
+2025-10-01,West,Supermarket,Sugar-Free Vanilla,122,29463.0
+2025-10-01,West,Quick-commerce,Vanilla,421,79569.0
+2025-10-01,West,Quick-commerce,Chocolate,423,88830.0
+2025-10-01,West,Quick-commerce,Mango Alphonso,173,43596.0
+2025-10-01,West,Quick-commerce,Butterscotch,251,50074.5
+2025-10-01,West,Quick-commerce,Strawberry,204,40698.0
+2025-10-01,West,Quick-commerce,Kesar Pista,165,45045.0
+2025-10-01,West,Quick-commerce,Cookie Crunch,204,53550.0
+2025-10-01,West,Quick-commerce,Sugar-Free Vanilla,132,31878.0
+2025-11-01,North,Parlour,Vanilla,408,77112.0
+2025-11-01,North,Parlour,Chocolate,409,85890.0
+2025-11-01,North,Parlour,Mango Alphonso,113,28476.0
+2025-11-01,North,Parlour,Butterscotch,281,56059.5
+2025-11-01,North,Parlour,Strawberry,199,39700.5
+2025-11-01,North,Parlour,Kesar Pista,173,47229.0
+2025-11-01,North,Parlour,Cookie Crunch,209,54862.5
+2025-11-01,North,Parlour,Sugar-Free Vanilla,133,32119.5
+2025-11-01,North,Supermarket,Vanilla,347,65583.0
+2025-11-01,North,Supermarket,Chocolate,373,78330.0
+2025-11-01,North,Supermarket,Mango Alphonso,97,24444.0
+2025-11-01,North,Supermarket,Butterscotch,260,51870.0
+2025-11-01,North,Supermarket,Strawberry,187,37306.5
+2025-11-01,North,Supermarket,Kesar Pista,142,38766.0
+2025-11-01,North,Supermarket,Cookie Crunch,207,54337.5
+2025-11-01,North,Supermarket,Sugar-Free Vanilla,111,26806.5
+2025-11-01,North,Quick-commerce,Vanilla,364,68796.0
+2025-11-01,North,Quick-commerce,Chocolate,373,78330.0
+2025-11-01,North,Quick-commerce,Mango Alphonso,108,27216.0
+2025-11-01,North,Quick-commerce,Butterscotch,277,55261.5
+2025-11-01,North,Quick-commerce,Strawberry,185,36907.5
+2025-11-01,North,Quick-commerce,Kesar Pista,174,47502.0
+2025-11-01,North,Quick-commerce,Cookie Crunch,196,51450.0
+2025-11-01,North,Quick-commerce,Sugar-Free Vanilla,120,28980.0
+2025-11-01,South,Parlour,Vanilla,324,61236.0
+2025-11-01,South,Parlour,Chocolate,302,63420.0
+2025-11-01,South,Parlour,Mango Alphonso,132,33264.0
+2025-11-01,South,Parlour,Butterscotch,222,44289.0
+2025-11-01,South,Parlour,Strawberry,146,29127.0
+2025-11-01,South,Parlour,Kesar Pista,157,42861.0
+2025-11-01,South,Parlour,Cookie Crunch,174,45675.0
+2025-11-01,South,Parlour,Sugar-Free Vanilla,111,26806.5
+2025-11-01,South,Supermarket,Vanilla,324,61236.0
+2025-11-01,South,Supermarket,Chocolate,278,58380.0
+2025-11-01,South,Supermarket,Mango Alphonso,116,29232.0
+2025-11-01,South,Supermarket,Butterscotch,202,40299.0
+2025-11-01,South,Supermarket,Strawberry,135,26932.5
+2025-11-01,South,Supermarket,Kesar Pista,119,32487.0
+2025-11-01,South,Supermarket,Cookie Crunch,149,39112.5
+2025-11-01,South,Supermarket,Sugar-Free Vanilla,101,24391.5
+2025-11-01,South,Quick-commerce,Vanilla,325,61425.0
+2025-11-01,South,Quick-commerce,Chocolate,300,63000.0
+2025-11-01,South,Quick-commerce,Mango Alphonso,117,29484.0
+2025-11-01,South,Quick-commerce,Butterscotch,206,41097.0
+2025-11-01,South,Quick-commerce,Strawberry,149,29725.5
+2025-11-01,South,Quick-commerce,Kesar Pista,146,39858.0
+2025-11-01,South,Quick-commerce,Cookie Crunch,168,44100.0
+2025-11-01,South,Quick-commerce,Sugar-Free Vanilla,102,24633.0
+2025-11-01,East,Parlour,Vanilla,242,45738.0
+2025-11-01,East,Parlour,Chocolate,211,44310.0
+2025-11-01,East,Parlour,Mango Alphonso,98,24696.0
+2025-11-01,East,Parlour,Butterscotch,170,33915.0
+2025-11-01,East,Parlour,Strawberry,114,22743.0
+2025-11-01,East,Parlour,Kesar Pista,100,27300.0
+2025-11-01,East,Parlour,Cookie Crunch,114,29925.0
+2025-11-01,East,Parlour,Sugar-Free Vanilla,77,18595.5
+2025-11-01,East,Supermarket,Vanilla,196,37044.0
+2025-11-01,East,Supermarket,Chocolate,208,43680.0
+2025-11-01,East,Supermarket,Mango Alphonso,82,20664.0
+2025-11-01,East,Supermarket,Butterscotch,151,30124.5
+2025-11-01,East,Supermarket,Strawberry,101,20149.5
+2025-11-01,East,Supermarket,Kesar Pista,92,25116.0
+2025-11-01,East,Supermarket,Cookie Crunch,100,26250.0
+2025-11-01,East,Supermarket,Sugar-Free Vanilla,59,14248.5
+2025-11-01,East,Quick-commerce,Vanilla,239,45171.0
+2025-11-01,East,Quick-commerce,Chocolate,232,48720.0
+2025-11-01,East,Quick-commerce,Mango Alphonso,91,22932.0
+2025-11-01,East,Quick-commerce,Butterscotch,157,31321.5
+2025-11-01,East,Quick-commerce,Strawberry,105,20947.5
+2025-11-01,East,Quick-commerce,Kesar Pista,103,28119.0
+2025-11-01,East,Quick-commerce,Cookie Crunch,111,29137.5
+2025-11-01,East,Quick-commerce,Sugar-Free Vanilla,72,17388.0
+2025-11-01,West,Parlour,Vanilla,331,62559.0
+2025-11-01,West,Parlour,Chocolate,350,73500.0
+2025-11-01,West,Parlour,Mango Alphonso,141,35532.0
+2025-11-01,West,Parlour,Butterscotch,250,49875.0
+2025-11-01,West,Parlour,Strawberry,180,35910.0
+2025-11-01,West,Parlour,Kesar Pista,161,43953.0
+2025-11-01,West,Parlour,Cookie Crunch,191,50137.5
+2025-11-01,West,Parlour,Sugar-Free Vanilla,114,27531.0
+2025-11-01,West,Supermarket,Vanilla,297,56133.0
+2025-11-01,West,Supermarket,Chocolate,317,66570.0
+2025-11-01,West,Supermarket,Mango Alphonso,117,29484.0
+2025-11-01,West,Supermarket,Butterscotch,221,44089.5
+2025-11-01,West,Supermarket,Strawberry,150,29925.0
+2025-11-01,West,Supermarket,Kesar Pista,155,42315.0
+2025-11-01,West,Supermarket,Cookie Crunch,156,40950.0
+2025-11-01,West,Supermarket,Sugar-Free Vanilla,109,26323.5
+2025-11-01,West,Quick-commerce,Vanilla,364,68796.0
+2025-11-01,West,Quick-commerce,Chocolate,356,74760.0
+2025-11-01,West,Quick-commerce,Mango Alphonso,150,37800.0
+2025-11-01,West,Quick-commerce,Butterscotch,216,43092.0
+2025-11-01,West,Quick-commerce,Strawberry,154,30723.0
+2025-11-01,West,Quick-commerce,Kesar Pista,140,38220.0
+2025-11-01,West,Quick-commerce,Cookie Crunch,173,45412.5
+2025-11-01,West,Quick-commerce,Sugar-Free Vanilla,110,26565.0
+2025-12-01,North,Parlour,Vanilla,395,74655.0
+2025-12-01,North,Parlour,Chocolate,337,70770.0
+2025-12-01,North,Parlour,Mango Alphonso,109,27468.0
+2025-12-01,North,Parlour,Butterscotch,241,48079.5
+2025-12-01,North,Parlour,Strawberry,174,34713.0
+2025-12-01,North,Parlour,Kesar Pista,161,43953.0
+2025-12-01,North,Parlour,Cookie Crunch,214,56175.0
+2025-12-01,North,Parlour,Sugar-Free Vanilla,109,26323.5
+2025-12-01,North,Supermarket,Vanilla,330,62370.0
+2025-12-01,North,Supermarket,Chocolate,324,68040.0
+2025-12-01,North,Supermarket,Mango Alphonso,98,24696.0
+2025-12-01,North,Supermarket,Butterscotch,227,45286.5
+2025-12-01,North,Supermarket,Strawberry,160,31920.0
+2025-12-01,North,Supermarket,Kesar Pista,125,34125.0
+2025-12-01,North,Supermarket,Cookie Crunch,163,42787.5
+2025-12-01,North,Supermarket,Sugar-Free Vanilla,100,24150.0
+2025-12-01,North,Quick-commerce,Vanilla,339,64071.0
+2025-12-01,North,Quick-commerce,Chocolate,319,66990.0
+2025-12-01,North,Quick-commerce,Mango Alphonso,104,26208.0
+2025-12-01,North,Quick-commerce,Butterscotch,248,49476.0
+2025-12-01,North,Quick-commerce,Strawberry,175,34912.5
+2025-12-01,North,Quick-commerce,Kesar Pista,168,45864.0
+2025-12-01,North,Quick-commerce,Cookie Crunch,197,51712.5
+2025-12-01,North,Quick-commerce,Sugar-Free Vanilla,124,29946.0
+2025-12-01,South,Parlour,Vanilla,285,53865.0
+2025-12-01,South,Parlour,Chocolate,297,62370.0
+2025-12-01,South,Parlour,Mango Alphonso,111,27972.0
+2025-12-01,South,Parlour,Butterscotch,194,38703.0
+2025-12-01,South,Parlour,Strawberry,158,31521.0
+2025-12-01,South,Parlour,Kesar Pista,143,39039.0
+2025-12-01,South,Parlour,Cookie Crunch,161,42262.5
+2025-12-01,South,Parlour,Sugar-Free Vanilla,87,21010.5
+2025-12-01,South,Supermarket,Vanilla,243,45927.0
+2025-12-01,South,Supermarket,Chocolate,274,57540.0
+2025-12-01,South,Supermarket,Mango Alphonso,113,28476.0
+2025-12-01,South,Supermarket,Butterscotch,179,35710.5
+2025-12-01,South,Supermarket,Strawberry,115,22942.5
+2025-12-01,South,Supermarket,Kesar Pista,123,33579.0
+2025-12-01,South,Supermarket,Cookie Crunch,134,35175.0
+2025-12-01,South,Supermarket,Sugar-Free Vanilla,90,21735.0
+2025-12-01,South,Quick-commerce,Vanilla,315,59535.0
+2025-12-01,South,Quick-commerce,Chocolate,310,65100.0
+2025-12-01,South,Quick-commerce,Mango Alphonso,127,32004.0
+2025-12-01,South,Quick-commerce,Butterscotch,202,40299.0
+2025-12-01,South,Quick-commerce,Strawberry,135,26932.5
+2025-12-01,South,Quick-commerce,Kesar Pista,124,33852.0
+2025-12-01,South,Quick-commerce,Cookie Crunch,154,40425.0
+2025-12-01,South,Quick-commerce,Sugar-Free Vanilla,103,24874.5
+2025-12-01,East,Parlour,Vanilla,212,40068.0
+2025-12-01,East,Parlour,Chocolate,223,46830.0
+2025-12-01,East,Parlour,Mango Alphonso,83,20916.0
+2025-12-01,East,Parlour,Butterscotch,152,30324.0
+2025-12-01,East,Parlour,Strawberry,96,19152.0
+2025-12-01,East,Parlour,Kesar Pista,102,27846.0
+2025-12-01,East,Parlour,Cookie Crunch,119,31237.5
+2025-12-01,East,Parlour,Sugar-Free Vanilla,67,16180.5
+2025-12-01,East,Supermarket,Vanilla,203,38367.0
+2025-12-01,East,Supermarket,Chocolate,161,33810.0
+2025-12-01,East,Supermarket,Mango Alphonso,72,18144.0
+2025-12-01,East,Supermarket,Butterscotch,132,26334.0
+2025-12-01,East,Supermarket,Strawberry,86,17157.0
+2025-12-01,East,Supermarket,Kesar Pista,84,22932.0
+2025-12-01,East,Supermarket,Cookie Crunch,106,27825.0
+2025-12-01,East,Supermarket,Sugar-Free Vanilla,57,13765.5
+2025-12-01,East,Quick-commerce,Vanilla,229,43281.0
+2025-12-01,East,Quick-commerce,Chocolate,187,39270.0
+2025-12-01,East,Quick-commerce,Mango Alphonso,82,20664.0
+2025-12-01,East,Quick-commerce,Butterscotch,159,31720.5
+2025-12-01,East,Quick-commerce,Strawberry,103,20548.5
+2025-12-01,East,Quick-commerce,Kesar Pista,90,24570.0
+2025-12-01,East,Quick-commerce,Cookie Crunch,124,32550.0
+2025-12-01,East,Quick-commerce,Sugar-Free Vanilla,66,15939.0
+2025-12-01,West,Parlour,Vanilla,353,66717.0
+2025-12-01,West,Parlour,Chocolate,335,70350.0
+2025-12-01,West,Parlour,Mango Alphonso,123,30996.0
+2025-12-01,West,Parlour,Butterscotch,232,46284.0
+2025-12-01,West,Parlour,Strawberry,172,34314.0
+2025-12-01,West,Parlour,Kesar Pista,152,41496.0
+2025-12-01,West,Parlour,Cookie Crunch,163,42787.5
+2025-12-01,West,Parlour,Sugar-Free Vanilla,98,23667.0
+2025-12-01,West,Supermarket,Vanilla,304,57456.0
+2025-12-01,West,Supermarket,Chocolate,285,59850.0
+2025-12-01,West,Supermarket,Mango Alphonso,121,30492.0
+2025-12-01,West,Supermarket,Butterscotch,187,37306.5
+2025-12-01,West,Supermarket,Strawberry,128,25536.0
+2025-12-01,West,Supermarket,Kesar Pista,113,30849.0
+2025-12-01,West,Supermarket,Cookie Crunch,147,38587.5
+2025-12-01,West,Supermarket,Sugar-Free Vanilla,88,21252.0
+2025-12-01,West,Quick-commerce,Vanilla,325,61425.0
+2025-12-01,West,Quick-commerce,Chocolate,300,63000.0
+2025-12-01,West,Quick-commerce,Mango Alphonso,126,31752.0
+2025-12-01,West,Quick-commerce,Butterscotch,225,44887.5
+2025-12-01,West,Quick-commerce,Strawberry,164,32718.0
+2025-12-01,West,Quick-commerce,Kesar Pista,143,39039.0
+2025-12-01,West,Quick-commerce,Cookie Crunch,161,42262.5
+2025-12-01,West,Quick-commerce,Sugar-Free Vanilla,103,24874.5

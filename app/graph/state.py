@@ -8,7 +8,8 @@ Route = Literal["docs", "data", "both", "out_of_scope"]
 class Citation(BaseModel):
     doc_id: str
     doc_name: str
-    page: int
+    section: str
+    location: str  # "p.3-5" for PDFs, "line 12" for Markdown
     text: str = ""
 
 
@@ -19,8 +20,9 @@ class GraphState(TypedDict, total=False):
     doc_context: list[Citation]
     sql_query: str | None
     sql_result: list[dict] | None
+    sql_error: str | None
     answer: str
-    citations: list[Citation]
     grounded: bool
+    guard_feedback: str | None
     retries: int
     blocked_reason: str | None

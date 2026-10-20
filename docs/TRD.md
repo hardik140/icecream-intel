@@ -58,7 +58,7 @@
 | SQL generation, synthesis, PageIndex chat | `claude-sonnet-5-5` |
 | Eval judge | `claude-sonnet-5-5` |
 
-> **Open item:** PageIndex local documents OpenAI keys and a `pageindex[claude]` extra for Claude subscriptions. Confirm in M2 that it runs with an Anthropic API key; fallback is an OpenAI key used only for PageIndex.
+> **Resolved:** PageIndex local calls models through LiteLLM, so `anthropic/<model>` works with `ANTHROPIC_API_KEY`. No OpenAI key needed. Markdown files are indexed from their headings with no LLM call at all.
 
 ## 3. Repository layout
 
@@ -69,7 +69,7 @@ icecream-intel/
 │   ├── api/                 # routes: documents, data, chat, health
 │   ├── core/                # config (pydantic-settings), logging, llm factory
 │   ├── ingestion/
-│   │   ├── pdf_indexer.py   # PDF → PageIndex tree (background task)
+│   │   ├── doc_indexer.py   # PDF / Markdown → PageIndex tree (background task)
 │   │   └── table_loader.py  # CSV/XLSX → DuckDB table
 │   ├── retrieval/
 │   │   ├── pageindex_tool.py
@@ -106,12 +106,13 @@ class GraphState(TypedDict):
     question: str
     clean_question: str            # after PII scrub
     route: Literal["docs", "data", "both", "out_of_scope"]
-    doc_context: list[Citation]    # {doc_id, doc_name, page, text}
+    doc_context: list[Citation]    # {doc_id, doc_name, section, location ("p.3-5" | "line 12"), text}
     sql_query: str | None
     sql_result: list[dict] | None
+    sql_error: str | None
     answer: str
-    citations: list[Citation]
     grounded: bool
+    guard_feedback: str | None     # why the output guard rejected the last answer (drives the retry)
     retries: int
     blocked_reason: str | None
 ```
@@ -119,12 +120,12 @@ class GraphState(TypedDict):
 ## 5. Components
 
 ### 5.1 Ingestion
-- **PDF:** validate MIME type and that text is extractable (reject scanned PDFs with HTTP 422). Save the file, run PageIndex indexing as a FastAPI background task, store the tree JSON plus a `documents` registry row (`id, name, status, pages, created_at`).
-- **Tables:** CSV/XLSX → `CREATE TABLE ... AS SELECT * FROM read_csv_auto(...)` (or via pandas for xlsx). Table names sanitised to `[a-z0-9_]`. Schema is stored for the SQL prompt.
+- **Documents:** PDF or Markdown. PDFs must have extractable text (scanned → HTTP 422). The file is saved, and the PageIndex tree is built as a FastAPI background task: `page_index()` for PDFs (LLM, with node summaries) and `md_to_tree()` for Markdown (headings, offline). Each document is one JSON file in `data/store/docs/` (`doc_id, name, status, tree, created_at`).
+- **Tables:** CSV goes through DuckDB `read_csv_auto` (infers dates); XLSX goes through pandas. Table names must match `^[a-z][a-z0-9_]*$`. The schema is read from `information_schema` for the prompts.
 
-### 5.2 Retrieval tools (LangChain `@tool`)
-- `search_documents(question) -> list[Citation]` — PageIndex tree reasoning over indexed docs.
-- `query_sales_data(question) -> {sql, rows}` — LLM writes SQL from schema + few-shot examples → SQL guard → execute.
+### 5.2 Retrieval (plain functions called by graph nodes)
+- `search_documents(question) -> list[Citation]`: all ready document trees are compressed (titles plus 150-char summaries, node ids prefixed with `doc_id:`) and sent to the LLM with ice-cream **expert routing rules**. The LLM returns node ids; their full section text becomes the context. This is adapted from the PageIndex crash course in krishnaik06/RAG-Tutorials.
+- `query_sales_data(question) -> {sql, rows}`: the LLM writes SQL from the schema and a few-shot example, then it passes the SQL guard and runs on a locked-down connection with a timeout.
 
 ### 5.3 Guardrails
 
@@ -133,7 +134,7 @@ class GraphState(TypedDict):
 | Input: size | ≤ 2,000 chars | Pydantic |
 | Input: PII | emails, phones, card numbers masked | regex |
 | Input: injection + topic | classify `ok / off_topic / injection` | Haiku, structured output |
-| SQL | single `SELECT`, no DDL/DML/`ATTACH`/`COPY`/`PRAGMA`; `LIMIT 1000` enforced; 10 s timeout | `sqlglot` parse + read-only DuckDB connection |
+| SQL | single `SELECT`, no DDL/DML/`ATTACH`/`COPY`/`PRAGMA`; `LIMIT 1000` enforced; 10 s timeout | `sqlglot` parse + DuckDB `read_only`, `enable_external_access=false`, `lock_configuration=true` |
 | Output: grounding | every claim supported by context; every number present in `sql_result` | LLM judge + numeric cross-check |
 | Output: citations | doc answers must include ≥1 citation | code check |
 
@@ -151,7 +152,7 @@ Single prompt: question + doc citations + SQL rows → answer in markdown with `
 | `DELETE` | `/documents/{id}` | — | `204` |
 | `POST` | `/data` | multipart CSV/XLSX, `table_name` | `201 {table, rows, columns}` |
 | `GET` | `/data/tables` | — | tables + schemas |
-| `POST` | `/chat` | `{question, stream?: bool}` | `{answer, citations, sql, route, trace_url}` or SSE stream |
+| `POST` | `/chat` | `{question}` | `{answer, route, blocked, grounded, citations, sql, run_id}` (streaming not built yet) |
 | `GET` | `/health` | — | `{status, langsmith, llm}` |
 
 Errors use a single shape: `{error: {code, message}}`.
@@ -160,7 +161,6 @@ Errors use a single shape: `{error: {code, message}}`.
 
 ```
 ANTHROPIC_API_KEY=
-OPENAI_API_KEY=              # only if PageIndex needs it
 LANGSMITH_API_KEY=
 LANGSMITH_TRACING=true
 LANGSMITH_PROJECT=icecream-intel
@@ -172,17 +172,18 @@ MAX_QUESTION_CHARS=2000
 
 ## 8. Evaluation
 
-- **Dataset** (`eval/datasets/golden.json`, ~40 items): 12 docs, 12 data, 8 both, 8 adversarial (off-topic / injection). Each has `question`, `expected_route`, `expected_answer` and optionally `expected_sql_result`.
-- **Evaluators** (LangSmith `evaluate()`):
-  - `route_correct` — exact match
-  - `answer_correctness` — LLM judge vs reference
-  - `groundedness` — LLM judge vs retrieved context
-  - `sql_result_match` — compare result rows to expected
-  - `guard_blocked` — adversarial items must be blocked
+- **Dataset** (`eval/datasets/golden.json`, 22 items for now; target is 40): 6 data, 6 docs, 4 both, 6 adversarial (off-topic / injection). Each item has `question` plus `route`, `answer` and optionally `numbers`, or `blocked` for attack items. The expected numbers come from the sample `sales.csv`.
+- **Evaluators** (LangSmith `evaluate()`, judges adapted from krishnaik06/RAG-Tutorials):
+  - `guard_correct`: attack items blocked with the right label, and normal items not blocked
+  - `route_correct`: exact match
+  - `numbers_match`: every expected number appears in the answer
+  - `correctness`: LLM judge against the reference answer
+  - `groundedness`: LLM judge against the retrieved sections and SQL rows
+  - `retrieval_relevance`: LLM judge on the retrieved sections
 - **Run:** `python -m eval.run --experiment <name>` → results in LangSmith; CI fails if any metric drops below PRD targets (manual trigger, since it costs tokens).
 
 ## 9. Observability
-- LangSmith traces every graph run; `trace_url` returned in `/chat` response.
+- LangSmith traces every graph run; the `run_id` is returned in the `/chat` response.
 - Structured JSON logs (request id, route, latency, tokens).
 
 ## 10. Security
