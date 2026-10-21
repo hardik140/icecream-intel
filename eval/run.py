@@ -1,7 +1,7 @@
 """Run the golden dataset through the pipeline and score it in LangSmith.
 
 Usage: python -m eval.run --experiment baseline [--recreate]
-Needs ANTHROPIC_API_KEY and LANGSMITH_API_KEY, and the sample data loaded (python -m scripts.load_sample_data).
+Needs GOOGLE_API_KEY and LANGSMITH_API_KEY, and the sample data loaded (python -m scripts.load_sample_data).
 Exits 1 if any metric is below its PRD target.
 """
 import argparse

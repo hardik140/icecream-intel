@@ -40,7 +40,7 @@
 |---|---|---|
 | Language | Python 3.11+ | |
 | Orchestration | **LangGraph** | State machine above |
-| LLM + tools | **LangChain** (`langchain-anthropic`, `langchain-community`) | |
+| LLM + tools | **LangChain** (`langchain-google-genai`) | Google Gemini API |
 | Tracing + eval | **LangSmith** | Free tier: 5k traces/month |
 | Document retrieval | **PageIndex** local (`pip install pageindex`, MIT) | Vectorless, tree-based, text PDFs only |
 | Numeric data | **DuckDB** | Embedded, read-only connection for queries |
@@ -54,11 +54,13 @@
 
 | Role | Model |
 |---|---|
-| Router, guards, PageIndex indexing | `claude-haiku-5-5` |
-| SQL generation, synthesis, PageIndex chat | `claude-sonnet-5-5` |
-| Eval judge | `claude-sonnet-5-5` |
+| Router, guards, PageIndex PDF indexing | `gemini-3.5-flash-lite` |
+| Tree search, SQL generation, synthesis, eval judge | `gemini-3.5-flash` |
 
-> **Resolved:** PageIndex local calls models through LiteLLM, so `anthropic/<model>` works with `ANTHROPIC_API_KEY`. No OpenAI key needed. Markdown files are indexed from their headings with no LLM call at all.
+All calls go through one shared rate limiter per model (`LLM_RPM_FAST`, `LLM_RPM_SMART`). If the quota is exhausted anyway, `/chat` returns `429 llm_quota_exceeded`.
+**Free-tier limits seen on 2026-10-21:** `gemini-3.5-flash` allows 5 requests/minute and **20 requests/day**. One question uses about 3 smart calls, so the free tier covers roughly 6 questions a day. The eval suite needs a paid key.
+
+> **Resolved:** PageIndex local calls models through LiteLLM, so `gemini/<model>` works with the Google key (exported as `GEMINI_API_KEY`). No OpenAI key needed. Markdown files are indexed from their headings with no LLM call at all.
 
 ## 3. Repository layout
 
@@ -168,12 +170,14 @@ Errors use a single shape: `{error: {code, message}}`.
 ## 7. Configuration (`.env`)
 
 ```
-ANTHROPIC_API_KEY=
+GOOGLE_API_KEY=
 LANGSMITH_API_KEY=
 LANGSMITH_TRACING=true
 LANGSMITH_PROJECT=icecream-intel
-MODEL_FAST=claude-haiku-5-5
-MODEL_SMART=claude-sonnet-5-5
+MODEL_FAST=gemini-3.5-flash-lite
+MODEL_SMART=gemini-3.5-flash
+LLM_RPM_FAST=10
+LLM_RPM_SMART=5
 DATA_DIR=./data/store
 MAX_QUESTION_CHARS=2000
 ```

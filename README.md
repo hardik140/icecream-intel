@@ -2,7 +2,7 @@
 
 Ask business questions about an ice cream brand in plain language. Answers come from the brand's own documents (**vectorless RAG** with [PageIndex](https://github.com/VectifyAI/PageIndex)) and sales data (**SQL** on DuckDB), with citations, exact numbers and guardrails.
 
-**Stack:** LangChain · LangGraph · LangSmith · PageIndex (local, free) · DuckDB · FastAPI · Claude
+**Stack:** LangChain · LangGraph · LangSmith · PageIndex (local, free) · DuckDB · FastAPI · Google Gemini
 
 ```
 question → input guard → router → PageIndex tree search ┐
@@ -16,7 +16,7 @@ Docs: [PRD](docs/PRD.md) · [TRD](docs/TRD.md)
 ```bash
 python -m venv .venv && .venv\Scripts\activate      # Windows (Linux/macOS: source .venv/bin/activate)
 pip install -e ".[dev]"
-copy .env.example .env                               # add ANTHROPIC_API_KEY and LANGSMITH_API_KEY
+copy .env.example .env                               # add GOOGLE_API_KEY (Gemini) and LANGSMITH_API_KEY
 
 python -m scripts.load_sample_data                   # sample brand "Frosty Scoops": sales.csv + 3 docs
 uvicorn app.main:app --reload                        # open http://localhost:8000/docs

@@ -1,3 +1,4 @@
+import os
 from functools import lru_cache
 from pathlib import Path
 
@@ -8,13 +9,16 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
-    anthropic_api_key: str = ""
+    google_api_key: str = ""
     langsmith_api_key: str = ""
     langsmith_tracing: bool = True
     langsmith_project: str = "icecream-intel"
 
-    model_fast: str = "claude-haiku-5-5"
-    model_smart: str = "claude-sonnet-5-5"
+    model_fast: str = "gemini-3.5-flash-lite"
+    model_smart: str = "gemini-3.5-flash"
+    # Requests per minute per model. Free tier is 5/min for gemini-3.5-flash; raise on a paid plan.
+    llm_rpm_fast: int = 10
+    llm_rpm_smart: int = 5
 
     data_dir: Path = Path("./data/store")
     max_question_chars: int = 2000
@@ -40,5 +44,7 @@ def get_settings() -> Settings:
     # LangSmith and LiteLLM (used by PageIndex) read keys from os.environ, not from Settings
     load_dotenv()
     s = Settings()
+    if s.google_api_key:
+        os.environ.setdefault("GEMINI_API_KEY", s.google_api_key)  # the name LiteLLM looks for
     s.docs_dir.mkdir(parents=True, exist_ok=True)
     return s

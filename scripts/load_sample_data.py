@@ -1,6 +1,6 @@
 """Load data/sample into the store: sales.csv → DuckDB, *.md / *.pdf → PageIndex trees.
 
-Markdown indexing is offline and free; PDFs need ANTHROPIC_API_KEY.
+Markdown indexing is offline and free; PDFs need GOOGLE_API_KEY.
 Usage: python -m scripts.load_sample_data
 """
 import shutil

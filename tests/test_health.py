@@ -34,3 +34,14 @@ def test_errors_use_one_shape():
     assert r.status_code == 415
     assert r.json()["error"]["code"] == "http_error"
     assert client.post("/chat", json={"question": ""}).json()["error"]["code"] == "validation_error"
+
+
+def test_llm_quota_exhaustion_returns_429(monkeypatch):
+    from langchain_google_genai.chat_models import GoogleRateLimitError
+
+    def boom(question):
+        raise GoogleRateLimitError("429 RESOURCE_EXHAUSTED")
+    monkeypatch.setattr("app.api.chat.ask", boom)
+    r = TestClient(app, raise_server_exceptions=False).post("/chat", json={"question": "Top flavours?"})
+    assert r.status_code == 429
+    assert r.json()["error"]["code"] == "llm_quota_exceeded"
