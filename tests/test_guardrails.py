@@ -41,3 +41,9 @@ def test_ungrounded_numbers():
     sources = 'SQL RESULT: [{"revenue": 12685680.0, "pct": -23.0912}]'
     assert ungrounded_numbers("Revenue was 12,685,680 and fell 23.09% in the top 3", sources) == []
     assert ungrounded_numbers("Revenue was 13,000,000", sources) == [13000000.0]
+
+
+def test_scaled_numbers_are_grounded():
+    sources = 'SQL RESULT: [{"revenue": 69847134.0}]'
+    assert ungrounded_numbers("Revenue was 69.85 million (6.98 crore)", sources) == []
+    assert ungrounded_numbers("Revenue was 75 million", sources) == [75.0]

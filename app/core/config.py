@@ -20,7 +20,7 @@ class Settings(BaseSettings):
     model_fast: str = "groq:openai/gpt-oss-20b"
     model_fast_fallback: str = "google_genai:gemini-3.5-flash-lite"
     model_smart: str = "google_genai:gemini-3.5-flash"
-    model_smart_fallback: str = "groq:openai/gpt-oss-120b"
+    model_smart_fallback: str = "groq:openai/gpt-oss-120b,groq:qwen/qwen3.8-27b"  # each Groq model has its own per-minute quota
     # Requests per minute per model. Free tiers: Gemini flash 5/min (20/day); Groq 30/min (1000/day).
     gemini_rpm: int = 5
     groq_rpm: int = 30

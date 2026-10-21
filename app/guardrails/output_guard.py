@@ -25,7 +25,8 @@ def ungrounded_numbers(answer: str, sources: str) -> list[float]:
     allowed = set()
     for n in extract_numbers(sources):
         n = abs(n)  # "fell 23.09%" is grounded by a SQL value of -23.09
-        allowed |= {n, round(n, 2), round(n, 1), float(round(n))}
+        for scaled in (n, n / 1e3, n / 1e5, n / 1e6, n / 1e7, n / 1e9):  # thousand, lakh, million, crore, billion
+            allowed |= {scaled, round(scaled, 2), round(scaled, 1), float(round(scaled))}
     # Small integers ("top 3", "Q2", list numbering) are not data claims.
     return sorted(n for n in map(abs, extract_numbers(answer)) if n not in allowed and not (n.is_integer() and n <= 12))
 

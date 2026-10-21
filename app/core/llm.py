@@ -19,9 +19,10 @@ LITELLM_PREFIX = {"google_genai": "gemini", "groq": "groq"}  # PageIndex calls m
 
 
 def _specs(tier: Tier) -> list[str]:
-    """Primary then fallback, skipping providers without an API key."""
+    """Primary then fallbacks (comma-separated), skipping providers without an API key."""
     s = get_settings()
-    specs = [s.model_fast, s.model_fast_fallback] if tier == "fast" else [s.model_smart, s.model_smart_fallback]
+    primary, fallbacks = (s.model_fast, s.model_fast_fallback) if tier == "fast" else (s.model_smart, s.model_smart_fallback)
+    specs = [primary, *(f.strip() for f in fallbacks.split(","))]
     keys = {"google_genai": s.google_api_key, "groq": s.groq_api_key}
     usable = [sp for sp in specs if sp and keys.get(sp.split(":", 1)[0])]
     if not usable:

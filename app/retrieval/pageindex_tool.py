@@ -50,6 +50,19 @@ def _find(nodes: list[dict], ids: set[str], doc: dict) -> list[Citation]:
     return found
 
 
+def document_outline() -> str:
+    """One line per ready document with its top-level sections, so the router knows what docs cover."""
+    lines = []
+    for d in list_documents(with_tree=True):
+        if d["status"] != "ready":
+            continue
+        tree = d["tree"]
+        # Markdown trees have one root (the H1 title); its children are the real sections
+        top = tree[0].get("nodes") or tree if len(tree) == 1 else tree
+        lines.append(f"- {d['name']}: " + "; ".join(n["title"] for n in top[:12]))
+    return "\n".join(lines) or "(no documents)"
+
+
 def search_documents(question: str) -> list[Citation]:
     """Return the document sections that answer the question, with locations for citation."""
     docs = [d for d in list_documents(with_tree=True) if d["status"] == "ready"]

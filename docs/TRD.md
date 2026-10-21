@@ -57,7 +57,7 @@
 | Tier | Primary | Fallback |
 |---|---|---|
 | fast: input guard, router, groundedness judge | `groq:openai/gpt-oss-20b` | `google_genai:gemini-3.5-flash-lite` |
-| smart: tree search, SQL, synthesis, eval judge | `google_genai:gemini-3.5-flash` | `groq:openai/gpt-oss-120b` |
+| smart: tree search, SQL, synthesis, eval judge | `google_genai:gemini-3.5-flash` | `groq:openai/gpt-oss-120b`, `groq:qwen/qwen3.8-27b` |
 
 - `get_llm(tier)` returns a small wrapper whose `invoke` and `with_structured_output` chain primary and fallback with LangChain `with_fallbacks`. Providers without a key are skipped.
 - Groq structured output uses `method="json_schema"`; the default tool-calling mode fails on gpt-oss ("model did not call a tool").
@@ -67,7 +67,8 @@
 
 **Free-tier limits seen on 2026-10-21:**
 - Gemini flash: 5 requests/min and 20 requests/day.
-- Groq gpt-oss: 1,000 requests/day and 8,000 tokens/min per model.
+- Groq gpt-oss: 1,000 requests/day, 8,000 tokens/min and a daily token cap ("TPD") per model.
+- A full eval run (22 questions plus LLM judges) needs about 700k tokens, more than one free day allows. Run it on a paid key or across days.
 
 One question makes about 6–9 LLM calls, so Groq carries most of the load.
 

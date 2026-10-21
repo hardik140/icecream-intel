@@ -2,7 +2,7 @@ from typing import Literal, TypedDict
 
 from pydantic import BaseModel
 
-Route = Literal["docs", "data", "both", "out_of_scope"]
+Route = Literal["docs", "data", "both"]
 
 
 class Citation(BaseModel):

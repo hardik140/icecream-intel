@@ -61,7 +61,7 @@ Then ask: *"Which competitors near Koramangala have the best ratings, and what d
 | Tier | Used for | Primary | Fallback |
 |---|---|---|---|
 | fast | guards, router, judges | Groq `openai/gpt-oss-20b` | Gemini `gemini-3.5-flash-lite` |
-| smart | tree search, SQL, answers | Gemini `gemini-3.5-flash` | Groq `openai/gpt-oss-120b` |
+| smart | tree search, SQL, answers | Gemini `gemini-3.5-flash` | Groq `openai/gpt-oss-120b`, then `qwen/qwen3.8-27b` |
 
 Any error on the primary (quota, outage) switches to the other provider automatically. A provider without a key is skipped, so either key alone also works. Models are `provider:model` strings in `.env`.
 
@@ -77,6 +77,7 @@ Any error on the primary (quota, outage) switches to the other provider automati
 pytest -q                                   # offline, fake LLM, no keys needed
 RUN_LIVE_SCRAPE=1 pytest tests/test_google_maps.py   # + one real Google Maps scrape
 python -m eval.run --experiment baseline    # real LLM, results in LangSmith, fails below PRD targets
+python -m eval.run --experiment baseline --local   # same, scored locally (no LangSmith)
 ```
 
 The evaluation runs `eval/datasets/golden.json` (data, document, combined and attack questions) with the evaluators `guard_correct`, `route_correct`, `numbers_match`, `correctness`, `groundedness` and `retrieval_relevance`.

@@ -23,6 +23,8 @@ def test_both_keys_gives_primary_then_fallback(monkeypatch):
     _set(monkeypatch, GOOGLE_API_KEY="g", GROQ_API_KEY="q")
     assert llm._specs("fast") == ["groq:openai/gpt-oss-20b", "google_genai:gemini-3.5-flash-lite"]
     assert llm._specs("smart") == ["google_genai:gemini-3.5-flash", "groq:openai/gpt-oss-120b"]
+    _set(monkeypatch, MODEL_SMART_FALLBACK="groq:a, groq:b")
+    assert llm._specs("smart") == ["google_genai:gemini-3.5-flash", "groq:a", "groq:b"]
     assert llm.litellm_name("smart") == "gemini/gemini-3.5-flash"
 
 

@@ -11,7 +11,7 @@ from app.guardrails.input_guard import classify_input, scrub_pii
 from app.guardrails.output_guard import facts_text, judge_grounded, ungrounded_numbers
 from app.ingestion.table_loader import get_schema
 from app.prompts import NOT_FOUND, REFUSALS, ROUTER, SYNTHESIZE
-from app.retrieval.pageindex_tool import search_documents
+from app.retrieval.pageindex_tool import document_outline, search_documents
 from app.retrieval.sql_tool import format_schema, query_sales_data
 
 log = logging.getLogger(__name__)
@@ -32,12 +32,9 @@ class RouteDecision(BaseModel):
 
 
 def route(state: GraphState) -> dict:
-    prompt = ROUTER.format(schema=format_schema(get_schema()), question=state["clean_question"])
-    decision = get_llm("fast").with_structured_output(RouteDecision).invoke(prompt)
-    update = {"route": decision.route}
-    if decision.route == "out_of_scope":
-        update["answer"] = REFUSALS["out_of_scope"]
-    return update
+    prompt = ROUTER.format(schema=format_schema(get_schema()), docs=document_outline(),
+                           question=state["clean_question"])
+    return {"route": get_llm("fast").with_structured_output(RouteDecision).invoke(prompt).route}
 
 
 def retrieve_docs(state: GraphState) -> dict:
