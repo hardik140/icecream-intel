@@ -14,11 +14,16 @@ class Settings(BaseSettings):
     langsmith_tracing: bool = True
     langsmith_project: str = "icecream-intel"
 
-    model_fast: str = "gemini-3.5-flash-lite"
-    model_smart: str = "gemini-3.5-flash"
-    # Requests per minute per model. Free tier is 5/min for gemini-3.5-flash; raise on a paid plan.
-    llm_rpm_fast: int = 10
-    llm_rpm_smart: int = 5
+    groq_api_key: str = ""
+
+    # "provider:model". Each tier falls back to the other provider on any error (quota, outage).
+    model_fast: str = "groq:openai/gpt-oss-20b"
+    model_fast_fallback: str = "google_genai:gemini-3.5-flash-lite"
+    model_smart: str = "google_genai:gemini-3.5-flash"
+    model_smart_fallback: str = "groq:openai/gpt-oss-120b"
+    # Requests per minute per model. Free tiers: Gemini flash 5/min (20/day); Groq 30/min (1000/day).
+    gemini_rpm: int = 5
+    groq_rpm: int = 30
 
     data_dir: Path = Path("./data/store")
     max_question_chars: int = 2000

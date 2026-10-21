@@ -3,7 +3,6 @@ import logging
 from fastapi import FastAPI, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
-from langchain_google_genai.chat_models import GoogleRateLimitError
 from starlette.exceptions import HTTPException
 
 from app.api import chat, collect, data, documents, health
@@ -30,13 +29,12 @@ def create_app() -> FastAPI:
     async def validation_error(_: Request, exc: RequestValidationError):
         return _error(422, "validation_error", exc.errors())
 
-    @app.exception_handler(GoogleRateLimitError)
-    async def llm_quota(_: Request, exc: GoogleRateLimitError):
-        log.warning("LLM quota exceeded: %s", str(exc)[:200])
-        return _error(429, "llm_quota_exceeded", "The AI model's quota is used up. Try again in a minute.")
-
     @app.exception_handler(Exception)
     async def unexpected_error(_: Request, exc: Exception):
+        # Reaches here only when every provider failed (fallbacks are tried first)
+        if getattr(exc, "status_code", None) == 429 or "RateLimit" in type(exc).__name__:
+            log.warning("LLM quota exceeded on all providers: %s", str(exc)[:200])
+            return _error(429, "llm_quota_exceeded", "The AI models' quota is used up. Try again later.")
         log.exception("Unhandled error")
         return _error(500, "internal_error", "Something went wrong")
 

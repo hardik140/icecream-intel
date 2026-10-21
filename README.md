@@ -2,7 +2,7 @@
 
 Ask business questions about an ice cream brand in plain language. Answers come from the brand's own documents (**vectorless RAG** with [PageIndex](https://github.com/VectifyAI/PageIndex)) and sales data (**SQL** on DuckDB), with citations, exact numbers and guardrails.
 
-**Stack:** LangChain · LangGraph · LangSmith · PageIndex (local, free) · DuckDB · FastAPI · Google Gemini
+**Stack:** LangChain · LangGraph · LangSmith · PageIndex (local, free) · DuckDB · FastAPI · Google Gemini + Groq (automatic fallback)
 
 ```
 question → input guard → router → PageIndex tree search ┐
@@ -16,7 +16,7 @@ Docs: [PRD](docs/PRD.md) · [TRD](docs/TRD.md)
 ```bash
 python -m venv .venv && .venv\Scripts\activate      # Windows (Linux/macOS: source .venv/bin/activate)
 pip install -e ".[dev]"
-copy .env.example .env                               # add GOOGLE_API_KEY (Gemini) and LANGSMITH_API_KEY
+copy .env.example .env                               # add GOOGLE_API_KEY, GROQ_API_KEY, LANGSMITH_API_KEY
 
 python -m scripts.load_sample_data                   # sample brand "Frosty Scoops": sales.csv + 3 docs
 uvicorn app.main:app --reload                        # open http://localhost:8000/docs
@@ -55,6 +55,15 @@ curl -X POST localhost:8000/collect/google-maps -H "Content-Type: application/js
 Then ask: *"Which competitors near Koramangala have the best ratings, and what do their customers praise?"*
 
 > ⚠️ This is a scraper, not an official Google API, and it may violate Google's Terms of Service. Keep volume low (max 10 queries per job, one job at a time). Reviewer names, photos and profile links are dropped, and review text is PII-scrubbed. For production use, switch to the official Places API.
+
+## Two LLM providers
+
+| Tier | Used for | Primary | Fallback |
+|---|---|---|---|
+| fast | guards, router, judges | Groq `openai/gpt-oss-20b` | Gemini `gemini-3.5-flash-lite` |
+| smart | tree search, SQL, answers | Gemini `gemini-3.5-flash` | Groq `openai/gpt-oss-120b` |
+
+Any error on the primary (quota, outage) switches to the other provider automatically. A provider without a key is skipped, so either key alone also works. Models are `provider:model` strings in `.env`.
 
 ## Guardrails
 

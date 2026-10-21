@@ -40,7 +40,7 @@
 |---|---|---|
 | Language | Python 3.11+ | |
 | Orchestration | **LangGraph** | State machine above |
-| LLM + tools | **LangChain** (`langchain-google-genai`) | Google Gemini API |
+| LLM + tools | **LangChain** (`langchain-google-genai`, `langchain-groq`) | Gemini + Groq with `with_fallbacks` |
 | Tracing + eval | **LangSmith** | Free tier: 5k traces/month |
 | Document retrieval | **PageIndex** local (`pip install pageindex`, MIT) | Vectorless, tree-based, text PDFs only |
 | Numeric data | **DuckDB** | Embedded, read-only connection for queries |
@@ -54,11 +54,22 @@
 
 | Role | Model |
 |---|---|
-| Router, guards, PageIndex PDF indexing | `gemini-3.5-flash-lite` |
-| Tree search, SQL generation, synthesis, eval judge | `gemini-3.5-flash` |
+| Tier | Primary | Fallback |
+|---|---|---|
+| fast: input guard, router, groundedness judge | `groq:openai/gpt-oss-20b` | `google_genai:gemini-3.5-flash-lite` |
+| smart: tree search, SQL, synthesis, eval judge | `google_genai:gemini-3.5-flash` | `groq:openai/gpt-oss-120b` |
 
-All calls go through one shared rate limiter per model (`LLM_RPM_FAST`, `LLM_RPM_SMART`). If the quota is exhausted anyway, `/chat` returns `429 llm_quota_exceeded`.
-**Free-tier limits seen on 2026-10-21:** `gemini-3.5-flash` allows 5 requests/minute and **20 requests/day**. One question uses about 3 smart calls, so the free tier covers roughly 6 questions a day. The eval suite needs a paid key.
+- `get_llm(tier)` returns a small wrapper whose `invoke` and `with_structured_output` chain primary and fallback with LangChain `with_fallbacks`. Providers without a key are skipped.
+- Groq structured output uses `method="json_schema"`; the default tool-calling mode fails on gpt-oss ("model did not call a tool").
+- Retries: Gemini gets 1 (its free quota is daily, so we fail over at once). Groq gets 4 (its quota is per minute and the client honours `retry-after`).
+- Each model has one shared rate limiter (`GEMINI_RPM`, `GROQ_RPM`). If every provider fails, `/chat` returns `429 llm_quota_exceeded`.
+- PageIndex PDF indexing uses the fast tier's primary through LiteLLM (`groq/...` or `gemini/...`), with no fallback.
+
+**Free-tier limits seen on 2026-10-21:**
+- Gemini flash: 5 requests/min and 20 requests/day.
+- Groq gpt-oss: 1,000 requests/day and 8,000 tokens/min per model.
+
+One question makes about 6–9 LLM calls, so Groq carries most of the load.
 
 > **Resolved:** PageIndex local calls models through LiteLLM, so `gemini/<model>` works with the Google key (exported as `GEMINI_API_KEY`). No OpenAI key needed. Markdown files are indexed from their headings with no LLM call at all.
 
