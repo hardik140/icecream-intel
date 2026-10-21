@@ -32,6 +32,17 @@ def load_table(path: Path, table_name: str) -> dict:
     return {"table": table_name, "rows": rows, "columns": columns}
 
 
+def upsert_rows(df: pd.DataFrame, table_name: str, key: str) -> int:
+    """Insert rows, replacing existing rows with the same key. Creates the table on first use."""
+    if not TABLE_NAME.match(table_name) or not TABLE_NAME.match(key):
+        raise ValueError("invalid table or key name")
+    with duckdb.connect(str(get_settings().db_path)) as con:
+        con.execute(f"CREATE TABLE IF NOT EXISTS {table_name} AS SELECT * FROM df LIMIT 0")
+        con.execute(f"DELETE FROM {table_name} WHERE {key} IN (SELECT {key} FROM df)")
+        con.execute(f"INSERT INTO {table_name} BY NAME SELECT * FROM df")
+        return con.execute(f"SELECT COUNT(*) FROM {table_name}").fetchone()[0]
+
+
 def readonly_connection() -> duckdb.DuckDBPyConnection:
     """No writes, no file/network access, settings locked — safe for LLM-generated SQL.
 

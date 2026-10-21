@@ -5,7 +5,7 @@ from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 from starlette.exceptions import HTTPException
 
-from app.api import chat, data, documents, health
+from app.api import chat, collect, data, documents, health
 from app.core.logging import setup_logging
 
 log = logging.getLogger(__name__)
@@ -18,7 +18,7 @@ def _error(status: int, code: str, message) -> JSONResponse:
 def create_app() -> FastAPI:
     setup_logging()
     app = FastAPI(title="Ice Cream Brand Intelligence", version="0.2.0")
-    for module in (health, documents, data, chat):
+    for module in (health, documents, data, collect, chat):
         app.include_router(module.router)
 
     @app.exception_handler(HTTPException)

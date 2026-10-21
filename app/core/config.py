@@ -22,6 +22,10 @@ class Settings(BaseSettings):
     max_sql_rows: int = 1000
     sql_timeout_s: float = 10.0
 
+    gmaps_scraper_bin: Path | None = None  # default: first bin/google_maps_scraper* file
+    gmaps_max_queries: int = 10
+    gmaps_timeout_s: int = 900
+
     @property
     def db_path(self) -> Path:
         return self.data_dir / "brand.duckdb"

@@ -7,7 +7,8 @@ EXPERT_RULES = """\
 - Storage temperature, shelf life, hygiene, cold chain    → operations SOP
 - Ingredients, recipes, suppliers, costs, delivery terms  → operations SOP / supplier sections
 - Campaigns, ads, social media, launches                  → marketing / market research
-- "Why" questions about a flavour → check reviews AND any supplier/recipe change for that flavour"""
+- "Why" questions about a flavour → check reviews AND any supplier/recipe change for that flavour
+- What customers say about competitor / rival shops        → Google Maps competitor reviews"""
 
 TREE_SEARCH = """\
 You are given a question and the tree structures (like tables of contents) of an ice cream brand's documents.
@@ -35,8 +36,9 @@ Question: {question}"""
 
 ROUTER = """\
 Decide where to find the answer for a question about an ice cream brand.
-- "data": needs numbers from the sales tables (totals, rankings, trends, comparisons, growth).
-- "docs": needs text from documents (reviews, reasons, SOPs, suppliers, market research, policies).
+- "data": needs numbers from the tables (sales totals, rankings, trends, growth; competitor ratings,
+  review counts and locations from the competitors table).
+- "docs": needs text from documents (reviews incl. competitor reviews, reasons, SOPs, suppliers, market research).
 - "both": needs numbers AND explanations (e.g. "which flavour is declining and why?").
 
 Sales tables available:

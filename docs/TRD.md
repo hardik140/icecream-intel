@@ -123,6 +123,14 @@ class GraphState(TypedDict):
 - **Documents:** PDF or Markdown. PDFs must have extractable text (scanned → HTTP 422). The file is saved, and the PageIndex tree is built as a FastAPI background task: `page_index()` for PDFs (LLM, with node summaries) and `md_to_tree()` for Markdown (headings, offline). Each document is one JSON file in `data/store/docs/` (`doc_id, name, status, tree, created_at`).
 - **Tables:** CSV goes through DuckDB `read_csv_auto` (infers dates); XLSX goes through pandas. Table names must match `^[a-z][a-z0-9_]*$`. The schema is read from `information_schema` for the prompts.
 
+### 5.1b Collectors: Google Maps
+- `app/collectors/google_maps.py` runs the pinned **gosom/google-maps-scraper v1.18.1** binary (installed into `bin/`, kept out of git) as a subprocess. There is no shell; queries are validated (at most 10, at most 200 chars, no newlines) and written one per line, and the run has a 15-minute timeout.
+- Places are upserted by `place_id` into the DuckDB `competitors` table: name, category, address, city, lat/lon, rating, review_count, stars_1–5, price_range, website, maps_link, scraped_at. Phone numbers and owner fields are dropped.
+- Reviews go into one Markdown document per run, with one `##` section per place, indexed by PageIndex offline. Reviewer name, photo and profile URL are dropped, and the text goes through `scrub_pii`.
+- API: `POST /collect/google-maps` starts a background job, allowing only one at a time (409 otherwise); `GET /collect/jobs/{id}` returns its status. Shortcut: jobs are kept in memory and lost on restart.
+- Risk: scraping may violate Google's ToS and gets rate-limited. The official Places API is the production alternative.
+- Not supported in the Docker image yet, because the Linux binary needs Playwright browser dependencies.
+
 ### 5.2 Retrieval (plain functions called by graph nodes)
 - `search_documents(question) -> list[Citation]`: all ready document trees are compressed (titles plus 150-char summaries, node ids prefixed with `doc_id:`) and sent to the LLM with ice-cream **expert routing rules**. The LLM returns node ids; their full section text becomes the context. This is adapted from the PageIndex crash course in krishnaik06/RAG-Tutorials.
 - `query_sales_data(question) -> {sql, rows}`: the LLM writes SQL from the schema and a few-shot example, then it passes the SQL guard and runs on a locked-down connection with a timeout.

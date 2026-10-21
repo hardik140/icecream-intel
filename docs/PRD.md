@@ -60,6 +60,7 @@ A chat assistant that answers business questions about the brand in plain langua
 - Evaluation suite in LangSmith.
 - REST backend, Docker, CI on GitHub.
 - Sample (fake) brand dataset so anyone can run the project.
+- Competitor collection from Google Maps (places + reviews) via an open-source scraper, low volume.
 
 ### Out of scope (v1)
 - Scanned / image PDFs (needs PageIndex cloud OCR).

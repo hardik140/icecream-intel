@@ -37,8 +37,24 @@ Try `POST /chat`:
 | `DELETE` | `/documents/{id}` | Remove a document |
 | `POST` | `/data` | Upload CSV/Excel as a DuckDB table (`table_name` form field) |
 | `GET` | `/data/tables` | Tables and columns |
+| `POST` | `/collect/google-maps` | Scrape competitors from Google Maps (background job, 1–5 min) |
+| `GET` | `/collect/jobs/{id}` | Collection job status and summary |
 | `POST` | `/chat` | Ask a question → answer, route, citations, SQL, LangSmith run id |
 | `GET` | `/health` | Keys configured, documents ready, tables loaded |
+
+## Competitor data from Google Maps
+
+Uses [gosom/google-maps-scraper](https://github.com/gosom/google-maps-scraper) (MIT). Places go into the `competitors` table (rating, review count, star breakdown, location, ...) for SQL, and reviews go into a Markdown document for PageIndex.
+
+```bash
+python -m scripts.install_gmaps_scraper     # downloads the pinned binary into bin/ (~60 MB)
+curl -X POST localhost:8000/collect/google-maps -H "Content-Type: application/json" \
+     -d '{"queries": ["ice cream parlour in Koramangala Bangalore"]}'
+```
+
+Then ask: *"Which competitors near Koramangala have the best ratings, and what do their customers praise?"*
+
+> ⚠️ This is a scraper, not an official Google API, and it may violate Google's Terms of Service. Keep volume low (max 10 queries per job, one job at a time). Reviewer names, photos and profile links are dropped, and review text is PII-scrubbed. For production use, switch to the official Places API.
 
 ## Guardrails
 
@@ -50,6 +66,7 @@ Try `POST /chat`:
 
 ```bash
 pytest -q                                   # offline, fake LLM, no keys needed
+RUN_LIVE_SCRAPE=1 pytest tests/test_google_maps.py   # + one real Google Maps scrape
 python -m eval.run --experiment baseline    # real LLM, results in LangSmith, fails below PRD targets
 ```
 
@@ -61,6 +78,7 @@ The evaluation runs `eval/datasets/golden.json` (data, document, combined and at
 app/
   api/          FastAPI routes (thin)
   core/         settings, logging, LLM factory
+  collectors/   google_maps (scraper → competitors table + reviews doc)
   ingestion/    doc_indexer (PageIndex), table_loader (DuckDB)
   retrieval/    pageindex_tool (tree search), sql_tool
   guardrails/   input, sql, output guards

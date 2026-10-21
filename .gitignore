@@ -8,3 +8,4 @@ data/store/
 data/raw/
 *.duckdb
 *.egg-info/
+bin/
