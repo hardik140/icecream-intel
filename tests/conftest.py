@@ -38,6 +38,7 @@ def isolated(tmp_path, monkeypatch):
     monkeypatch.setenv("DATA_DIR", str(tmp_path))
     monkeypatch.setenv("LANGSMITH_TRACING", "false")
     monkeypatch.setenv("LANGCHAIN_TRACING_V2", "false")
+    monkeypatch.setenv("PAGEINDEX_API_KEY", "")  # never upload to the real cloud account from tests
     get_settings.cache_clear()
     yield
     get_settings.cache_clear()

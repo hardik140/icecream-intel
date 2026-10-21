@@ -32,7 +32,7 @@ Try `POST /chat`:
 
 | Method | Path | What it does |
 |---|---|---|
-| `POST` | `/documents` | Upload a text PDF or Markdown file; PageIndex tree built in the background |
+| `POST` | `/documents` | Upload a PDF or Markdown file; PageIndex tree built in the background (PDFs via PageIndex cloud if `PAGEINDEX_API_KEY` is set) |
 | `GET` | `/documents` | List documents and indexing status |
 | `DELETE` | `/documents/{id}` | Remove a document |
 | `POST` | `/data` | Upload CSV/Excel as a DuckDB table (`table_name` form field) |
@@ -55,6 +55,13 @@ curl -X POST localhost:8000/collect/google-maps -H "Content-Type: application/js
 Then ask: *"Which competitors near Koramangala have the best ratings, and what do their customers praise?"*
 
 > ⚠️ This is a scraper, not an official Google API, and it may violate Google's Terms of Service. Keep volume low (max 10 queries per job, one job at a time). Reviewer names, photos and profile links are dropped, and review text is PII-scrubbed. For production use, switch to the official Places API.
+
+## PageIndex: local or cloud
+
+- **No `PAGEINDEX_API_KEY`:** PDFs are indexed locally, so they must have a text layer, and indexing uses our LLM tokens.
+- **With `PAGEINDEX_API_KEY`:** PDFs go to PageIndex cloud. It does OCR, so scanned PDFs work, and no tokens of ours are spent. A 12-page report took about 30 s. Deleting a document also deletes its cloud copy.
+- Markdown is always indexed locally from its headings, which is free.
+- Retrieval always runs here. When all document trees together are too large for one prompt (the free tiers cap a request at about 7k tokens), a cheap first step picks up to 3 documents, and only their trees are searched.
 
 ## Two LLM providers
 

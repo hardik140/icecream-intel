@@ -14,7 +14,7 @@ MANGO_SQL = ("SELECT year(month) AS year, ROUND(SUM(revenue_inr), 2) AS revenue_
 
 
 def responses(route="both", answer="North mango revenue fell from 3045840.0 to 2342592.0 [SOP, line 1].",
-              label="ok", node_ids=lambda p: re.findall(r'"node_id": "([^"]+)",\s*"title": "Mango Pulp"', p)):
+              label="ok", node_ids=lambda p: re.findall(r'"node_id":"([^"]+)","title":"Mango Pulp"', p)):
     return {
         "InputVerdict": lambda p: InputVerdict(label=label, reason="test"),
         "RouteDecision": lambda p: nodes.RouteDecision(route=route),

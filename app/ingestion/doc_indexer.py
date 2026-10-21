@@ -1,12 +1,14 @@
 """Brand documents (PDF / Markdown) → PageIndex tree, stored as one JSON file per document.
 
-PDF trees are built by an LLM (costs tokens). Markdown trees come from the headings (free, offline).
+PDFs: PageIndex cloud when PAGEINDEX_API_KEY is set (OCR for scanned PDFs, no LLM tokens of ours),
+otherwise local PageIndex (text PDFs only, uses our LLM). Markdown trees come from headings (free, offline).
 """
 import asyncio
 import json
 import logging
 import os
 import shutil
+import time
 import uuid
 from datetime import datetime, timezone
 from pathlib import Path
@@ -32,7 +34,7 @@ def _write(meta: dict) -> None:
 
 
 def validate(path: Path) -> None:
-    """Raise ValueError for unsupported or unreadable files. Local PageIndex has no OCR."""
+    """Raise ValueError for unsupported or unreadable files. Only local PageIndex needs a text layer."""
     ext = path.suffix.lower()
     if ext not in SUPPORTED:
         raise ValueError(f"Unsupported file type {ext}; use PDF or Markdown")
@@ -42,7 +44,7 @@ def validate(path: Path) -> None:
             has_text = any((p.extract_text() or "").strip() for p in pages[:5])
         except Exception as e:
             raise ValueError(f"Not a readable PDF: {e}") from e
-        if not has_text:
+        if not has_text and not get_settings().pageindex_api_key:  # cloud does OCR
             raise ValueError("PDF has no extractable text (scanned?). Only text-based PDFs are supported")
 
 
@@ -64,6 +66,8 @@ def build_tree(doc_id: str) -> None:
         if path.suffix == ".md":
             from pageindex.page_index_md import md_to_tree
             result = asyncio.run(md_to_tree(str(path), if_add_node_text="yes", if_add_node_id="yes"))
+        elif get_settings().pageindex_api_key:
+            result = {"structure": _cloud_tree(path, meta)}
         else:
             from pageindex import page_index
             result = page_index(str(path), model=litellm_name("fast"),
@@ -73,6 +77,26 @@ def build_tree(doc_id: str) -> None:
         log.exception("Indexing failed for %s", doc_id)
         meta.update(status="failed", error=str(e))
     _write(meta)
+
+
+def _cloud_client():
+    from pageindex import PageIndexCloudClient
+    return PageIndexCloudClient(api_key=get_settings().pageindex_api_key)
+
+
+def _cloud_tree(path: Path, meta: dict) -> list[dict]:
+    """Upload to PageIndex cloud, wait for processing, return its tree (with node text and summaries)."""
+    client = _cloud_client()
+    meta["cloud_doc_id"] = client.submit_document(str(path))["doc_id"]
+    _write(meta)  # so a delete during processing can still remove the cloud copy
+    deadline = time.monotonic() + get_settings().pageindex_timeout_s
+    while (status := client.get_document(meta["cloud_doc_id"]).get("status")) != "completed":
+        if status == "failed":
+            raise RuntimeError("PageIndex cloud failed to process this document")
+        if time.monotonic() > deadline:
+            raise TimeoutError(f"PageIndex cloud still '{status}' after {get_settings().pageindex_timeout_s}s")
+        time.sleep(5)
+    return client.get_tree(meta["cloud_doc_id"], node_summary=True)["result"]
 
 
 def get_document(doc_id: str) -> dict:
@@ -92,5 +116,10 @@ def list_documents(with_tree: bool = False) -> list[dict]:
 
 def delete_document(doc_id: str) -> None:
     meta = get_document(doc_id)
+    if meta.get("cloud_doc_id"):
+        try:
+            _cloud_client().delete_document(meta["cloud_doc_id"])
+        except Exception:  # don't block the local delete; the cloud copy can be removed in the dashboard
+            log.warning("Could not delete cloud copy %s of %s", meta["cloud_doc_id"], doc_id)
     (get_settings().docs_dir / meta["file"]).unlink(missing_ok=True)
     _meta_path(doc_id).unlink()

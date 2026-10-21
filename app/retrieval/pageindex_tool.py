@@ -1,7 +1,8 @@
 """Vectorless retrieval: the LLM reads every document's PageIndex tree and picks the sections to read.
 
 Adapted from llm_tree_search / find_nodes_by_ids in krishnaik06/RAG-Tutorials (PageIndex crash course),
-extended to search across all indexed documents at once.
+extended to search across all indexed documents at once. When all trees together are too big for one
+prompt (free tiers cap a request at ~7k tokens), a first cheap step picks the documents to search.
 """
 import json
 
@@ -10,10 +11,15 @@ from pydantic import BaseModel
 from app.core.llm import get_llm
 from app.graph.state import Citation
 from app.ingestion.doc_indexer import list_documents
-from app.prompts import EXPERT_RULES, TREE_SEARCH
+from app.prompts import DOC_SELECT, EXPERT_RULES, TREE_SEARCH
 
 MAX_SECTIONS = 6
 MAX_SECTION_CHARS = 6000
+MAX_TREE_PROMPT_CHARS = 16000  # ~4k tokens; above this, pick documents first
+
+
+class DocChoice(BaseModel):
+    doc_names: list[str]
 
 
 class TreeSearch(BaseModel):
@@ -50,12 +56,9 @@ def _find(nodes: list[dict], ids: set[str], doc: dict) -> list[Citation]:
     return found
 
 
-def document_outline() -> str:
-    """One line per ready document with its top-level sections, so the router knows what docs cover."""
+def _outline(docs: list[dict]) -> str:
     lines = []
-    for d in list_documents(with_tree=True):
-        if d["status"] != "ready":
-            continue
+    for d in docs:
         tree = d["tree"]
         # Markdown trees have one root (the H1 title); its children are the real sections
         top = tree[0].get("nodes") or tree if len(tree) == 1 else tree
@@ -63,13 +66,32 @@ def document_outline() -> str:
     return "\n".join(lines) or "(no documents)"
 
 
+def document_outline() -> str:
+    """One line per ready document with its top-level sections, so the router knows what docs cover."""
+    return _outline([d for d in list_documents(with_tree=True) if d["status"] == "ready"])
+
+
+def _tree_prompt(question: str, docs: list[dict]) -> str:
+    trees = [{"doc_name": d["name"], "nodes": _compress(d["tree"], d["doc_id"])} for d in docs]
+    return TREE_SEARCH.format(rules=EXPERT_RULES, question=question,
+                              trees=json.dumps(trees, separators=(",", ":"), ensure_ascii=False))
+
+
+def _pick_documents(question: str, docs: list[dict]) -> list[dict]:
+    prompt = DOC_SELECT.format(rules=EXPERT_RULES, question=question, docs=_outline(docs))
+    names = set(get_llm("fast").with_structured_output(DocChoice).invoke(prompt).doc_names)
+    return [d for d in docs if d["name"] in names] or docs  # nothing usable picked: search everything
+
+
 def search_documents(question: str) -> list[Citation]:
     """Return the document sections that answer the question, with locations for citation."""
     docs = [d for d in list_documents(with_tree=True) if d["status"] == "ready"]
     if not docs:
         return []
-    trees = [{"doc_name": d["name"], "nodes": _compress(d["tree"], d["doc_id"])} for d in docs]
-    prompt = TREE_SEARCH.format(rules=EXPERT_RULES, question=question, trees=json.dumps(trees, indent=1))
+    prompt = _tree_prompt(question, docs)
+    if len(prompt) > MAX_TREE_PROMPT_CHARS and len(docs) > 1:
+        docs = _pick_documents(question, docs)
+        prompt = _tree_prompt(question, docs)
     result = get_llm("smart").with_structured_output(TreeSearch).invoke(prompt)
     ids = set(result.node_list)
     return [c for d in docs for c in _find(d["tree"], ids, d)][:MAX_SECTIONS]

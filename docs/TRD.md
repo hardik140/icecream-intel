@@ -146,7 +146,8 @@ class GraphState(TypedDict):
 - Not supported in the Docker image yet, because the Linux binary needs Playwright browser dependencies.
 
 ### 5.2 Retrieval (plain functions called by graph nodes)
-- `search_documents(question) -> list[Citation]`: all ready document trees are compressed (titles plus 150-char summaries, node ids prefixed with `doc_id:`) and sent to the LLM with ice-cream **expert routing rules**. The LLM returns node ids; their full section text becomes the context. This is adapted from the PageIndex crash course in krishnaik06/RAG-Tutorials.
+- PDFs: PageIndex **cloud** (`submit_document` → poll `get_document` until `completed` → `get_tree(node_summary=True)`) when `PAGEINDEX_API_KEY` is set; it adds OCR, so the text-layer check is skipped. Otherwise local `page_index()`. The cloud id is stored as `cloud_doc_id`, and its cloud copy is deleted together with the document.
+- `search_documents(question) -> list[Citation]`: all ready document trees are compressed (titles plus 150-char summaries, node ids prefixed with `doc_id:`) and sent to the LLM with ice-cream **expert routing rules**. The LLM returns node ids; their full section text becomes the context. This is adapted from the PageIndex crash course in krishnaik06/RAG-Tutorials. When the compact-JSON prompt is over 16k characters, a fast-tier `DOC_SELECT` step first picks up to 3 documents from their outlines; if it picks no known name, all documents are searched.
 - `query_sales_data(question) -> {sql, rows}`: the LLM writes SQL from the schema and a few-shot example, then it passes the SQL guard and runs on a locked-down connection with a timeout.
 
 ### 5.3 Guardrails
