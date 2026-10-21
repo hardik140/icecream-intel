@@ -4,7 +4,6 @@ COPY pyproject.toml ./
 COPY app ./app
 COPY eval ./eval
 COPY scripts ./scripts
-COPY data/sample ./data/sample
 RUN pip install --no-cache-dir .
 ENV DATA_DIR=/data
 VOLUME /data

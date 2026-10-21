@@ -2,13 +2,13 @@
 
 # Domain routing hints for the tree search ("expert-guided retrieval", from the PageIndex crash course).
 EXPERT_RULES = """\
-- Taste, texture, melting, packaging, complaints, ratings  → customer review reports
-- Competitors, pricing, market share, consumer trends     → market research
-- Storage temperature, shelf life, hygiene, cold chain    → operations SOP
-- Ingredients, recipes, suppliers, costs, delivery terms  → operations SOP / supplier sections
-- Campaigns, ads, social media, launches                  → marketing / market research
-- "Why" questions about a flavour → check reviews AND any supplier/recipe change for that flavour
-- What customers say about competitor / rival shops        → Google Maps competitor reviews"""
+- Taste, texture, melting, packaging, complaints, ratings  → customer reviews (incl. Google Maps reviews)
+- Market size, consumption, growth drivers, trends, outlook → industry / market reports
+- Competitors, market share, pricing                      → market reports, competitor reviews
+- Storage, shelf life, cold chain, supply chain, distribution → operations / supply-chain sections
+- Ingredients, recipes, suppliers, costs                  → operations / supplier sections
+- Campaigns, digital marketing, launches                  → marketing sections of any report
+- "Why" questions → look for causes (reviews, supplier or recipe changes, market drivers)"""
 
 TREE_SEARCH = """\
 You are given a question and the tree structures (like tables of contents) of an ice cream brand's documents.
@@ -85,14 +85,16 @@ Rules:
 - Compute every number the answer needs (totals, growth %, shares, differences) IN SQL with
   readable column aliases — the answer writer is not allowed to do arithmetic.
 - Round money and percentages to 2 decimals. Order results meaningfully. Keep result small.
+- Numbers may be stored as text: use TRY_CAST(col AS DOUBLE) before arithmetic or numeric comparison.
 - Use only columns that exist. Match text values case-insensitively when filtering.
 - Growth / trend / "is X growing" with no period given: compare FULL calendar years (each year in
   the data), never single months — monthly values are seasonal.
 
-Example (for a table sales(month DATE, region, channel, flavour, units_sold, revenue_inr)):
-Q: Top 3 flavours by revenue in 2025
-SQL: SELECT flavour, ROUND(SUM(revenue_inr), 2) AS revenue_inr FROM sales
-     WHERE year(month) = 2025 GROUP BY flavour ORDER BY revenue_inr DESC LIMIT 3
+Example (for a table market_data(metric, year_period, value, unit) where value is text):
+Q: How much did the market grow from 2020 to 2025?
+SQL: SELECT ROUND(100 * (MAX(TRY_CAST(value AS DOUBLE)) FILTER (WHERE year_period = '2025')
+            / MAX(TRY_CAST(value AS DOUBLE)) FILTER (WHERE year_period = '2020') - 1), 2) AS growth_pct
+     FROM market_data WHERE lower(metric) = 'market value'
 
 Question: {question}"""
 
@@ -104,6 +106,7 @@ Rules:
 - Copy numbers EXACTLY as they appear in the SQL result. Do not calculate, round or invent new numbers.
 - If the context does not contain the answer, say so plainly. Never guess.
 - Use only the parts of the context that help answer THIS question; ignore unrelated SQL rows or sections.
+- Industry / market figures describe the whole market, not the brand: never call them the brand's own.
 - Be concise, but include EVERY fact from the context that answers the question (ratings, figures,
   requests, dates, names). Use a small markdown table for multi-row numbers.
 - End with one line starting "**What this means:**" giving the business implication.

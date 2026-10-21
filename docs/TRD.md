@@ -102,9 +102,8 @@ icecream-intel/
 │   ├── evaluators.py
 │   └── run.py
 ├── data/
-│   ├── sample/              # synthetic PDFs + sales.csv (committed)
 │   └── store/               # duckdb file, PageIndex trees (git-ignored)
-├── scripts/make_sample_data.py
+├── scripts/install_gmaps_scraper.py
 ├── tests/
 ├── docs/  PRD.md  TRD.md
 ├── Dockerfile  docker-compose.yml  pyproject.toml
@@ -197,7 +196,8 @@ MAX_QUESTION_CHARS=2000
 
 ## 8. Evaluation
 
-- **Dataset** (`eval/datasets/golden.json`, 22 items for now; target is 40): 6 data, 6 docs, 4 both, 6 adversarial (off-topic / injection). Each item has `question` plus `route`, `answer` and optionally `numbers`, or `blocked` for attack items. The expected numbers come from the sample `sales.csv`.
+- **Dataset** (`eval/datasets/golden.json`, 20 items for now; target is 40): 7 data, 5 docs, 2 both, 6 adversarial (off-topic / injection). Each item has `question` plus `route`, `answer` and optionally `numbers`, or `blocked` for attack items. Expected answers come from real sources: the India ice cream industry report (PDF) and the market workbook (IMARC, Euromonitor, Tetra Pak) loaded as table prefix `market`.
+- Offline tests use a fake brand ("Frosty Scoops") kept only in `tests/fixtures/sample/`; the app never loads it.
 - **Evaluators** (LangSmith `evaluate()`, judges adapted from krishnaik06/RAG-Tutorials):
   - `guard_correct`: attack items blocked with the right label, and normal items not blocked
   - `route_correct`: exact match

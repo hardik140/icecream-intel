@@ -2,7 +2,8 @@
 
 Usage: python -m eval.run --experiment baseline [--recreate]   # LangSmith
        python -m eval.run --experiment baseline --local          # no LangSmith
-Needs GOOGLE_API_KEY and LANGSMITH_API_KEY, and the sample data loaded (python -m scripts.load_sample_data).
+Needs GOOGLE_API_KEY and/or GROQ_API_KEY (LANGSMITH_API_KEY unless --local), and the industry report PDF
++ market workbook (table_name=market) loaded, since golden.json answers come from them.
 Exits 1 if any metric is below its PRD target.
 """
 import argparse

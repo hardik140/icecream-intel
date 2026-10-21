@@ -59,7 +59,6 @@ A chat assistant that answers business questions about the brand in plain langua
 - Guardrails: off-topic, prompt-injection, PII scrubbing, read-only SQL, groundedness check.
 - Evaluation suite in LangSmith.
 - REST backend, Docker, CI on GitHub.
-- Sample (fake) brand dataset so anyone can run the project.
 - Competitor collection from Google Maps (places + reviews) via an open-source scraper, low volume.
 
 ### Out of scope (v1)
@@ -89,7 +88,7 @@ A chat assistant that answers business questions about the brand in plain langua
 
 - **Modular:** each component (ingestion, retrieval, guardrails, graph, API) is swappable and tested alone.
 - **Secure:** secrets only in `.env`; real brand data never committed.
-- **Reproducible:** `docker compose up` + sample data = working demo.
+- **Reproducible:** `docker compose up`, then upload documents and tables, gives a working system.
 - **Cost-aware:** cheap model for routing/guards, strong model for answers.
 
 ## 8. Risks
@@ -105,7 +104,7 @@ A chat assistant that answers business questions about the brand in plain langua
 
 | # | Milestone |
 |---|---|
-| M1 | Repo skeleton, config, sample data |
+| M1 | Repo skeleton, config |
 | M2 | Ingestion (PageIndex + DuckDB) |
 | M3 | Retrieval tools, tested alone |
 | M4 | LangGraph flow + LangSmith tracing |

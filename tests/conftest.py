@@ -6,7 +6,7 @@ from langchain_core.messages import AIMessage
 
 from app.core.config import get_settings
 
-SAMPLE = Path(__file__).resolve().parents[1] / "data" / "sample"
+SAMPLE = Path(__file__).parent / "fixtures" / "sample"  # fake brand "Frosty Scoops": tests only, never loaded by the app
 LLM_USERS = ["app.graph.nodes", "app.guardrails.input_guard", "app.guardrails.output_guard",
              "app.retrieval.sql_tool", "app.retrieval.pageindex_tool"]
 

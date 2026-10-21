@@ -18,14 +18,17 @@ python -m venv .venv && .venv\Scripts\activate      # Windows (Linux/macOS: sour
 pip install -e ".[dev]"
 copy .env.example .env                               # add GOOGLE_API_KEY, GROQ_API_KEY, LANGSMITH_API_KEY
 
-python -m scripts.load_sample_data                   # sample brand "Frosty Scoops": sales.csv + 3 docs
 uvicorn app.main:app --reload                        # open http://localhost:8000/docs
+
+# load your data (or use the /docs page)
+curl -F file=@report.pdf localhost:8000/documents
+curl -F file=@market_data.xlsx -F table_name=market localhost:8000/data   # one table per sheet
 ```
 
 Try `POST /chat`:
 
 ```json
-{"question": "How did Mango Alphonso revenue in the North change from 2024 to 2025, and why?"}
+{"question": "How big was India's ice cream market in 2025, and what is driving its growth?"}
 ```
 
 ## API
@@ -35,7 +38,7 @@ Try `POST /chat`:
 | `POST` | `/documents` | Upload a PDF or Markdown file; PageIndex tree built in the background (PDFs via PageIndex cloud if `PAGEINDEX_API_KEY` is set) |
 | `GET` | `/documents` | List documents and indexing status |
 | `DELETE` | `/documents/{id}` | Remove a document |
-| `POST` | `/data` | Upload CSV/Excel as a DuckDB table (`table_name` form field) |
+| `POST` | `/data` | Upload CSV/Excel into DuckDB (`table_name` form field; workbooks get one table per sheet, `<name>_<sheet>`) |
 | `GET` | `/data/tables` | Tables and columns |
 | `POST` | `/collect/google-maps` | Scrape competitors from Google Maps (background job, 1–5 min) |
 | `GET` | `/collect/jobs/{id}` | Collection job status and summary |
@@ -87,7 +90,7 @@ python -m eval.run --experiment baseline    # real LLM, results in LangSmith, fa
 python -m eval.run --experiment baseline --local   # same, scored locally (no LangSmith)
 ```
 
-The evaluation runs `eval/datasets/golden.json` (data, document, combined and attack questions) with the evaluators `guard_correct`, `route_correct`, `numbers_match`, `correctness`, `groundedness` and `retrieval_relevance`.
+The evaluation runs `eval/datasets/golden.json` (data, document, combined and attack questions). Its answers come from the India ice cream industry report (PDF) and the market workbook loaded as `market`, so load both first. It uses the evaluators `guard_correct`, `route_correct`, `numbers_match`, `correctness`, `groundedness` and `retrieval_relevance`.
 
 ## Project layout
 
@@ -102,7 +105,7 @@ app/
   graph/        LangGraph state, nodes, builder
   prompts/      every prompt in one file
 eval/           golden dataset, evaluators, LangSmith runner
-scripts/        sample data generator and loader
+scripts/        Google Maps scraper installer
 tests/
 ```
 
