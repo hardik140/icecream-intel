@@ -9,3 +9,7 @@ data/raw/
 *.duckdb
 *.egg-info/
 bin/
+/*.pdf
+/*.xlsx
+/*.xls
+/*.csv
